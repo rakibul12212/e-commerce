@@ -1,7 +1,5 @@
-
+import { Container } from "@/components/container";
 import "./globals.css";
-
-
 
 export const metadata = {
   title: "E-commerce app",
@@ -12,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {children}
+        <Container>{children}</Container>
       </body>
     </html>
   );
