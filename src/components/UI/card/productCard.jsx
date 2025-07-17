@@ -41,7 +41,7 @@ const ProductCard = ({
         <Button variant="secondary" text="Add to Cart" />
         
       </div>
-      <div></div>
+      
     </div>
   );
 };
