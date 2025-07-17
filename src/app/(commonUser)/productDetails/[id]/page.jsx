@@ -2,12 +2,13 @@
 import Button from "@/components/UI/buttons/button";
 import { products } from "@/data/productData";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const page = ({ params }) => {
   const [size, setSize] = useState("");
   const product = products.find((item) => item.id == parseInt(params.id));
   const hasDiscount = product.hasDiscount;
+
   if (!product) {
     return (
       <p className="py-10 text-2xl font-semibold flex justify-center items-center h-screen">
@@ -17,7 +18,7 @@ const page = ({ params }) => {
   }
   return (
     <>
-      <div className="p-20 grid grid-cols-1 md:grid-cols-2 gap-x-4">
+      <div className="p-20 grid grid-cols-1 md:grid-cols-2 justify-center gap-x-2 max-w-7xl mx-auto">
         <div className="">
           <div>
             <Image
@@ -25,7 +26,7 @@ const page = ({ params }) => {
               alt={product.name}
               width={500}
               height={200}
-              className="border border-gray-500"
+              className="border border-gray-200"
             />
             <div className="flex gap-x-6 my-4">
               {product.images.detail.map((img, index) => (
@@ -35,7 +36,7 @@ const page = ({ params }) => {
                   alt={`${product.name} detail ${index + 1}`}
                   width={150}
                   height={50}
-                  className="border border-gray-500"
+                  className="border border-gray-200"
                 />
               ))}
             </div>
@@ -51,14 +52,14 @@ const page = ({ params }) => {
               </p>
             )}
           </div>
-          <p className="text-4xl font-bold pb-2">${product.price}</p>
+          <p className="text-3xl font-bold p-2">${product.price}</p>
           <div className="py-2">
             <p className="text-lg font-semibold pb-2">select size</p>
             <p className="flex gap-x-4">
               {product.variants.map((variant, id) => (
                 <span
                   key={id}
-                  className={`w-10 h-10 border rounded text-lg font-semibold flex items-center justify-center cursor-pointer transition-colors ${
+                  className={`w-8 h-8 border rounded text-sm font-semibold flex items-center justify-center cursor-pointer transition-colors ${
                     size === variant.size
                       ? "border-black bg-black text-white"
                       : "border-gray-500 hover:bg-gray-100"
