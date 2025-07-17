@@ -1,9 +1,11 @@
+"use client";
 import Button from "@/components/UI/buttons/button";
 import { products } from "@/data/productData";
 import Image from "next/image";
-import React from "react";
+import { useState } from "react";
 
 const page = ({ params }) => {
+  const [size, setSize] = useState("");
   const product = products.find((item) => item.id == parseInt(params.id));
   const hasDiscount = product.hasDiscount;
   if (!product) {
@@ -53,10 +55,15 @@ const page = ({ params }) => {
           <div className="py-2">
             <p className="text-lg font-semibold pb-2">select size</p>
             <p className="flex gap-x-4">
-              {product.variants.map((variant) => (
+              {product.variants.map((variant, id) => (
                 <span
-                  key={`${variant.size}-${variant.color}`}
-                  className="w-10 h-10 border border-gray-500 rounded text-lg font-semibold flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-colors"
+                  key={id}
+                  className={`w-10 h-10 border rounded text-lg font-semibold flex items-center justify-center cursor-pointer transition-colors ${
+                    size === variant.size
+                      ? "border-black bg-black text-white"
+                      : "border-gray-500 hover:bg-gray-100"
+                  }`}
+                  onClick={() => setSize(variant.size)}
                 >
                   {variant.size}
                 </span>
