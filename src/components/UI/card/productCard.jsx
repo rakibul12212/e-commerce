@@ -1,7 +1,9 @@
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const ProductCard = ({
+  id,
   img,
   name,
   price,
@@ -9,6 +11,7 @@ const ProductCard = ({
   shortDescription,
   hasDiscount,
 }) => {
+const router = useRouter();
   return (
     <div className="border border-gray-300 shadow-md bg-gray-50 p-4 rounded-lg grid gap-4 w-full max-w-lg">
       <div className="relative w-full h-[200px]">
@@ -29,7 +32,10 @@ const ProductCard = ({
       </div>
 
       <div className="flex justify-start items-center gap-x-3">
-        <button className="bg-white border border-black px-4 py-1 rounded text-black hover:bg-black hover:text-white transition ease-in-out">
+        <button
+          onClick={() => router.push(`/productDetails/${id}`)}
+          className="bg-white border border-black px-4 py-1 rounded text-black hover:bg-black hover:text-white transition ease-in-out"
+        >
           View Details
         </button>
         <button className="bg-gray-700 border border-gray-700 px-4 py-1 rounded text-white hover:bg-black hover:text-white hover:border-gray-500 transition ease-in-out">

@@ -1,4 +1,4 @@
-import { AllProductsPage } from "@/app/pages/home/allProducts/allProducts";
+import { AllProductsPage } from "@/components/pages/home/allProducts/allProducts";
 
 
  const page = () => {

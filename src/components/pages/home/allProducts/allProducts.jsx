@@ -11,7 +11,7 @@ export const AllProductsPage = () => {
     // Simulate loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // 2 seconds
+    }, 1000); // 2 seconds
 
     return () => clearTimeout(timer);
   }, []);
@@ -34,6 +34,7 @@ export const AllProductsPage = () => {
               className="border border-gray-100 p-4 rounded-lg"
             >
               <ProductCard
+                id={product.id}
                 img={product.img}
                 name={product.name}
                 price={product.price}
