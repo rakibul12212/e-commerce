@@ -8,10 +8,10 @@ export const AllProductsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading delay
+
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000); // 2 seconds
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -35,7 +35,7 @@ export const AllProductsPage = () => {
             >
               <ProductCard
                 id={product.id}
-                img={product.img}
+                img={product.images.primary}
                 name={product.name}
                 price={product.price}
                 discount={product.discount}
