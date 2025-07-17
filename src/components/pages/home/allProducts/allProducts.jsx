@@ -74,6 +74,8 @@ export const AllProductsPage = () => {
           type="search"
           name="search"
           id="search"
+          suggestions="off"
+          // autoComplete="off"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search products..."
