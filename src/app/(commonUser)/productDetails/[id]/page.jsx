@@ -44,16 +44,19 @@ const page = ({ params }) => {
         </div>
         <div>
           <p className="text-xl text-gray-500 pb-2">{product.category}</p>
-          <p className="text-4xl font-bold ">{product.name}</p>
-          <div>
-            {hasDiscount && (
-              <p className="text-xl font-semibold pt-2 text-red-500">
-                {product.discount}% OFF
-              </p>
-            )}
+          <p className="text-3xl font-bold ">{product.name}</p>
+
+          <div className="flex gap-x-2">
+            <p className="text-3xl font-bold py-2">$ {product.price}</p>
+            <div>
+              {hasDiscount && (
+                <p className="text-sm font-bold pt-2 text-red-500">
+                  {product.discount}% OFF
+                </p>
+              )}
+            </div>
           </div>
-          <p className="text-3xl font-bold p-2">${product.price}</p>
-          <div className="py-2">
+          <div className="">
             <p className="text-lg font-semibold pb-2">select size</p>
             <p className="flex gap-x-4">
               {product.variants.map((variant, id) => (
@@ -83,7 +86,7 @@ const page = ({ params }) => {
             <p className="text-lg font-semibold pb-2 ">materials</p>
             <ul>
               {product.materials.map((material, id) => (
-                <li key={id}>- {material}</li>
+                <li key={id} className="text-sm text-gray-500">- {material}</li>
               ))}
             </ul>
           </div>
