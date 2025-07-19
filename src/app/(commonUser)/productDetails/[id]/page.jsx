@@ -2,12 +2,14 @@
 import Button from "@/components/UI/buttons/button";
 import { products } from "@/data/productData";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 
 const page = ({ params }) => {
   const [size, setSize] = useState("");
   const product = products.find((item) => item.id == parseInt(params.id));
   const hasDiscount = product.hasDiscount;
+    const router = useRouter();
 
   if (!product) {
     return (
@@ -76,7 +78,11 @@ const page = ({ params }) => {
           </div>
           <div className="flex  items-center mt-6 gap-x-4 pb-2">
             <Button variant="primary" text="Wishlist" />
-            <Button variant="secondary" text="Add to Cart" />
+            <Button
+              variant="secondary"
+              text="Add to Cart"
+              onClick={() => router.push(`/cart`)}
+            />
           </div>
           <div className="py-2">
             <p className="text-lg font-semibold pb-2 ">Product description</p>
@@ -86,7 +92,9 @@ const page = ({ params }) => {
             <p className="text-lg font-semibold pb-2 ">materials</p>
             <ul>
               {product.materials.map((material, id) => (
-                <li key={id} className="text-sm text-gray-500">- {material}</li>
+                <li key={id} className="text-sm text-gray-500">
+                  - {material}
+                </li>
               ))}
             </ul>
           </div>

@@ -6,7 +6,7 @@ import React from "react";
 
 const navLinks = [
   { href: "/products", label: "Products" },
-  //   { href: "/checkout", label: "Checkout" },
+    { href: "/cart", label: "Cart" },
 ];
 
 const Navbar = () => {

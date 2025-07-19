@@ -19,18 +19,15 @@ const ProductCard = ({
         <Image src={img} alt={name} fill className="object-cover rounded " />
 
         {hasDiscount && (
-          <p className="absolute top-2 right-2 bg-red-500 text-white text-sm px-2 py-1 rounded">
+          <p className="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
             {discount}% OFF
           </p>
         )}
       </div>
 
-      <p className="text-sm text-gray-600">{shortDescription}</p>
-      <p className="text-lg font-semibold">{name}</p>
-
-      <div className="flex justify-start items-center gap-x-2">
-        <p className="text-lg font-semibold text-black">Price: ${price}</p>
-      </div>
+      <p className="text-xs text-gray-600">{shortDescription}</p>
+      <p className="text-md font-semibold">{name}</p>
+      <p className="text-md font-semibold text-black">Price: ${price}</p>
 
       <div className="flex justify-start items-center gap-x-3">
         <Button
@@ -38,10 +35,12 @@ const ProductCard = ({
           text="View Details"
           onClick={() => router.push(`/productDetails/${id}`)}
         />
-        <Button variant="secondary" text="Add to Cart" />
-        
+        <Button
+          variant="secondary"
+          text="Add to Cart"
+          onClick={() => router.push(`/cart`)}
+        />
       </div>
-      
     </div>
   );
 };

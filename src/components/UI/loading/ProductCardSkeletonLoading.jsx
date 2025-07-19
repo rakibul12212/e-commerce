@@ -2,6 +2,7 @@ import React from "react";
 
 const ProductCardSkeleton = () => {
   return (
+    
     <div className="border border-gray-300 shadow-md bg-gray-50 p-4 rounded-lg grid gap-4 w-full max-w-lg animate-pulse">
       <div className="relative w-full h-[200px] bg-gray-300 rounded"></div>
 
