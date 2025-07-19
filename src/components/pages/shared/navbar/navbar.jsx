@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
+import { BsCart3 } from "react-icons/bs";
 
 const navLinks = [
   { href: "/products", label: "Products" },
-    { href: "/cart", label: "Cart" },
+  { href: "/cart", label: "Cart", icon: true },
 ];
 
 const Navbar = () => {
@@ -24,12 +24,13 @@ const Navbar = () => {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`hover:text-red-500 hover:border-b-2 hover:border-red-500 transition-colors ${
+                  className={`hover:text-red-500 hover:border-b-2 hover:border-red-500 transition-colors flex items-center gap-2 ${
                     pathname === link.href
                       ? "text-gray-600 border-b-2 border-red-500"
                       : "text-gray-700"
                   }`}
                 >
+                  {link.icon && <BsCart3 />}
                   {link.label}
                 </Link>
               </li>
