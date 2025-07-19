@@ -156,7 +156,7 @@ const page = () => {
             />
             <button
               type="button"
-              className="px-4 py-3 bg-white border text-gray-300 rounded-lg hover:bg-gray-300 hover:text-white "
+              className=" px-4 py-3 text-gray-300 border border-gray-300 rounded-lg hover:bg-black hover:text-white"
             >
               <FaPlus />
             </button>
@@ -176,7 +176,7 @@ const page = () => {
             Product Variants
           </label>
 
-          <div className="border border-gray-300 rounded-lg p-4 mb-4">
+          <div className="border border-gray-500 rounded-lg p-4 mb-4">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
               <div>
                 <label htmlFor="size" className="sr-only">

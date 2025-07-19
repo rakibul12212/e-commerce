@@ -6,6 +6,7 @@ import { BsCart3 } from "react-icons/bs";
 
 const navLinks = [
   { href: "/products", label: "Products" },
+  { href: "/addProduct", label: "Add Product" },
   { href: "/cart", label: "Cart", icon: true },
 ];
 
