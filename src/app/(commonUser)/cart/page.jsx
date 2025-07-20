@@ -1,4 +1,4 @@
-import AddToCart from "@/components/pages/home/addToCart/addToCart";
+import AddToCart from "@/components/pages/home/container/addToCart/addToCart";
 import React from "react";
 
 const page = () => {
