@@ -4,6 +4,7 @@ import Button from "@/components/UI/buttons/button";
 import { FaPlus } from "react-icons/fa";
 import { AiOutlineDelete } from "react-icons/ai";
 
+
 const page = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -24,6 +25,7 @@ const page = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-8">
+      
       <h1 className="text-3xl font-bold mb-8">Add New Product</h1>
 
       <form className="space-y-6">
