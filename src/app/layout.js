@@ -1,6 +1,7 @@
 import { Container } from "@/components/container";
 import "./globals.css";
 import Navbar from "@/components/pages/shared/navbar/navbar";
+import Footer from "@/components/pages/shared/footer/Footer";
 
 export const metadata = {
   title: "E-commerce app",
@@ -11,10 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Container>
-          <Navbar />
-          {children}
-        </Container>
+        <Navbar />
+        <Container>{children}</Container>
+        <Footer />
       </body>
     </html>
   );

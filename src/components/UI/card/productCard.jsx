@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 import Button from "../buttons/button";
+import { BsCart3 } from "react-icons/bs";
 
 const ProductCard = ({
   id,
@@ -29,16 +30,19 @@ const ProductCard = ({
       <p className="text-md font-semibold">{name}</p>
       <p className="text-md font-semibold text-black">Price: ${price}</p>
 
-      <div className="flex justify-start items-center gap-x-3">
+      <div className="flex justify-start items-center gap-x-2 ">
         <Button
           variant="primary"
           text="View Details"
           onClick={() => router.push(`/productDetails/${id}`)}
+          className="flex-4"
         />
         <Button
           variant="secondary"
-          text="Add to Cart"
+          Icon={BsCart3}
+          text=""
           onClick={() => router.push(`/cart`)}
+          className="flex-1"
         />
       </div>
     </div>
