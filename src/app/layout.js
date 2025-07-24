@@ -1,7 +1,8 @@
 import { Container } from "@/components/container";
 import "./globals.css";
 import Navbar from "@/components/pages/shared/navbar/navbar";
-import Footer from "@/components/pages/shared/footer/Footer";
+import Footer from "@/components/pages/shared/footer/footer";
+
 
 export const metadata = {
   title: "E-commerce app",
