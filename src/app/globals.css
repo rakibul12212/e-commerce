@@ -48,3 +48,39 @@
         transform: scale(1.2)
     }
 }
+
+/* bannerCarousel */
+.swiper {
+    width: 100%;
+    height: 500px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 500px;
+
+}
+
+.mySwiper .swiper-pagination-bullet {
+    width: 20px;
+    height: 4px;
+    border-radius: 2px;
+    background: #888;
+    opacity: 0.6;
+    margin: 0 4px !important;
+    transition: background-color 0.3s;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+    background: #1d4ed8;
+    opacity: 1;
+}
