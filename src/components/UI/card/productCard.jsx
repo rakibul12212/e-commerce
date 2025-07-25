@@ -12,6 +12,7 @@ const ProductCard = ({
   discount,
   shortDescription,
   hasDiscount,
+  stockQuantity,
 }) => {
   const router = useRouter();
   return (
@@ -28,7 +29,25 @@ const ProductCard = ({
 
       <p className="text-xs text-gray-600">{shortDescription}</p>
       <p className="text-md font-semibold">{name}</p>
-      <p className="text-md font-semibold text-black">Price: ${price}</p>
+      <div className="flex justify-between items-center">
+        <p className="text-md font-semibold text-black">Price: ${price}</p>
+        <p
+          className={`text-sm  ${
+            stockQuantity <= 0
+              ? "text-red-600"
+              : stockQuantity < 5
+              ? "text-yellow-500"
+              : "text-green-600"
+          }`}
+        >
+          {stockQuantity <= 0
+            ? "Stock Out"
+            : stockQuantity < 5
+            ? "Low Stock"
+            : "In Stock"}
+          
+        </p>
+      </div>
 
       <div className="flex justify-start items-center gap-x-2 ">
         <Button

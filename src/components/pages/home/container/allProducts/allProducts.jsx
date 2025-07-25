@@ -120,6 +120,7 @@ export const AllProductsPage = () => {
                     discount={product.discount}
                     shortDescription={product.description}
                     hasDiscount={product.hasDiscount}
+                    stockQuantity={product.stockQuantity}
                   />
                 </div>
               ))}

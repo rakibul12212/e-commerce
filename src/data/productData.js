@@ -14,7 +14,7 @@ export const products = [
     isNewArrival: false,
     hasDiscount: true,
     flashSale: true,
-    stockQuantity: 51,
+    stockQuantity: 5,
     materials: ["Cotton", "Polyester", "Spandex"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -47,7 +47,7 @@ export const products = [
     isNewArrival: false,
     hasDiscount: false,
     flashSale: false,
-    stockQuantity: 51,
+    stockQuantity: 0,
     materials: ["Polyester", "Cotton", "Viscose"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -80,7 +80,7 @@ export const products = [
     isNewArrival: false,
     hasDiscount: true,
     flashSale: true,
-    stockQuantity: 51,
+    stockQuantity: 2,
     materials: ["Polyester", "Cotton", "Nylon"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -113,7 +113,7 @@ export const products = [
     isNewArrival: false,
     hasDiscount: true,
     flashSale: false,
-    stockQuantity: 51,
+    stockQuantity: 20,
     materials: ["Cotton (Denim)", "Spandex", "Polyester"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -146,7 +146,7 @@ export const products = [
     isNewArrival: false,
     hasDiscount: false,
     flashSale: false,
-    stockQuantity: 51,
+    stockQuantity: 60,
     materials: ["Leather", "Rubber", "Mesh", "EVA Foam"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -178,7 +178,7 @@ export const products = [
     isNewArrival: false,
     hasDiscount: true,
     flashSale: true,
-    stockQuantity: 51,
+    stockQuantity: 75,
     materials: ["Leather", "Polyester (lining)", "Metal (hardware)"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -210,7 +210,7 @@ export const products = [
     isNewArrival: false,
     hasDiscount: true,
     flashSale: false,
-    stockQuantity: 51,
+    stockQuantity: 50,
     materials: ["Cotton", "Polyester", "Elastane"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -242,7 +242,7 @@ export const products = [
     isNewArrival: false,
     hasDiscount: true,
     flashSale: true,
-    stockQuantity: 51,
+    stockQuantity: 100,
     materials: ["Leather", "Rubber", "Cork", "Synthetic Lining"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -275,7 +275,7 @@ export const products = [
     isNewArrival: false,
     hasDiscount: false,
     flashSale: false,
-    stockQuantity: 51,
+    stockQuantity: 20,
     materials: ["Leather", "Rubber", "Synthetic Lining"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -307,7 +307,7 @@ export const products = [
     isNewArrival: false,
     hasDiscount: false,
     flashSale: false,
-    stockQuantity: 51,
+    stockQuantity: 25,
     materials: ["Wool", "Polyester", "Nylon", "Cotton (lining)"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -339,7 +339,7 @@ export const products = [
     isNewArrival: true,
     hasDiscount: true,
     flashSale: true,
-    stockQuantity: 51,
+    stockQuantity: 15,
     materials: ["Polyester", "Spandex", "Nylon"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -372,7 +372,7 @@ export const products = [
     isNewArrival: true,
     hasDiscount: true,
     flashSale: true,
-    stockQuantity: 51,
+    stockQuantity: 5,
     materials: ["Polycarbonate (lenses)", "Metal (frame)", "Plastic (temples)"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -404,7 +404,7 @@ export const products = [
     isNewArrival: true,
     hasDiscount: false,
     flashSale: false,
-    stockQuantity: 51,
+    stockQuantity: 151,
     materials: ["Cotton", "Polyester", "Fleece"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -436,7 +436,7 @@ export const products = [
     isNewArrival: true,
     hasDiscount: true,
     flashSale: true,
-    stockQuantity: 51,
+    stockQuantity: 7,
     materials: ["Polyester", "Viscose", "Spandex"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -468,7 +468,7 @@ export const products = [
     isNewArrival: true,
     hasDiscount: true,
     flashSale: true,
-    stockQuantity: 51,
+    stockQuantity: 0,
     materials: ["Leather", "Metal (buckle)", "Nylon (stitching)"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -533,7 +533,7 @@ export const products = [
     isNewArrival: true,
     hasDiscount: true,
     flashSale: true,
-    stockQuantity: 51,
+    stockQuantity: 20,
     materials: [
       "Leather (strap)",
       "Stainless Steel (case)",
@@ -571,7 +571,7 @@ export const products = [
     isNewArrival: true,
     hasDiscount: true,
     flashSale: true,
-    stockQuantity: 51,
+    stockQuantity: 5,
     materials: ["Cotton", "Polyester", "Viscose"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -603,7 +603,7 @@ export const products = [
     isNewArrival: true,
     hasDiscount: true,
     flashSale: true,
-    stockQuantity: 51,
+    stockQuantity: 50,
     materials: ["Cotton", "Spandex", "Polyester"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
@@ -635,7 +635,7 @@ export const products = [
     isNewArrival: true,
     hasDiscount: true,
     flashSale: true,
-    stockQuantity: 51,
+    stockQuantity: 10,
     materials: ["Leather", "Rubber", "Synthetic Lining", "Metal (zipper)"],
     images: {
       primary: "https://i.ibb.co/B2TRtrZP/noimage.png",
