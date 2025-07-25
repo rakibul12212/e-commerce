@@ -4,7 +4,7 @@ import { products } from "@/data/productData";
 import ProductCardSkeleton from "@/components/UI/loading/ProductCardSkeletonLoading";
 import { useEffect, useState } from "react";
 import Button from "@/components/UI/buttons/button";
-import Dropdown from "@/components/UI/dropdown/dropdown";
+
 
 export const AllProductsPage = () => {
   const [isLoading, setIsLoading] = useState(true);

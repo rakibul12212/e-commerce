@@ -12,6 +12,8 @@ const Button = ({
       "bg-white border border-black px-4 py-1 rounded text-black hover:bg-black hover:text-white transition ease-in-out",
     secondary:
       "bg-gray-700 border border-gray-700 px-4 py-1 rounded text-white hover:bg-black hover:text-white hover:border-gray-500 transition ease-in-out",
+    flashSaleButton:
+      "bg-red-500  px-4 py-1 rounded text-white hover:bg-red-700 hover:text-white  transition ease-in-out",
     iconButton:
       "bg-gray-700 border border-gray-700 p-2 rounded text-white hover:bg-black hover:text-white hover:border-gray-500 transition ease-in-out",
   };

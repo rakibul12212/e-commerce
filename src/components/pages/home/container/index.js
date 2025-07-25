@@ -3,6 +3,7 @@ import Banner from "./banner/banner";
 import { AllProductsPage } from "./allProducts/allProducts";
 import SubCategoryPage from "./subCategoryPage/subCategoryPage";
 import CartBtn from "@/components/UI/buttons/cartBtn";
+import FlashSaleProduct from "./flashSaleProduct/flashSaleProduct";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <div className="space-y-20">
         <Banner />
         <SubCategoryPage />
+        <FlashSaleProduct />
         <AllProductsPage />
       </div>
       <div className="fixed bottom-10 right-4">
