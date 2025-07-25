@@ -15,11 +15,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white mt-auto">
-      {/* Main Footer Content */}
-      <div className="max-w-[1920px] mx-auto px-6 py-12">
+    <footer className="bg-gray-900 text-white  mt-auto">
+      <div className="max-w-[1920px] mx-auto px-10 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
           <div className="space-y-4">
             <Link
               href="/"
@@ -203,7 +201,6 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-400">
               <p>© {currentYear} E-Commerce. All rights reserved.</p>
-              
             </div>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <a
