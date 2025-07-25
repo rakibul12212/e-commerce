@@ -80,7 +80,7 @@ export const AllProductsPage = () => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search products..."
-          className="w-full max-w-md px-2 py-1 border border-gray-500 rounded-lg mt-4 mb-6"
+          className="w-full max-w-md px-2 py-1 border border-gray-500 rounded-lg mt-4 "
         />
       </div>
       {/* Product Grid */}
@@ -93,7 +93,7 @@ export const AllProductsPage = () => {
           ))}
         </div>
       ) : (
-        <div className="pt-5">
+        <div className="">
           {filteredProducts.length === 0 ? (
             <div className="text-center py-20">
               <h2 className="text-2xl font-semibold text-gray-600 mb-4">
