@@ -1,4 +1,4 @@
-import HomePage from "@/components/pages/home/container/banner";
+import HomePage from "@/components/pages/home/container";
 
 export default function Home() {
   return (
