@@ -16,7 +16,7 @@ const ProductCard = ({
 }) => {
   const router = useRouter();
   return (
-    <div className="border border-gray-300 shadow-md bg-gray-50 p-4 rounded-lg grid gap-4 w-full max-w-lg">
+    <div className="border border-gray-300 shadow-md bg-gray-50 p-4 rounded-lg grid gap-4 w-full max-w-lg transform transition-transform duration-300 ease-in-out hover:scale-105">
       <div className="relative w-full h-[200px]">
         <Image src={img} alt={name} fill className="object-cover rounded " />
 
@@ -27,10 +27,10 @@ const ProductCard = ({
         )}
       </div>
 
-      <p className="text-xs text-gray-600">{shortDescription}</p>
-      <p className="text-md font-semibold">{name}</p>
+      <p className="text-sm font-semibold text-gray-600">{shortDescription}</p>
+      <p className="text-xl font-semibold text-[#6896AD]">{name}</p>
       <div className="flex justify-between items-center">
-        <p className="text-md font-semibold text-black">Price: ${price}</p>
+        <p className="text-md font-semibold text-[#6896AD]">Price: ${price}</p>
         <p
           className={`text-sm  ${
             stockQuantity <= 0
@@ -45,7 +45,6 @@ const ProductCard = ({
             : stockQuantity < 5
             ? "Low Stock"
             : "In Stock"}
-          
         </p>
       </div>
 
@@ -57,11 +56,10 @@ const ProductCard = ({
           className="flex-4"
         />
         <Button
-          variant="secondary"
+          variant="iconButton"
           Icon={BsCart3}
-          text=""
           onClick={() => router.push(`/cart`)}
-          className="flex-1"
+          ariaLabel="Add to cart"
         />
       </div>
     </div>
