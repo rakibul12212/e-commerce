@@ -338,8 +338,8 @@ export const products = [
   {
     id: 11,
     name: "Men's Sports Shorts",
-    shortDescription: "Lightweight shorts for sports and casual comfort.",
-    description: "Lightweight shorts for sports and casual wear.",
+    shortDescription: "Lightweight shorts for sports ",
+    description: "Lightweight shorts for sports ",
     longDescription:
       "These Men's Sports Shorts are designed for active lifestyles, offering lightweight comfort and flexibility. Made from a blend of polyester, spandex, and nylon, they provide excellent breathability and stretch, making them ideal for workouts, sports, or casual wear. Available in Black, Grey, and Blue, these shorts feature an elastic waistband with a drawstring for a secure fit and side pockets for convenience. The moisture-wicking fabric keeps you dry during intense activities, while the durable construction ensures long-lasting performance. Perfect for the gym, running, or lounging at home, these shorts combine functionality with a modern, streamlined design that suits any active man’s wardrobe.",
     price: 900,

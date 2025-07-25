@@ -30,14 +30,17 @@ const FlashSaleProductCard = ({
         </p>
       </div>
 
-      <p className="text-sm font-semibold text-gray-600">{shortDescription}</p>
-      <p className="text-xl font-semibold text-black">{name}</p>
-      <div className="flex gap-x-2 items-center">
-        <p className="text-xl font-bold text-red-500">Price: ${price}</p>
-        <p className="text-lg font-semibold text-gray-400 line-through">
-          ${discountedPrice}
-        </p>
-      </div>
+     <div className="text-center">
+  <p className="text-sm font-semibold text-gray-600">{shortDescription}</p>
+  <p className="text-xl font-semibold text-black">{name}</p>
+  <div className="flex justify-center gap-x-2 items-center">
+    <p className="text-xl font-bold text-red-500">Price: ${price}</p>
+    <p className="text-lg font-semibold text-gray-400 line-through">
+      ${discountedPrice}
+    </p>
+  </div>
+</div>
+
 
       <Button
         variant="flashSaleButton"
