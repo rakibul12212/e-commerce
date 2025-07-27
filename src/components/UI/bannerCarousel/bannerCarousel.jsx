@@ -10,6 +10,7 @@ const BannerCarousel = () => {
     "https://techlandbd.com/cache/images/uploads/sliders/image-walton-monitor-1753621560_cache_optimize-70.webp",
     "https://techlandbd.com/cache/images/uploads/sliders/image-amd-web-banner-1753339056_cache_optimize-70.webp",
     "https://techlandbd.com/cache/images/uploads/sliders/image-laptop-banani-1753623272_cache_optimize-70.webp",
+    "https://techlandbd.com/cache/images/uploads/sliders/image-ac-1752927301_cache_optimize-70.webp",
   ];
 
   return (
