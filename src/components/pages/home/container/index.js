@@ -8,7 +8,7 @@ import FlashSaleProduct from "./flashSaleProduct/flashSaleProduct";
 const HomePage = () => {
   return (
     <div>
-      <div className="space-y-20">
+      <div className="space-y-10">
         <Banner />
         <SubCategoryPage />
         <FlashSaleProduct />

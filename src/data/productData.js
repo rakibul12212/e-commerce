@@ -171,7 +171,7 @@ export const products = [
   },
   {
     id: 6,
-    name: "Womens Leather Handbag",
+    name: "Womens Handbag",
     shortDescription: "An elegant leather handbag for daily sophistication.",
     description: "Elegant leather handbag for daily use.",
     longDescription:

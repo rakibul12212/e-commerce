@@ -22,9 +22,12 @@ const FlashSaleProduct = () => {
   return (
     <div className="pt-5">
       {isLoading ? (
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-4 md:gap-6">
           {Array.from({ length: 5 }).map((_, index) => (
-            <div key={index} className="border border-gray-100 p-4 rounded-lg">
+            <div
+              key={index}
+              className="border border-gray-100 p-2 sm:p-3 md:p-4 rounded-lg"
+            >
               <FlashSaleProductLoader />
             </div>
           ))}
@@ -32,21 +35,22 @@ const FlashSaleProduct = () => {
       ) : (
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={16}
-          slidesPerView={1}
+          spaceBetween={8}
+          slidesPerView={2}
           breakpoints={{
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 4 },
-            1280: { slidesPerView: 5 },
+            480: { slidesPerView: 2, spaceBetween: 12 },
+            640: { slidesPerView: 2, spaceBetween: 16 },
+            768: { slidesPerView: 3, spaceBetween: 16 },
+            1024: { slidesPerView: 4, spaceBetween: 16 },
+            1280: { slidesPerView: 5, spaceBetween: 16 },
           }}
           autoplay={{ delay: 2500 }}
           loop={true}
-          className="!pb-8"
+          
         >
           {flashSale.map((product) => (
             <SwiperSlide key={product.id}>
-              <div className="border border-gray-100 p-4 rounded-lg h-full">
+              
                 <FlashSaleProductCard
                   id={product.id}
                   img={product.images.primary}
@@ -56,7 +60,7 @@ const FlashSaleProduct = () => {
                   discountedPrice={product.discountedPrice}
                   stockQuantity={product.stockQuantity}
                 />
-              </div>
+              
             </SwiperSlide>
           ))}
         </Swiper>
