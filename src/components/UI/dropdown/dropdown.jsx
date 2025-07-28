@@ -1,4 +1,4 @@
-import { data } from "@/data/districtData";
+import { data } from "@/lib/data/districtData";
 import React, { useState } from "react";
 
 const Dropdown = () => {

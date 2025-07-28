@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
-import { products } from "@/data/productData";
+import { products } from "@/lib/data/productData";
 import FlashSaleProductCard from "@/components/UI/card/flashSaleProductCard";
 import FlashSaleProductLoader from "@/components/UI/loading/flashSaleProductLoader";
 
@@ -46,21 +46,18 @@ const FlashSaleProduct = () => {
           }}
           autoplay={{ delay: 2500 }}
           loop={true}
-          
         >
           {flashSale.map((product) => (
             <SwiperSlide key={product.id}>
-              
-                <FlashSaleProductCard
-                  id={product.id}
-                  img={product.images.primary}
-                  name={product.name}
-                  price={product.price}
-                  shortDescription={product.description}
-                  discountedPrice={product.discountedPrice}
-                  stockQuantity={product.stockQuantity}
-                />
-              
+              <FlashSaleProductCard
+                id={product.id}
+                img={product.images.primary}
+                name={product.name}
+                price={product.price}
+                shortDescription={product.description}
+                discountedPrice={product.discountedPrice}
+                stockQuantity={product.stockQuantity}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

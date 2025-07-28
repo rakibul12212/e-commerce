@@ -1,7 +1,7 @@
 "use client";
-import { products } from "@/data/productData";
+import { products } from "@/lib/data/productData";
 import React from "react";
-import { useRouter } from "next/navigation"; 
+import { useRouter } from "next/navigation";
 
 const subCategories = Array.from(
   new Set(products.map((product) => product.subCategory)),

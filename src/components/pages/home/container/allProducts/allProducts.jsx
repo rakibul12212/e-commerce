@@ -1,10 +1,9 @@
 "use client";
 import ProductCard from "@/components/UI/card/productCard";
-import { products } from "@/data/productData";
+import { products } from "@/lib/data/productData";
 import ProductCardSkeleton from "@/components/UI/loading/ProductCardSkeletonLoading";
 import { useEffect, useState } from "react";
 import Button from "@/components/UI/buttons/button";
-
 
 export const AllProductsPage = () => {
   const [isLoading, setIsLoading] = useState(true);

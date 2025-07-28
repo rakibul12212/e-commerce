@@ -1,6 +1,6 @@
 "use client";
 import Button from "@/components/UI/buttons/button";
-import { products } from "@/data/productData";
+import { products } from "@/lib/data/productData";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
@@ -9,7 +9,7 @@ const page = ({ params }) => {
   const [size, setSize] = useState("");
   const product = products.find((item) => item.id == parseInt(params.id));
   const hasDiscount = product.hasDiscount;
-    const router = useRouter();
+  const router = useRouter();
 
   if (!product) {
     return (

@@ -1,6 +1,6 @@
 "use client";
 import ProductCard from "@/components/UI/card/productCard";
-import { products } from "@/data/productData";
+import { products } from "@/lib/data/productData";
 
 const SubCategoryDetailsPage = ({ params }) => {
   const { slug } = params || {};
@@ -20,10 +20,7 @@ const SubCategoryDetailsPage = ({ params }) => {
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
-            <div
-              key={product.id}
-              
-            >
+            <div key={product.id}>
               <ProductCard
                 id={product.id}
                 img={product.images.primary}
