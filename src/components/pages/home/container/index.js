@@ -14,7 +14,7 @@ const HomePage = () => {
         <FlashSaleProduct />
         <AllProductsPage />
       </div>
-      <div className="fixed bottom-10 right-4">
+      <div className="fixed z-20 bottom-10 right-4">
         <CartBtn />
       </div>
     </div>

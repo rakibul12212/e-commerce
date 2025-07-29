@@ -63,7 +63,7 @@ export const AllProductsPage = () => {
 
   return (
     <>
-      {/* Category Buttons */}
+      
       <div className="flex flex-row items-center justify-between  ">
         <div className="flex justify-start items-center gap-x-4 ">
           <Button
@@ -95,10 +95,10 @@ export const AllProductsPage = () => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search products..."
-          className="w-full max-w-md px-2 py-1 border border-gray-500 rounded-lg mt-4 "
+          className="w-full max-w-md px-2 py-1 border border-gray-300 rounded-lg mt-4 "
         />
       </div>
-      {/* Product Grid */}
+    
       {isLoading ? (
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 ">
           {Array.from({ length: 10 }).map((_, index) => (

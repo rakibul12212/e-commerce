@@ -23,7 +23,8 @@ const AddProduct = () => {
 
   const discountedPrice =
     price && discount ? price - (price * discount) / 100 : price || 0;
-  const stockQuantity = variants
+  
+    const stockQuantity = variants
     .flatMap((variant) => parseInt(variant.stock) || 0)
     .reduce((a, b) => a + b, 0);
   console.log("Total Stock Quantity:", stockQuantity);
@@ -420,7 +421,7 @@ const AddProduct = () => {
           </div>
         </div>
 
-        {/* Submit button */}
+       
         <div className="col-span-1 md:col-span-3 flex justify-center mt-6">
           <button
             type="submit"
