@@ -1,15 +1,38 @@
 "use client";
+import Loading from "@/app/loading";
 import Button from "@/components/UI/buttons/button";
-import { products } from "@/lib/data/productData";
+import { getAllProducts } from "@/lib/data/api";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 
 const page = ({ params }) => {
   const [size, setSize] = useState("");
-  const product = products.find((item) => item.id == parseInt(params.id));
-  const hasDiscount = product.hasDiscount;
+  const [allProducts, setAllProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const products = await getAllProducts();
+        setAllProducts(products);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+        setAllProducts([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
+
+  const product = allProducts.find((item) => item.id == parseInt(params.id));
 
   if (!product) {
     return (
@@ -18,6 +41,8 @@ const page = ({ params }) => {
       </p>
     );
   }
+
+  const hasDiscount = product.hasDiscount;
   return (
     <>
       <div className="p-20 grid grid-cols-1 md:grid-cols-2 justify-center gap-x-2 max-w-7xl mx-auto">

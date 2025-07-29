@@ -1,14 +1,32 @@
 "use client";
-import { products } from "@/lib/data/productData";
-import React from "react";
-import { useRouter } from "next/navigation";
 
-const subCategories = Array.from(
-  new Set(products.map((product) => product.subCategory)),
-);
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { getAllProducts } from "@/lib/data/api";
+
+
 
 const SubCategoryPage = () => {
+  const [allProducts, setAllProducts] = useState([]);
   const router = useRouter();
+
+   useEffect(() => {
+      const fetchProducts = async () => {
+        try {
+          const products = await getAllProducts();
+          setAllProducts(products);
+        } catch (error) {
+          console.error("Error fetching products:", error);
+          setAllProducts([]);
+        } 
+      };
+  
+      fetchProducts();
+    }, []);
+
+  const subCategories = Array.from(
+    new Set(allProducts.map((product) => product.subCategory)),
+  );
 
   const handleClick = (subCategory) => {
     router.push(`/subcategory/${subCategory.toLowerCase()}`);

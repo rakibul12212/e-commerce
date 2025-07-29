@@ -4,13 +4,27 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
-import { products } from "@/lib/data/productData";
 import FlashSaleProductCard from "@/components/UI/card/flashSaleProductCard";
 import FlashSaleProductLoader from "@/components/UI/loading/flashSaleProductLoader";
+import { getAllProducts } from "@/lib/data/api";
 
 const FlashSaleProduct = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const flashSale = products.filter((product) => product.flashSale === true);
+  const [allProducts, setAllProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const products = await getAllProducts();
+        setAllProducts(products);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+        setAllProducts([]);
+      }
+    };
+
+    fetchProducts();
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -18,6 +32,8 @@ const FlashSaleProduct = () => {
     }, 1000);
     return () => clearTimeout(timer);
   }, []);
+
+  const flashSale = allProducts.filter((product) => product.flashSale === true);
 
   return (
     <div className="pt-5">

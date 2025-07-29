@@ -1,15 +1,39 @@
 "use client";
+import Loading from "@/app/loading";
 import ProductCard from "@/components/UI/card/productCard";
-import { products } from "@/lib/data/productData";
+import { getAllProducts } from "@/lib/data/api";
+import { useEffect, useState } from "react";
+
 
 const SubCategoryDetailsPage = ({ params }) => {
-  const { slug } = params || {};
+  const [allProducts, setAllProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
+  const { slug } = params || {};
   if (!slug) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
-  const filteredProducts = products.filter(
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const products = await getAllProducts();
+        setAllProducts(products);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+        setAllProducts([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+  if (loading) {
+    return <Loading />;
+  }
+
+  const filteredProducts = allProducts.filter(
     (product) => product.subCategory.toLowerCase() === slug.toLowerCase(),
   );
 

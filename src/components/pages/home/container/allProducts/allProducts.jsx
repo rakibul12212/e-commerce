@@ -1,14 +1,15 @@
 "use client";
 import ProductCard from "@/components/UI/card/productCard";
-import { products } from "@/lib/data/productData";
 import ProductCardSkeleton from "@/components/UI/loading/ProductCardSkeletonLoading";
 import { useEffect, useState } from "react";
 import Button from "@/components/UI/buttons/button";
+import { getAllProducts } from "@/lib/data/api";
 
 export const AllProductsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const [filteredProducts, setFilteredProducts] = useState(products);
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [allProducts, setAllProducts] = useState([]);
   const [search, setSearch] = useState("");
 
   // loading
@@ -20,9 +21,24 @@ export const AllProductsPage = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  // Fetch products 
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const products = await getAllProducts();
+        setAllProducts(products);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+        setAllProducts([]);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
   useEffect(() => {
     // category filter
-    let filteredProduct = products;
+    let filteredProduct = allProducts;
     if (selectedCategory !== "all") {
       filteredProduct = filteredProduct.filter(
         (product) => product.category === selectedCategory,
@@ -43,7 +59,7 @@ export const AllProductsPage = () => {
     }
 
     setFilteredProducts(filteredProduct);
-  }, [selectedCategory, search]);
+  }, [selectedCategory, search, allProducts]);
 
   return (
     <>
