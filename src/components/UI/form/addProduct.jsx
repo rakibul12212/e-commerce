@@ -21,26 +21,14 @@ const AddProduct = () => {
     { size: "", color: "", stock: "" },
   ]);
 
-  
   const discountedPrice =
     price && discount ? price - (price * discount) / 100 : price || 0;
+  const stockQuantity = variants
+    .flatMap((variant) => parseInt(variant.stock) || 0)
+    .reduce((a, b) => a + b, 0);
+  console.log("Total Stock Quantity:", stockQuantity);
 
-//   console.log({
-//     name,
-//     price,
-//     shortDescription,
-//     longDescription,
-//     category,
-//     subCategory,
-//     materials,
-//     hasDiscount,
-//     isNewArrival,
-//     flashSale,
-//     images,
-//     variants,
-//     discount,
-//     discountedPrice,
-//   });
+
   const handleVariantChange = (index, field, value) => {
     const updatedVariants = [...variants];
     updatedVariants[index][field] = value;
@@ -87,12 +75,13 @@ const AddProduct = () => {
       images,
       discount: parseFloat(discount) || 0,
       discountedPrice,
+      stockQuantity,
       variants: variants.filter(
         (variant) => variant.size && variant.color && variant.stock,
       ),
     };
 
-    console.log("Product Data to Submit:", productData);
+    console.log("Product Data :", productData);
     alert("Product added successfully!");
   };
 
@@ -113,7 +102,7 @@ const AddProduct = () => {
             placeholder="Product Name"
             onChange={(e) => setName(e.target.value)}
             className="w-full p-3 border border-gray-300 rounded-lg"
-            required
+           
           />
         </div>
         <div>
@@ -126,7 +115,7 @@ const AddProduct = () => {
             placeholder="Product Price"
             onChange={(e) => setPrice(e.target.value)}
             className="w-full p-3 border border-gray-300 rounded-lg"
-            required
+           
           />
         </div>
 
@@ -137,7 +126,7 @@ const AddProduct = () => {
             value={category}
             onChange={(e) => setCategory(e.target.value)}
             className="w-full p-3 border border-gray-300 rounded-lg"
-            required
+           
           >
             <option value="">Select Category</option>
             <option value="mens fashion">Men's Fashion</option>
@@ -153,7 +142,7 @@ const AddProduct = () => {
             value={subCategory}
             onChange={(e) => setSubCategory(e.target.value)}
             className="w-full p-3 border border-gray-300 rounded-lg"
-            required
+           
           >
             <option value="">Select Sub Category</option>
             <option value="Shirts">Shirts</option>
@@ -298,7 +287,7 @@ const AddProduct = () => {
             onChange={(e) => setDiscount(e.target.value)}
             placeholder="Enter discount percentage"
             className="w-full p-3 border border-gray-300 rounded-lg"
-            required
+           
           />
         </div>
         <div>
@@ -324,7 +313,7 @@ const AddProduct = () => {
             placeholder="Enter short description"
             onChange={(e) => setShortDescription(e.target.value)}
             className="w-full p-3 border border-gray-300 rounded-lg"
-            required
+           
           />
         </div>
         {/*  Long Description */}
@@ -338,7 +327,7 @@ const AddProduct = () => {
             placeholder="Enter long description"
             onChange={(e) => setLongDescription(e.target.value)}
             className="w-full p-3 border border-gray-300 rounded-lg"
-            required
+           
           />
         </div>
         {/* checkboxes */}
@@ -392,7 +381,19 @@ const AddProduct = () => {
                   setImages({ ...images, primary: e.target.value })
                 }
                 className="w-full p-3 border border-gray-300 rounded-lg"
-                required
+               
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-2">
+                Stock Quantity
+              </label>
+              <input
+                type="number"
+                value={stockQuantity}
+                placeholder="Discounted Price"
+                className="w-full p-3 border border-gray-300 rounded-lg bg-gray-100"
+                readOnly
               />
             </div>
             <div>
