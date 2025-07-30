@@ -79,7 +79,7 @@ const Navbar = () => {
         <div
           className={`md:hidden transition-all duration-300 ease-in-out ${
             isMenuOpen
-              ? "max-h-64 opacity-100 border-t border-gray-200"
+              ? "h-screen w-full opacity-100 border-t border-gray-200 absolute bg-white/70 font-semibold backdrop-blur-sm"
               : "max-h-0 opacity-0 overflow-hidden"
           }`}
         >
@@ -92,8 +92,8 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                     className={`flex items-center gap-3 px-3 py-2 rounded-md transition-colors ${
                       pathname === link.href
-                        ? "text-red-500 bg-red-50"
-                        : "text-gray-700 hover:text-red-500 hover:bg-gray-50"
+                        ? "text-red-500 "
+                        : "text-gray-700 hover:text-red-500 "
                     }`}
                   >
                     {link.icon && (
