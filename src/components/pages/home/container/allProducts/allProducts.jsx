@@ -52,9 +52,9 @@ export const AllProductsPage = () => {
         Products
       </h2>
 
-      {/* Mobile-first responsive layout */}
+      
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 pb-6 md:pb-8">
-        {/* Filter buttons - stack on mobile, horizontal on larger screens */}
+      
         <div className="flex flex-col-3 sm:flex-row justify-start items-stretch sm:items-center gap-2 sm:gap-x-4">
           <Button
             text="All Products"
@@ -77,7 +77,7 @@ export const AllProductsPage = () => {
           />
         </div>
 
-        {/* Search input */}
+        
         <input
           type="search"
           name="search"
