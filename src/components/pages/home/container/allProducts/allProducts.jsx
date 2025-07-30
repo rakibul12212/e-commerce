@@ -3,13 +3,14 @@ import ProductCard from "@/components/UI/card/productCard";
 import ProductCardSkeleton from "@/components/UI/loading/ProductCardSkeletonLoading";
 import { useEffect, useState } from "react";
 import Button from "@/components/UI/buttons/button";
-import { getAllProducts } from "@/lib/data/api";
+import { useCard } from "@/hooks/useCard";
+
 
 export const AllProductsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const [allProducts, setAllProducts] = useState([]);
+  const { allProducts } = useCard();
   const [search, setSearch] = useState("");
 
   // loading
@@ -21,20 +22,7 @@ export const AllProductsPage = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Fetch products 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const products = await getAllProducts();
-        setAllProducts(products);
-      } catch (error) {
-        console.error("Error fetching products:", error);
-        setAllProducts([]);
-      }
-    };
 
-    fetchProducts();
-  }, []);
 
   useEffect(() => {
     // category filter
@@ -99,7 +87,7 @@ export const AllProductsPage = () => {
       </div>
 
       {isLoading ? (
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-4 2xl:grid-cols-5 gap-6 ">
           {Array.from({ length: 10 }).map((_, index) => (
             <div key={index} className="border border-gray-100 p-4 rounded-lg">
               <ProductCardSkeleton />

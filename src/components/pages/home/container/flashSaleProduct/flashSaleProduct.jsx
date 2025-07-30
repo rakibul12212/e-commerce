@@ -6,25 +6,11 @@ import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import FlashSaleProductCard from "@/components/UI/card/flashSaleProductCard";
 import FlashSaleProductLoader from "@/components/UI/loading/flashSaleProductLoader";
-import { getAllProducts } from "@/lib/data/api";
+import { useCard } from "@/hooks/useCard";
 
 const FlashSaleProduct = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [allProducts, setAllProducts] = useState([]);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const products = await getAllProducts();
-        setAllProducts(products);
-      } catch (error) {
-        console.error("Error fetching products:", error);
-        setAllProducts([]);
-      }
-    };
-
-    fetchProducts();
-  }, []);
+  const { allProducts } = useCard();
 
   useEffect(() => {
     const timer = setTimeout(() => {

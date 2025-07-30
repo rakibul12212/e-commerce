@@ -5,40 +5,47 @@ import { getAllProducts } from "@/lib/data/api";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
+import { useCard } from "@/hooks/useCard";
 
 const page = ({ params }) => {
   const [size, setSize] = useState("");
-  const [allProducts, setAllProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const { allProducts } = useCard();
+  const [isAdding, setIsAdding] = useState(false);
   const router = useRouter();
+  const { addToCart, cartItems } = useCard();
+  const product = allProducts.find((item) => item.id == parseInt(params.id));
+  const isInCart = cartItems.some((item) => item.id === product?.id);
+  const handleAddToCart = async () => {
+    if (!product || isAdding) return;
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const products = await getAllProducts();
-        setAllProducts(products);
-      } catch (error) {
-        console.error("Error fetching products:", error);
-        setAllProducts([]);
-      } finally {
-        setLoading(false);
-      }
+    setIsAdding(true);
+
+    const productToAdd = {
+      id: product.id,
+      title: product.name,
+      name: product.name,
+      price: parseFloat(product.price),
+      image: product.images.primary,
+      shortDescription: product.shortDescription,
+      longDescription: product.longDescription,
+      category: product.category,
+      selectedSize:
+        size || (product.variants.length > 0 ? product.variants[0].size : null),
+      stockQuantity: product.stockQuantity || 1,
     };
 
-    fetchProducts();
-  }, []);
+    addToCart(productToAdd);
 
-  if (loading) {
-    return <Loading />;
-  }
-
-  const product = allProducts.find((item) => item.id == parseInt(params.id));
+    setTimeout(() => {
+      setIsAdding(false);
+    }, 1000);
+  };
 
   if (!product) {
     return (
-      <p className="py-10 text-2xl font-semibold flex justify-center items-center h-screen">
-        Product not found
-      </p>
+      <div className="flex items-center justify-center h-screen">
+        <Loading />
+      </div>
     );
   }
 
@@ -104,9 +111,28 @@ const page = ({ params }) => {
           <div className="flex  items-center mt-6 gap-x-4 pb-2">
             <Button variant="primary" text="Wishlist" />
             <Button
-              variant="secondary"
-              text="Add to Cart"
-              onClick={() => router.push(`/cart`)}
+              variant={
+                isAdding
+                  ? "flashSaleButton"
+                  : isInCart
+                  ? "secondary"
+                  : "secondary"
+              }
+              text={
+                isAdding
+                  ? "Adding..."
+                  : isInCart
+                  ? "Added to Cart"
+                  : "Add to Cart"
+              }
+              onClick={handleAddToCart}
+              className={`${
+                isAdding
+                  ? "bg-green-500 hover:bg-green-600 border-green-500 text-green-500"
+                  : ""
+              } ${
+                isInCart ? "bg-green-500 text-green-700 border-green-300" : ""
+              }`}
             />
           </div>
           <div className="py-2">

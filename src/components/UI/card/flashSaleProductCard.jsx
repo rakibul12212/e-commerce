@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import Button from "../buttons/button";
 import { FiZap } from "react-icons/fi";
-import { BsCart3, BsCheck } from "react-icons/bs";
 import { useCard } from "@/hooks/useCard";
 
 const FlashSaleProductCard = ({
@@ -44,7 +43,6 @@ const FlashSaleProductCard = ({
 
     addToCart(product);
 
-    
     setTimeout(() => {
       setIsAdding(false);
     }, 1000);
