@@ -1,9 +1,11 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import React from "react";
+import React, { useState } from "react";
 import Button from "../buttons/button";
 import { FiZap } from "react-icons/fi";
+import { BsCart3, BsCheck } from "react-icons/bs";
+import { useCard } from "@/hooks/useCard";
 
 const FlashSaleProductCard = ({
   id,
@@ -13,8 +15,40 @@ const FlashSaleProductCard = ({
   shortDescription,
   discountedPrice,
   stockQuantity,
+  discount
 }) => {
   const router = useRouter();
+  const { addToCart, cartItems } = useCard();
+  const [isAdding, setIsAdding] = useState(false);
+
+
+  const isInCart = cartItems.some((item) => item.id === id);
+
+  const handleAddToCart = async () => {
+    if (stockQuantity <= 0) return;
+
+    setIsAdding(true);
+
+    const product = {
+      id,
+      title: name,
+      name,
+      price: parseFloat(price),
+      image: img,
+      shortDescription,
+      stockQuantity,
+     
+      discountedPrice: parseFloat(discountedPrice),
+      isFlashSale: true,
+    };
+
+    addToCart(product);
+
+    
+    setTimeout(() => {
+      setIsAdding(false);
+    }, 1000);
+  };
   return (
     <div className="border-none md:border border-gray-300 shadow-md rounded-md grid gap-3 p-0 md:p-3  md:max-w-lg transform transition-all duration-300 ease-in-out hover:shadow-xl  cursor-pointer bg-white">
       <div className="inline-flex items-center justify-center gap-1 sm:gap-2 text-sm sm:text-lg font-semibold bg-gradient-to-r from-red-500 via-orange-400 to-yellow-400 text-white px-2 sm:px-4 py-1 rounded-md shadow-md">
@@ -52,7 +86,7 @@ const FlashSaleProductCard = ({
               ${discountedPrice}
             </p>
             <span className="text-xs sm:text-sm bg-red-100 text-red-600 px-2 py-1 rounded-full font-semibold">
-              {Math.round(((discountedPrice - price) / discountedPrice) * 100)}%
+              {discount}%
               OFF
             </span>
           </div>
@@ -61,9 +95,11 @@ const FlashSaleProductCard = ({
 
       <Button
         variant="flashSaleButton"
-        text="Buy Now"
-        onClick={() => router.push(`/cart`)}
-        className="w-full text-sm sm:text-base font-semibold mt-2 hover:bg-opacity-90 transition-all duration-200"
+        text={isAdding ? "Adding..." : isInCart ? "Buy Now" : "Buy Now"}
+        onClick={handleAddToCart}
+        className={`w-full text-sm sm:text-base font-semibold hover:bg-opacity-90 transition-all duration-200 ${
+          stockQuantity <= 0 ? "opacity-50 cursor-not-allowed" : ""
+        } ${isAdding ? "bg-green-500 hover:bg-green-600" : ""}`}
       />
     </div>
   );

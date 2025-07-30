@@ -70,6 +70,7 @@ const FlashSaleProduct = () => {
                 img={product.images.primary}
                 name={product.name}
                 price={product.price}
+                discount={product.discount}
                 shortDescription={product.description}
                 discountedPrice={product.discountedPrice}
                 stockQuantity={product.stockQuantity}

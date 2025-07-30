@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import React from "react";
+import React, { useState } from "react";
 import Button from "../buttons/button";
-import { BsCart3 } from "react-icons/bs";
+import { BsCart3, BsCheck } from "react-icons/bs";
+import { useCard } from "@/hooks/useCard";
 
 const ProductCard = ({
   id,
@@ -15,6 +16,34 @@ const ProductCard = ({
   stockQuantity,
 }) => {
   const router = useRouter();
+  const { addToCart, cartItems } = useCard();
+  const [isAdding, setIsAdding] = useState(false);
+
+  // Check if product is already in cart
+  const isInCart = cartItems.some((item) => item.id === id);
+
+  const handleAddToCart = async () => {
+    if (stockQuantity <= 0) return;
+
+    setIsAdding(true);
+
+    const product = {
+      id,
+      title: name,
+      name,
+      price: parseFloat(price),
+      image: img,
+      shortDescription,
+      stockQuantity,
+    };
+
+    addToCart(product);
+
+    
+    setTimeout(() => {
+      setIsAdding(false);
+    }, 1000);
+  };
   return (
     <div className="border border-gray-300 shadow-md bg-gray-50 p-4 rounded-lg grid gap-4 w-full max-w-lg transform transition-transform duration-300 ease-in-out hover:scale-105">
       <div className="relative w-full h-[200px]">
@@ -53,13 +82,26 @@ const ProductCard = ({
           variant="primary"
           text="View Details"
           onClick={() => router.push(`/productDetails/${id}`)}
-          className="flex-4"
+          className="flex-1"
         />
         <Button
-          variant="iconButton"
-          Icon={BsCart3}
-          onClick={() => router.push(`/cart/`)}
-          ariaLabel="Add to cart"
+          variant={
+            isAdding ? "flashSaleButton" : isInCart ? "secondary" : "iconButton"
+          }
+          Icon={isAdding ? BsCheck : BsCart3}
+          onClick={handleAddToCart}
+          ariaLabel={
+            stockQuantity <= 0
+              ? "Out of stock"
+              : isInCart
+              ? "Already in cart"
+              : "Add to cart"
+          }
+          className={`${
+            stockQuantity <= 0 ? "opacity-50 cursor-not-allowed" : ""
+          } ${
+            isAdding ? "bg-green-500 hover:bg-green-600 border-green-500" : ""
+          }`}
         />
       </div>
     </div>

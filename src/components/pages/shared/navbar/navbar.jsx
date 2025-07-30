@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { BsCart3 } from "react-icons/bs";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { useCard } from "@/hooks/useCard";
 
 const navLinks = [
   { href: "/products", label: "Products" },
@@ -15,6 +16,8 @@ const navLinks = [
 const Navbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { getCartItemsCount } = useCard();
+  const cartItemsCount = getCartItemsCount();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -23,14 +26,11 @@ const Navbar = () => {
   return (
     <div className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-[1920px] mx-auto">
-      
         <div className="flex items-center justify-between px-4 sm:px-6 lg:px-10 py-4">
-         
           <Link href="/" className="font-semibold text-xl sm:text-2xl">
             E-Commerce
           </Link>
 
-    
           <div className="hidden md:flex items-center gap-4">
             <nav className="font-semibold">
               <ul className="flex items-center gap-6">
@@ -44,7 +44,16 @@ const Navbar = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      {link.icon && <BsCart3 className="text-lg" />}
+                      {link.icon && (
+                        <div className="relative">
+                          <BsCart3 className="text-lg" />
+                          {cartItemsCount > 0 && (
+                            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-medium">
+                              {cartItemsCount > 99 ? "99+" : cartItemsCount}
+                            </span>
+                          )}
+                        </div>
+                      )}
                       {!link.icon && link.label}
                     </Link>
                   </li>
@@ -67,7 +76,6 @@ const Navbar = () => {
           </button>
         </div>
 
-       
         <div
           className={`md:hidden transition-all duration-300 ease-in-out ${
             isMenuOpen
@@ -88,7 +96,16 @@ const Navbar = () => {
                         : "text-gray-700 hover:text-red-500 hover:bg-gray-50"
                     }`}
                   >
-                    {link.icon && <BsCart3 className="text-lg" />}
+                    {link.icon && (
+                      <div className="relative">
+                        <BsCart3 className="text-lg" />
+                        {cartItemsCount > 0 && (
+                          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-medium">
+                            {cartItemsCount > 99 ? "99+" : cartItemsCount}
+                          </span>
+                        )}
+                      </div>
+                    )}
                     {link.label}
                   </Link>
                 </li>

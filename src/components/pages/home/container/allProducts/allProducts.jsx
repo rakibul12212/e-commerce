@@ -63,8 +63,7 @@ export const AllProductsPage = () => {
 
   return (
     <>
-      
-      <div className="flex flex-row items-center justify-between  ">
+      <div className="flex flex-row items-center justify-between  pb-8">
         <div className="flex justify-start items-center gap-x-4 ">
           <Button
             text="All Products"
@@ -98,7 +97,7 @@ export const AllProductsPage = () => {
           className="w-full max-w-md px-2 py-1 border border-gray-300 rounded-lg mt-4 "
         />
       </div>
-    
+
       {isLoading ? (
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 ">
           {Array.from({ length: 10 }).map((_, index) => (
@@ -121,7 +120,7 @@ export const AllProductsPage = () => {
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 2xl:grid-cols-5 gap-6">
               {filteredProducts.map((product) => (
                 <div
                   key={product.id}
