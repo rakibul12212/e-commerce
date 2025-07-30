@@ -82,7 +82,7 @@ const AddProduct = () => {
       ),
     };
 
-    console.log("Product Data :", productData);
+     console.log("Product Data :", productData);
     alert("Product added successfully!");
   };
 

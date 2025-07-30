@@ -1,9 +1,11 @@
+
+import CheckoutForm from "@/components/UI/form/checkoutForm";
 import React from "react";
 
 const page = () => {
   return (
     <>
-      <p>Checkout Page</p>
+      <CheckoutForm />
     </>
   );
 };
