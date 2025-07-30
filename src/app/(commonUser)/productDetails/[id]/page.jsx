@@ -1,22 +1,21 @@
 "use client";
 import Loading from "@/app/loading";
 import Button from "@/components/UI/buttons/button";
-import { getAllProducts } from "@/lib/data/api";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useCard } from "@/hooks/useCard";
 
 const page = ({ params }) => {
   const [size, setSize] = useState("");
   const { allProducts } = useCard();
   const [isAdding, setIsAdding] = useState(false);
-  const router = useRouter();
+  // const router = useRouter();
   const { addToCart, cartItems } = useCard();
   const product = allProducts.find((item) => item.id == parseInt(params.id));
   const isInCart = cartItems.some((item) => item.id === product?.id);
   const handleAddToCart = async () => {
-    if (!product || isAdding) return;
+    if (!product || isAdding || product.stockQuantity <= 0) return;
 
     setIsAdding(true);
 
@@ -31,7 +30,7 @@ const page = ({ params }) => {
       category: product.category,
       selectedSize:
         size || (product.variants.length > 0 ? product.variants[0].size : null),
-      stockQuantity: product.stockQuantity || 1,
+      stockQuantity: product.stockQuantity || 0,
     };
 
     addToCart(productToAdd);
@@ -119,19 +118,26 @@ const page = ({ params }) => {
                   : "secondary"
               }
               text={
-                isAdding
+                product.stockQuantity <= 0
+                  ? "Out of Stock"
+                  : isAdding
                   ? "Adding..."
                   : isInCart
                   ? "Added to Cart"
                   : "Add to Cart"
               }
               onClick={handleAddToCart}
+              disabled={isAdding || product.stockQuantity <= 0}
               className={`${
                 isAdding
                   ? "bg-green-500 hover:bg-green-600 border-green-500 text-green-500"
                   : ""
               } ${
                 isInCart ? "bg-green-500 text-green-700 border-green-300" : ""
+              } ${
+                product.stockQuantity <= 0
+                  ? "bg-gray-400 text-gray-600 cursor-not-allowed hover:bg-gray-400"
+                  : ""
               }`}
             />
           </div>
