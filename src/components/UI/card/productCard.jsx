@@ -58,7 +58,7 @@ const ProductCard = ({
         <Button
           variant="iconButton"
           Icon={BsCart3}
-          onClick={() => router.push(`/cart`)}
+          onClick={() => router.push(`/cart/`)}
           ariaLabel="Add to cart"
         />
       </div>

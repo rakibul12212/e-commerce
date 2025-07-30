@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 import Button from "../buttons/button";
-import { BsCart3 } from "react-icons/bs";
 import { FiZap } from "react-icons/fi";
 
 const FlashSaleProductCard = ({
