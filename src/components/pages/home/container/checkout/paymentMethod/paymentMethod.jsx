@@ -124,7 +124,7 @@ const PaymentMethod = () => {
   const finalTotal = Math.max(0, orderTotal - discount);
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white">
+    <div className="max-w-7xl mx-auto p-3 sm:p-4 md:p-6 lg:p-8 bg-white min-h-screen">
       <Toast
         show={toast.show}
         message={toast.message}
@@ -132,19 +132,21 @@ const PaymentMethod = () => {
         onClose={hideToast}
       />
 
-      <h1 className="text-3xl font-bold mb-8 text-center">Payment Method</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
+      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 text-center">
+        Payment Method
+      </h1>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
+        <div className="order-2 lg:order-1">
           {/* Payment Methods */}
           <div className="mb-6">
-            <h2 className="text-lg font-semibold mb-4">
+            <h2 className="text-lg sm:text-xl font-semibold mb-4">
               Select Payment Method
             </h2>
             <div className="space-y-3">
               {paymentMethods.map((method) => (
                 <div
                   key={method.id}
-                  className={`border rounded-lg p-4 cursor-pointer transition-all ${
+                  className={`border rounded-lg p-3 sm:p-4 cursor-pointer transition-all ${
                     selectedPayment === method.id
                       ? "border-blue-500 bg-blue-50"
                       : "border-gray-300 hover:border-gray-400"
@@ -158,18 +160,20 @@ const PaymentMethod = () => {
                       name="payment"
                       checked={selectedPayment === method.id}
                       onChange={() => handlePaymentSelect(method.id)}
-                      className="mr-3"
+                      className="mr-3 w-4 h-4 sm:w-5 sm:h-5"
                     />
                     <div className="flex items-center flex-1">
-                      <span className="text-2xl mr-3">{method.icon}</span>
-                      <div>
+                      <span className="text-xl sm:text-2xl mr-3">
+                        {method.icon}
+                      </span>
+                      <div className="flex-1">
                         <label
                           htmlFor={method.id}
-                          className="font-medium cursor-pointer"
+                          className="font-medium cursor-pointer text-sm sm:text-base"
                         >
                           {method.name}
                         </label>
-                        <p className="text-sm text-gray-600">
+                        <p className="text-xs sm:text-sm text-gray-600 mt-1">
                           {method.description}
                         </p>
                       </div>
@@ -180,48 +184,53 @@ const PaymentMethod = () => {
             </div>
           </div>
           {/* Place Order Button */}
-          <div className="mt-8">
+          <div className="mt-6 sm:mt-8">
             <Button
               text={isLoading ? "Processing..." : "Place Order"}
               onClick={handlePlaceOrder}
               variant="flashSaleButton"
-              className={`w-full py-3 text-lg font-semibold ${
+              className={`w-full py-3 sm:py-4 text-base sm:text-lg font-semibold ${
                 isLoading ? "opacity-50 cursor-not-allowed" : ""
               }`}
               disabled={isLoading}
             />
           </div>
         </div>
-        <div className="">
+        <div className="order-1 lg:order-2">
           {/* Order Summary */}
-          <div className="bg-gray-50 px-4 pt-1 rounded-lg mb-5">
-            <h2 className="text-lg font-semibold mb-3">Order Summary</h2>
-            <div className="border border-gray-300 p-6 rounded-lg">
-              <div className="flex justify-between mb-2">
+          <div className="bg-gray-50 p-3 sm:p-4 md:p-5 rounded-lg mb-5 sticky top-4">
+            <h2 className="text-lg sm:text-xl font-semibold mb-3">
+              Order Summary
+            </h2>
+            <div className="border border-gray-300 p-4 sm:p-6 rounded-lg bg-white">
+              <div className="flex justify-between mb-2 text-sm sm:text-base">
                 <span>Subtotal:</span>
-                <span>${orderTotal.toFixed(2)}</span>
+                <span className="font-medium">${orderTotal.toFixed(2)}</span>
               </div>
               {appliedCoupon && (
-                <div className="flex justify-between mb-2 text-green-600">
+                <div className="flex justify-between mb-2 text-green-600 text-sm sm:text-base">
                   <span>Discount ({appliedCoupon.code}):</span>
-                  <span>-${discount.toFixed(2)}</span>
+                  <span className="font-medium">-${discount.toFixed(2)}</span>
                 </div>
               )}
-              <hr className="my-2" />
-              <div className="flex justify-between font-bold text-lg">
+              <hr className="my-3" />
+              <div className="flex justify-between font-bold text-base sm:text-lg">
                 <span>Total:</span>
                 <span>${finalTotal.toFixed(2)}</span>
               </div>
+
               {/* Coupon Section */}
-              <div className="mb-6">
-                <h2 className="text-lg font-semibold mb-4">Apply Coupon</h2>
-                <div className="flex space-x-2 mb-3">
+              <div className="mt-6">
+                <h3 className="text-base sm:text-lg font-semibold mb-4">
+                  Apply Coupon
+                </h3>
+                <div className="flex flex-col sm:flex-row gap-2 mb-3">
                   <input
                     type="text"
                     placeholder="Enter coupon code"
                     value={couponCode}
                     onChange={(e) => setCouponCode(e.target.value)}
-                    className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="flex-1 px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     disabled={appliedCoupon !== null}
                   />
                   {!appliedCoupon ? (
@@ -229,19 +238,19 @@ const PaymentMethod = () => {
                       text="Apply"
                       onClick={applyCoupon}
                       variant="primary"
-                      className="px-6"
+                      className="px-4 sm:px-6 py-2 text-sm sm:text-base w-full sm:w-auto"
                     />
                   ) : (
                     <Button
                       text="Remove"
                       onClick={removeCoupon}
                       variant="secondary"
-                      className="px-6"
+                      className="px-4 sm:px-6 py-2 text-sm sm:text-base w-full sm:w-auto"
                     />
                   )}
                 </div>
                 {appliedCoupon && (
-                  <div className="text-green-600 text-sm">
+                  <div className="text-green-600 text-xs sm:text-sm">
                     ✓ Coupon "{appliedCoupon.code}" applied successfully!
                   </div>
                 )}
