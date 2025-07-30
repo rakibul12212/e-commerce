@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import Button from "@/components/UI/buttons/button";
 import { useCard } from "@/hooks/useCard";
 
-
 export const AllProductsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -21,8 +20,6 @@ export const AllProductsPage = () => {
 
     return () => clearTimeout(timer);
   }, []);
-
-
 
   useEffect(() => {
     // category filter
@@ -51,6 +48,12 @@ export const AllProductsPage = () => {
 
   return (
     <>
+      <h2
+        className="text-3xl font-bold pb-10 text-center
+      "
+      >
+        Products
+      </h2>
       <div className="flex flex-row items-center justify-between  pb-8">
         <div className="flex justify-start items-center gap-x-4 ">
           <Button

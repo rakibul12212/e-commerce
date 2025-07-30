@@ -1,10 +1,8 @@
 import { AllProductsPage } from "@/components/pages/home/container/allProducts/allProducts";
 
-
- const page = () => {
+const page = () => {
   return (
     <>
-      <p className="py-10 text-2xl font-semibold text-center">Products</p>
       <AllProductsPage />
     </>
   );

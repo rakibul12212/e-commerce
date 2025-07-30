@@ -5,7 +5,7 @@ const Toast = ({
   type = "success",
   show,
   onClose,
-  duration = 3000,
+  duration = 2000,
 }) => {
   useEffect(() => {
     if (show) {
