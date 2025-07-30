@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
 
-/* loader */
-/* HTML: <div class="loader"></div> */
+
 .loader {
     width: 48px;
     height: 48px;
@@ -81,6 +80,6 @@
 }
 
 .mySwiper .swiper-pagination-bullet-active {
-    background: #1d4ed8;
+    background: #000000;
     opacity: 1;
 }

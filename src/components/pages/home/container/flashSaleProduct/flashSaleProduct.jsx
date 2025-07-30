@@ -24,12 +24,9 @@ const FlashSaleProduct = () => {
   return (
     <div className="pt-5">
       {isLoading ? (
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 2xl:grid-cols-5 gap-3 sm:gap-4 md:gap-6">
           {Array.from({ length: 5 }).map((_, index) => (
-            <div
-              key={index}
-              className="border border-gray-100 p-2 sm:p-3 md:p-4 rounded-lg"
-            >
+            <div key={index}>
               <FlashSaleProductLoader />
             </div>
           ))}

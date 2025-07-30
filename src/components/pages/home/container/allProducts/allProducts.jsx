@@ -48,14 +48,14 @@ export const AllProductsPage = () => {
 
   return (
     <>
-      <h2 className="text-2xl md:text-3xl font-bold pb-6 md:pb-10 text-start">
+      <h2
+        className="text-3xl font-bold pb-10 text-center
+      "
+      >
         Products
       </h2>
-
-      
-      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 pb-6 md:pb-8">
-      
-        <div className="flex flex-col-3 sm:flex-row justify-start items-stretch sm:items-center gap-2 sm:gap-x-4">
+      <div className="flex flex-row items-center justify-between  pb-8">
+        <div className="flex justify-start items-center gap-x-4 ">
           <Button
             text="All Products"
             variant={selectedCategory === "all" ? "secondary" : "primary"}
@@ -76,8 +76,6 @@ export const AllProductsPage = () => {
             onClick={() => setSelectedCategory("womens fashion")}
           />
         </div>
-
-        
         <input
           type="search"
           name="search"
@@ -87,17 +85,14 @@ export const AllProductsPage = () => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search products..."
-          className="w-full lg:max-w-md px-3 py-2 border border-gray-300 rounded-lg text-sm md:text-base"
+          className="w-full max-w-md px-2 py-1 border border-gray-300 rounded-lg mt-4 "
         />
       </div>
 
       {isLoading ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 2xl:grid-cols-5 gap-3 sm:gap-4 md:gap-6">
           {Array.from({ length: 10 }).map((_, index) => (
-            <div
-              key={index}
-              className="border border-gray-100 p-3 md:p-4 rounded-lg"
-            >
+            <div key={index}>
               <ProductCardSkeleton />
             </div>
           ))}
@@ -105,23 +100,20 @@ export const AllProductsPage = () => {
       ) : (
         <div className="">
           {filteredProducts.length === 0 ? (
-            <div className="text-center py-12 md:py-20 px-4">
-              <h2 className="text-xl md:text-2xl font-semibold text-gray-600 mb-2 md:mb-4">
+            <div className="text-center py-20">
+              <h2 className="text-2xl font-semibold text-gray-600 mb-4">
                 No products found
               </h2>
-              <p className="text-sm md:text-base text-gray-500">
+              <p className="text-gray-500">
                 {search
                   ? `No products match "${search}"`
                   : "Try adjusting your search or filter criteria"}
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 2xl:grid-cols-5 gap-3 sm:gap-4 md:gap-6">
               {filteredProducts.map((product) => (
-                <div
-                  key={product.id}
-                  className="border border-gray-100 p-3 md:p-4 rounded-lg"
-                >
+                <div key={product.id}>
                   <ProductCard
                     id={product.id}
                     img={product.images.primary}
