@@ -54,12 +54,13 @@ export const AllProductsPage = () => {
       >
         Products
       </h2>
-      <div className="flex flex-row items-center justify-between  pb-8">
-        <div className="flex justify-start items-center gap-x-4 ">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pb-8">
+        <div className="flex flex-wrap justify-start items-center gap-1  md:gap-4">
           <Button
             text="All Products"
             variant={selectedCategory === "all" ? "secondary" : "primary"}
             onClick={() => setSelectedCategory("all")}
+            className="text-xs sm:text-sm"
           />
           <Button
             text="Mens Fashion"
@@ -67,6 +68,7 @@ export const AllProductsPage = () => {
               selectedCategory === "mens fashion" ? "secondary" : "primary"
             }
             onClick={() => setSelectedCategory("mens fashion")}
+            className="text-xs sm:text-sm"
           />
           <Button
             text="Womens Fashion"
@@ -74,6 +76,7 @@ export const AllProductsPage = () => {
               selectedCategory === "womens fashion" ? "secondary" : "primary"
             }
             onClick={() => setSelectedCategory("womens fashion")}
+            className="text-xs sm:text-sm"
           />
         </div>
         <input
@@ -85,7 +88,7 @@ export const AllProductsPage = () => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search products..."
-          className="w-full max-w-md px-2 py-1 border border-gray-300 rounded-lg mt-4 "
+          className="w-full md:max-w-md px-3 py-2 border border-gray-300 rounded-lg text-sm"
         />
       </div>
 
