@@ -2,7 +2,7 @@
 export const getAllProducts = async () => {
   try {
     const response = await fetch(
-      "https://web-ecommerce-server.vercel.app/allProducts",
+      "https://e-commerce-server-swart.vercel.app/api/products/allProducts",
     );
 
     if (!response.ok) {
@@ -10,11 +10,9 @@ export const getAllProducts = async () => {
     }
 
     const products = await response.json();
-     console.log({products});
-    return products;
+    return products.data || products;
   } catch (error) {
     console.error("Failed to fetch all products:", error);
     throw error;
   }
- 
 };

@@ -32,15 +32,22 @@ export const AllProductsPage = () => {
 
     // search input
     if (search.trim()) {
-      filteredProduct = filteredProduct.filter(
-        (product) =>
-          product.name.toLowerCase().includes(search.toLowerCase()) ||
-          product.description.toLowerCase().includes(search.toLowerCase()) ||
-          product.shortDescription
-            .toLowerCase()
-            .includes(search.toLowerCase()) ||
-          product.price.toString().includes(search),
-      );
+      const searchProduct = search.toLowerCase();
+      filteredProduct = filteredProduct.filter((product) => {
+        const name = (product.name || "").toLowerCase();
+        const description = (product.description || "").toLowerCase();
+        const shortDescription = (product.shortDescription || "").toLowerCase();
+        const longDescription = (product.longDescription || "").toLowerCase();
+        const price = product.price.toString();
+
+        return (
+          name.includes(searchProduct) ||
+          description.includes(searchProduct) ||
+          shortDescription.includes(searchProduct) ||
+          longDescription.includes(searchProduct) ||
+          price.includes(search)
+        );
+      });
     }
 
     setFilteredProducts(filteredProduct);
