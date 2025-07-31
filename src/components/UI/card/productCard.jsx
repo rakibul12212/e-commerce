@@ -44,7 +44,7 @@ const ProductCard = ({
     }, 1000);
   };
   return (
-    <div className="border border-gray-300 shadow-md bg-gray-50 p-2 sm:p-3 md:p-4 rounded-lg grid gap-2 sm:gap-3 md:gap-4 w-full transform transition-transform duration-300 ease-in-out hover:scale-105">
+    <div className="border border-gray-300 shadow-md bg-gray-50 p-2 sm:p-3 md:p-4 rounded-lg grid gap-2 sm:gap-3 md:gap-4 w-full transform transition-transform duration-300 ease-in-out hover:shadow-xl">
       <div className="relative w-full h-[140px] sm:h-[160px] md:h-[180px] lg:h-[200px]">
         <Image src={img} alt={name} fill className="object-cover rounded" />
 
@@ -55,10 +55,10 @@ const ProductCard = ({
         )}
       </div>
 
-      <p className="text-xs sm:text-sm font-semibold text-gray-600 line-clamp-2">
+      <p className="text-xs sm:text-sm font-semibold text-gray-600 line-clamp-2 truncate md:truncate-none w-36 md:w-full">
         {shortDescription}
       </p>
-      <p className="text-sm sm:text-lg md:text-xl font-semibold text-[#6896AD] line-clamp-2">
+      <p className="text-sm sm:text-lg md:text-xl font-semibold text-[#6896AD] line-clamp-2 truncate md:truncate-none w-36 md:w-full">
         {name}
       </p>
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-2">

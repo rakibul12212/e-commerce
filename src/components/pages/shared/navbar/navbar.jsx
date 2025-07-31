@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-[1920px] mx-auto">
-        <div className="flex items-center justify-between px-4 sm:px-6 lg:px-10 py-4">
+        <div className="flex items-center justify-between px-2 md:px-10 py-4">
           <Link href="/" className="font-semibold text-xl sm:text-2xl">
             E-Commerce
           </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
             </nav>
           </div>
 
-          {/* Mobile Menu*/}
+        
           <button
             onClick={toggleMenu}
             className="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors"
