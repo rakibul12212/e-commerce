@@ -3,14 +3,18 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { BsCart3 } from "react-icons/bs";
+import { BsCart3, BsHeart } from "react-icons/bs";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { useCard } from "@/hooks/useCard";
 
 const navLinks = [
+  { href: "/dashboard", label: "Dashboard" },
   { href: "/products", label: "Products" },
   { href: "/addProduct", label: "Add Product" },
-  { href: "/cart", label: "Cart", icon: true },
+  { href: "/contact", label: "Contact Us" },
+  { href: "/about", label: "About Us" },
+  { href: "/wishlist", label: "Wishlist", icon: "wishlist" },
+  { href: "/cart", label: "Cart", icon: "cart" },
 ];
 
 const Navbar = () => {
@@ -46,12 +50,18 @@ const Navbar = () => {
                     >
                       {link.icon && (
                         <div className="relative">
-                          <BsCart3 className="text-lg" />
-                          {cartItemsCount > 0 && (
-                            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-medium">
-                              {cartItemsCount > 99 ? "99+" : cartItemsCount}
-                            </span>
-                          )}
+                          {link.icon === "cart" ? (
+                            <>
+                              <BsCart3 className="text-lg" />
+                              {cartItemsCount > 0 && (
+                                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-medium">
+                                  {cartItemsCount > 99 ? "99+" : cartItemsCount}
+                                </span>
+                              )}
+                            </>
+                          ) : link.icon === "wishlist" ? (
+                            <BsHeart className="text-lg" />
+                          ) : null}
                         </div>
                       )}
                       {!link.icon && link.label}
@@ -62,7 +72,6 @@ const Navbar = () => {
             </nav>
           </div>
 
-        
           <button
             onClick={toggleMenu}
             className="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors"
@@ -98,12 +107,18 @@ const Navbar = () => {
                   >
                     {link.icon && (
                       <div className="relative">
-                        <BsCart3 className="text-lg" />
-                        {cartItemsCount > 0 && (
-                          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-medium">
-                            {cartItemsCount > 99 ? "99+" : cartItemsCount}
-                          </span>
-                        )}
+                        {link.icon === "cart" ? (
+                          <>
+                            <BsCart3 className="text-lg" />
+                            {cartItemsCount > 0 && (
+                              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-medium">
+                                {cartItemsCount > 99 ? "99+" : cartItemsCount}
+                              </span>
+                            )}
+                          </>
+                        ) : link.icon === "wishlist" ? (
+                          <BsHeart className="text-lg" />
+                        ) : null}
                       </div>
                     )}
                     {link.label}
