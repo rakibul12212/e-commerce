@@ -13,7 +13,7 @@ const HomePage = () => {
         <Banner />
         <SubCategoryPage />
         <FlashSaleProduct />
-        {/* <AllProductsPage /> */}
+        <AllProductsPage />
         <About />
       </div>
       <div className="fixed z-20 bottom-10 right-4">
