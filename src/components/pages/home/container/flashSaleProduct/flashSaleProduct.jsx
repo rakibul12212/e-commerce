@@ -32,35 +32,40 @@ const FlashSaleProduct = () => {
           ))}
         </div>
       ) : (
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={8}
-          slidesPerView={2}
-          breakpoints={{
-            480: { slidesPerView: 2, spaceBetween: 12 },
-            640: { slidesPerView: 2, spaceBetween: 16 },
-            768: { slidesPerView: 3, spaceBetween: 16 },
-            1024: { slidesPerView: 4, spaceBetween: 16 },
-            1280: { slidesPerView: 5, spaceBetween: 16 },
-          }}
-          autoplay={{ delay: 2500 }}
-          loop={true}
-        >
-          {flashSale.map((product) => (
-            <SwiperSlide key={product.id}>
-              <FlashSaleProductCard
-                id={product.id}
-                img={product.images.primary}
-                name={product.name}
-                price={product.price}
-                discount={product.discount}
-                shortDescription={product.description}
-                discountedPrice={product.discountedPrice}
-                stockQuantity={product.stockQuantity}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div>
+          <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Flash Sale
+          </div>
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={8}
+            slidesPerView={1}
+            breakpoints={{
+              480: { slidesPerView: 2, spaceBetween: 12 },
+              640: { slidesPerView: 2, spaceBetween: 16 },
+              768: { slidesPerView: 3, spaceBetween: 16 },
+              1024: { slidesPerView: 4, spaceBetween: 16 },
+              1280: { slidesPerView: 5, spaceBetween: 16 },
+            }}
+            autoplay={{ delay: 2500 }}
+            loop={true}
+          >
+            {flashSale.map((product) => (
+              <SwiperSlide key={product.id}>
+                <FlashSaleProductCard
+                  id={product.id}
+                  img={product.images.primary}
+                  name={product.name}
+                  price={product.price}
+                  discount={product.discount}
+                  shortDescription={product.description}
+                  discountedPrice={product.discountedPrice}
+                  stockQuantity={product.stockQuantity}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       )}
     </div>
   );

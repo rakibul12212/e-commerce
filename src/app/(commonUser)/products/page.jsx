@@ -3,6 +3,7 @@ import { AllProductsPage } from "@/components/pages/home/container/allProducts/a
 const page = () => {
   return (
     <>
+      
       <AllProductsPage />
     </>
   );

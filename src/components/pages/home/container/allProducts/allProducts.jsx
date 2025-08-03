@@ -55,12 +55,9 @@ export const AllProductsPage = () => {
 
   return (
     <>
-      <h2
-        className="text-3xl font-bold pb-10 text-center
-      "
-      >
-        Products
-      </h2>
+      <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Featured Products
+      </div>
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pb-8">
         <div className="flex flex-wrap justify-start items-center gap-1  md:gap-4">
           <Button
