@@ -2,7 +2,6 @@ import { Container } from "@/components/container";
 import "./globals.css";
 import Navbar from "@/components/pages/shared/navbar/navbar";
 import Footer from "@/components/pages/shared/footer/footer";
-import { CardProvider } from "@/contexts/productCardContext";
 
 
 export const metadata = {
@@ -14,13 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <CardProvider>
+        
           <Navbar />
-          <Container>
-            {children}
-          </Container>
+          <Container>{children}</Container>
           <Footer />
-        </CardProvider>
+        
       </body>
     </html>
   );
