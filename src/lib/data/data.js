@@ -48,6 +48,7 @@ export const products = [
         isLatest: true,
         deals: "smartphone deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -92,6 +93,7 @@ export const products = [
         isLatest: true,
         deals: "smartphone deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -137,6 +139,7 @@ export const products = [
         isLatest: true,
         deals: "smartphone deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -181,6 +184,7 @@ export const products = [
         isLatest: false,
         deals: "smartphone deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -225,6 +229,7 @@ export const products = [
         isLatest: true,
         deals: "smartphone deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -270,6 +275,7 @@ export const products = [
         isLatest: true,
         deals: "smartphone deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -314,6 +320,7 @@ export const products = [
         isLatest: true,
         deals: "smartphone deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -358,6 +365,7 @@ export const products = [
         isLatest: true,
         deals: "smartphone deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -402,6 +410,7 @@ export const products = [
         isLatest: true,
         deals: "smartphone deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -446,6 +455,7 @@ export const products = [
         isLatest: true,
         deals: "smartphone deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -498,6 +508,7 @@ export const products = [
         isLatest: true,
         deals: "laptop deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -543,6 +554,7 @@ export const products = [
         isLatest: true,
         deals: "laptop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -587,6 +599,7 @@ export const products = [
         isLatest: true,
         deals: "laptop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -631,6 +644,7 @@ export const products = [
         isLatest: false,
         deals: "laptop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -675,6 +689,7 @@ export const products = [
         isLatest: true,
         deals: "laptop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -719,6 +734,7 @@ export const products = [
         isLatest: true,
         deals: "laptop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -763,6 +779,7 @@ export const products = [
         isLatest: true,
         deals: "laptop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -807,6 +824,7 @@ export const products = [
         isLatest: true,
         deals: "laptop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -851,6 +869,7 @@ export const products = [
         isLatest: false,
         deals: "laptop deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -895,6 +914,7 @@ export const products = [
         isLatest: true,
         deals: "laptop deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -946,6 +966,7 @@ export const products = [
         isLatest: false,
         deals: "air-conditioner deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -990,6 +1011,7 @@ export const products = [
         isLatest: false,
         deals: "air-conditioner deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1034,6 +1056,7 @@ export const products = [
         isLatest: true,
         deals: "air-conditioner deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1078,6 +1101,7 @@ export const products = [
         isLatest: true,
         deals: "air-conditioner deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1122,6 +1146,7 @@ export const products = [
         isLatest: true,
         deals: "air-conditioner deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1166,6 +1191,7 @@ export const products = [
         isLatest: false,
         deals: "air-conditioner deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1210,6 +1236,7 @@ export const products = [
         isLatest: true,
         deals: "air-conditioner deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1254,6 +1281,7 @@ export const products = [
         isLatest: false,
         deals: "air-conditioner deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1298,6 +1326,7 @@ export const products = [
         isLatest: true,
         deals: "air-conditioner deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1342,6 +1371,7 @@ export const products = [
         isLatest: true,
         deals: "air-conditioner deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -1394,6 +1424,7 @@ export const products = [
         isLatest: false,
         deals: "desktop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: true,
       },
       {
@@ -1437,6 +1468,7 @@ export const products = [
         isLatest: true,
         deals: "desktop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: true,
       },
       {
@@ -1480,6 +1512,7 @@ export const products = [
         isLatest: false,
         deals: "desktop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1524,6 +1557,7 @@ export const products = [
         isLatest: true,
         deals: "desktop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1566,6 +1600,7 @@ export const products = [
         isLatest: false,
         deals: "desktop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1610,6 +1645,7 @@ export const products = [
         isLatest: false,
         deals: "desktop deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1652,6 +1688,7 @@ export const products = [
         isLatest: true,
         deals: "desktop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1695,6 +1732,7 @@ export const products = [
         isLatest: false,
         deals: "desktop deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1738,6 +1776,7 @@ export const products = [
         isLatest: true,
         deals: "desktop deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1782,6 +1821,7 @@ export const products = [
         isLatest: true,
         deals: "desktop deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -1833,6 +1873,7 @@ export const products = [
         isLatest: true,
         deals: "processor deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1877,6 +1918,7 @@ export const products = [
         isLatest: true,
         deals: "processor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1921,6 +1963,7 @@ export const products = [
         isLatest: true,
         deals: "processor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -1965,6 +2008,7 @@ export const products = [
         isLatest: true,
         deals: "processor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2009,6 +2053,7 @@ export const products = [
         isLatest: true,
         deals: "processor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2053,6 +2098,7 @@ export const products = [
         isLatest: true,
         deals: "processor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2097,6 +2143,7 @@ export const products = [
         isLatest: true,
         deals: "processor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2141,6 +2188,7 @@ export const products = [
         isLatest: true,
         deals: "processor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2185,6 +2233,7 @@ export const products = [
         isLatest: true,
         deals: "processor deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2229,6 +2278,7 @@ export const products = [
         isLatest: true,
         deals: "processor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -2281,6 +2331,7 @@ export const products = [
         isLatest: true,
         deals: "motherboard deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2326,6 +2377,7 @@ export const products = [
         isLatest: true,
         deals: "motherboard deals",
         isDeal: true,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2369,6 +2421,7 @@ export const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: true,
+        reviewCount:50,
         isBestSeller: false,
         deals: "motherboard deals",
         isDeal: true,
@@ -2416,6 +2469,7 @@ export const products = [
         isLatest: false,
         deals: "motherboard deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2461,6 +2515,7 @@ export const products = [
         isLatest: true,
         deals: "motherboard deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2506,6 +2561,7 @@ export const products = [
         isLatest: false,
         deals: "motherboard deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2551,6 +2607,7 @@ export const products = [
         isLatest: true,
         deals: "motherboard deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2596,6 +2653,7 @@ export const products = [
         isLatest: false,
         deals: "motherboard deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2641,6 +2699,7 @@ export const products = [
         isLatest: true,
         deals: "motherboard deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2686,6 +2745,7 @@ export const products = [
         isLatest: true,
         deals: "motherboard deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2731,6 +2791,7 @@ export const products = [
         isLatest: false,
         deals: "motherboard deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -2782,6 +2843,7 @@ export const products = [
         isLatest: true,
         deals: "ssd deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2826,6 +2888,7 @@ export const products = [
         isLatest: false,
         deals: "ssd deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2870,6 +2933,7 @@ export const products = [
         isLatest: true,
         deals: "ssd deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2914,6 +2978,7 @@ export const products = [
         isLatest: false,
         deals: "ssd deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2958,6 +3023,7 @@ export const products = [
         isLatest: true,
         deals: "ssd deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -2997,11 +3063,12 @@ export const products = [
         rating: 4,
         isWarranty: true,
         stockQuantity: 30,
-        isFeature: true,
+        isFeature: false,
         isFlashSale: false,
         isLatest: true,
         deals: "ssd deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3046,6 +3113,7 @@ export const products = [
         isLatest: true,
         deals: "ssd deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3090,6 +3158,7 @@ export const products = [
         isLatest: false,
         deals: "ssd deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3129,11 +3198,12 @@ export const products = [
         rating: 4,
         isWarranty: true,
         stockQuantity: 15,
-        isFeature: true,
+        isFeature: false,
         isFlashSale: false,
         isLatest: true,
         deals: "ssd deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3178,6 +3248,7 @@ export const products = [
         isLatest: false,
         deals: "ssd deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -3229,6 +3300,7 @@ export const products = [
         isLatest: true,
         deals: "graphics card deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3273,6 +3345,7 @@ export const products = [
         isLatest: true,
         deals: "graphics card deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3316,6 +3389,7 @@ export const products = [
         isLatest: true,
         deals: "graphics card deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3361,6 +3435,7 @@ export const products = [
         isLatest: true,
         deals: "graphics card deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3404,6 +3479,7 @@ export const products = [
         isLatest: true,
         deals: "graphics card deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3448,6 +3524,7 @@ export const products = [
         isLatest: true,
         deals: "graphics card deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3491,6 +3568,7 @@ export const products = [
         isLatest: true,
         deals: "graphics card deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3535,6 +3613,7 @@ export const products = [
         isLatest: true,
         deals: "graphics card deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3578,6 +3657,7 @@ export const products = [
         isLatest: true,
         deals: "graphics card deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3622,6 +3702,7 @@ export const products = [
         isLatest: false,
         deals: "graphics card deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -3673,6 +3754,7 @@ export const products = [
         isLatest: true,
         deals: "ram deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3717,6 +3799,7 @@ export const products = [
         isLatest: true,
         deals: "ram deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3761,6 +3844,7 @@ export const products = [
         isLatest: true,
         deals: "ram deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3805,6 +3889,7 @@ export const products = [
         isLatest: false,
         deals: "ram deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3849,6 +3934,7 @@ export const products = [
         isLatest: true,
         deals: "ram deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3893,6 +3979,7 @@ export const products = [
         isLatest: false,
         deals: "ram deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3937,6 +4024,7 @@ export const products = [
         isLatest: false,
         deals: "ram deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -3981,6 +4069,7 @@ export const products = [
         isLatest: true,
         deals: "ram deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4025,6 +4114,7 @@ export const products = [
         isLatest: false,
         deals: "ram deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4069,6 +4159,7 @@ export const products = [
         isLatest: true,
         deals: "ram deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -4120,6 +4211,7 @@ export const products = [
         isLatest: true,
         deals: "television deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4164,6 +4256,7 @@ export const products = [
         isLatest: true,
         deals: "television deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4208,6 +4301,7 @@ export const products = [
         isLatest: true,
         deals: "television deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4252,6 +4346,7 @@ export const products = [
         isLatest: true,
         deals: "television deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4296,6 +4391,7 @@ export const products = [
         isLatest: true,
         deals: "television deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4340,6 +4436,7 @@ export const products = [
         isLatest: true,
         deals: "television deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4384,6 +4481,7 @@ export const products = [
         isLatest: true,
         deals: "television deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4428,6 +4526,7 @@ export const products = [
         isLatest: true,
         deals: "television deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4472,6 +4571,7 @@ export const products = [
         isLatest: true,
         deals: "television deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -4523,6 +4623,7 @@ export const products = [
         isLatest: true,
         deals: "router deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4567,6 +4668,7 @@ export const products = [
         isLatest: false,
         deals: "router deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4611,6 +4713,7 @@ export const products = [
         isLatest: true,
         deals: "router deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4655,6 +4758,7 @@ export const products = [
         isLatest: false,
         deals: "router deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4699,6 +4803,7 @@ export const products = [
         isLatest: true,
         deals: "router deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4743,6 +4848,7 @@ export const products = [
         isLatest: false,
         deals: "router deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4787,6 +4893,7 @@ export const products = [
         isLatest: true,
         deals: "router deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4831,6 +4938,7 @@ export const products = [
         isLatest: true,
         deals: "router deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -4875,6 +4983,7 @@ export const products = [
         isLatest: true,
         deals: "router deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -4926,7 +5035,8 @@ export const products = [
         isLatest: true,
         deals: "monitor deals",
         isDeal: false,
-        isBestSeller: true,
+        reviewCount:50,
+        isBestSeller: false,
       },
       {
         id: "MN002",
@@ -4969,6 +5079,7 @@ export const products = [
         isLatest: false,
         deals: "monitor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5012,6 +5123,7 @@ export const products = [
         isLatest: true,
         deals: "monitor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5055,6 +5167,7 @@ export const products = [
         isLatest: true,
         deals: "monitor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5098,6 +5211,7 @@ export const products = [
         isLatest: false,
         deals: "monitor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5141,6 +5255,7 @@ export const products = [
         isLatest: true,
         deals: "monitor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5184,6 +5299,7 @@ export const products = [
         isLatest: true,
         deals: "monitor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5227,6 +5343,7 @@ export const products = [
         isLatest: true,
         deals: "monitor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5270,6 +5387,7 @@ export const products = [
         isLatest: true,
         deals: "monitor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5313,6 +5431,7 @@ export const products = [
         isLatest: false,
         deals: "monitor deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -5362,6 +5481,7 @@ export const products = [
         isFlashSale: false,
         deals: "gaming chair deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: true,
       },
       {
@@ -5404,6 +5524,7 @@ export const products = [
         isFlashSale: false,
         deals: "gaming chair deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5446,6 +5567,7 @@ export const products = [
         isFlashSale: false,
         deals: "gaming chair deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: true,
       },
       {
@@ -5488,6 +5610,7 @@ export const products = [
         isFlashSale: false,
         deals: "gaming chair deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5530,6 +5653,7 @@ export const products = [
         isFlashSale: false,
         deals: "gaming chair deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5572,6 +5696,7 @@ export const products = [
         isFlashSale: false,
         deals: "gaming chair deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5614,6 +5739,7 @@ export const products = [
         isFlashSale: false,
         deals: "gaming chair deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5656,6 +5782,7 @@ export const products = [
         isFlashSale: false,
         deals: "gaming chair deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5698,6 +5825,7 @@ export const products = [
         isFlashSale: false,
         deals: "gaming chair deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5740,6 +5868,7 @@ export const products = [
         isFlashSale: false,
         deals: "gaming chair deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -5786,11 +5915,12 @@ export const products = [
         rating: 4,
         isWarranty: true,
         stockQuantity: 30,
-        isFeature: true,
+        isFeature: false,
         isFlashSale: false,
         isLatest: true,
         deals: "case deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5835,6 +5965,7 @@ export const products = [
         isLatest: false,
         deals: "case deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5879,6 +6010,7 @@ export const products = [
         isLatest: true,
         deals: "case deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5923,6 +6055,7 @@ export const products = [
         isLatest: false,
         deals: "case deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -5967,6 +6100,7 @@ export const products = [
         isLatest: true,
         deals: "case deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6010,6 +6144,7 @@ export const products = [
         isLatest: false,
         deals: "case deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6054,6 +6189,7 @@ export const products = [
         isLatest: true,
         deals: "case deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6098,6 +6234,7 @@ export const products = [
         isLatest: false,
         deals: "case deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6142,6 +6279,7 @@ export const products = [
         isLatest: true,
         deals: "case deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6181,11 +6319,12 @@ export const products = [
         rating: 4,
         isWarranty: true,
         stockQuantity: 26,
-        isFeature: true,
+        isFeature: false,
         isFlashSale: false,
         isLatest: true,
         deals: "case deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -6237,6 +6376,7 @@ export const products = [
         isLatest: true,
         deals: "power supply deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6281,6 +6421,7 @@ export const products = [
         isLatest: false,
         deals: "power supply deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6325,6 +6466,7 @@ export const products = [
         isLatest: true,
         deals: "power supply deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6369,6 +6511,7 @@ export const products = [
         isLatest: false,
         deals: "power supply deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6413,6 +6556,7 @@ export const products = [
         isLatest: true,
         deals: "power supply deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6457,6 +6601,7 @@ export const products = [
         isLatest: false,
         deals: "power supply deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6501,6 +6646,7 @@ export const products = [
         isLatest: true,
         deals: "power supply deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6545,6 +6691,7 @@ export const products = [
         isLatest: true,
         deals: "power supply deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6589,6 +6736,7 @@ export const products = [
         isLatest: false,
         deals: "power supply deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6633,6 +6781,7 @@ export const products = [
         isLatest: true,
         deals: "power supply deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],
@@ -6684,6 +6833,7 @@ export const products = [
         isLatest: true,
         deals: "printer deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6729,6 +6879,7 @@ export const products = [
         isLatest: false,
         deals: "printer deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6773,6 +6924,7 @@ export const products = [
         isLatest: true,
         deals: "printer deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6817,6 +6969,7 @@ export const products = [
         isLatest: true,
         deals: "printer deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6861,6 +7014,7 @@ export const products = [
         isLatest: false,
         deals: "printer deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6904,6 +7058,7 @@ export const products = [
         isLatest: false,
         deals: "printer deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6946,6 +7101,7 @@ export const products = [
         isLatest: true,
         deals: "printer deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -6988,6 +7144,7 @@ export const products = [
         isLatest: true,
         deals: "printer deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -7032,6 +7189,7 @@ export const products = [
         isLatest: true,
         deals: "printer deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
       {
@@ -7076,6 +7234,7 @@ export const products = [
         isLatest: true,
         deals: "printer deals",
         isDeal: false,
+        reviewCount:50,
         isBestSeller: false,
       },
     ],

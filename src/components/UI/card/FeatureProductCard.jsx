@@ -3,9 +3,13 @@
 import { products } from "@/lib/data/data";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Rating from "../rating/Rating";
 
 const FeatureProductCard = () => {
   const [featureProduct, setFeatureProduct] = useState([]);
+  const discountPrice = (price, discount) => {
+    return (price - (price * discount) / 100).toFixed(2);
+  };
 
   useEffect(() => {
     const featureProductCategories = products.filter((category) => {
@@ -20,16 +24,16 @@ const FeatureProductCard = () => {
   }
   return (
     <div>
-      <div >
+      <div>
         {featureProduct.map((product, id) =>
           product.items.map(
             (item, index) =>
               item.isFeature && (
                 <div
                   key={index}
-                  className="flex justify-between items-center p-4 bg-gray-50 shadow-md rounded-md mb-4"
+                  className="bg-white flex justify-between gap-x-6 items-center p-4  rounded-md mb-8 border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200"
                 >
-                  <div>
+                  <div className="relative">
                     <Image
                       src={item.primaryImg}
                       alt={item.name}
@@ -37,11 +41,34 @@ const FeatureProductCard = () => {
                       height={150}
                       className="object-cover rounded-md mb-2"
                     />
+                    {item.discountPercent > 0 && (
+                      <div className="absolute top-2 left-2 bg-[#B91C1C] text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md">
+                        -{item.discountPercent}%
+                      </div>
+                    )}
                   </div>
-                  <div>
-                    <h3 className="text-lg font-semibold">{item.name}</h3>
-                    <p className="text-gray-600">${item.price}</p>
-                    <p className="text-sm text-gray-500">{item.description}</p>
+                  <div className="flex flex-col justify-start flex-1 ">
+                    <Rating
+                      value={item.rating}
+                      showValue
+                      showCount
+                      reviewCount={item.reviewCount}
+                      size="medium"
+                    />
+                    <h3 className="text-2xl font-semibold pb-3">{item.name}</h3>
+                    {item.isDiscount ? (
+                      <p>
+                        <span className="text-[#6896AD] text-2xl font-bold">
+                          ${discountPrice(item.price, item.discountPercent)}
+                        </span>
+                        <span className="line-through text-gray-400 text-xl font-semibold  ml-4">
+                          ${item.price}
+                        </span>
+                      </p>
+                    ) : (
+                      <p className="text-2xl font-bold">${item.price}</p>
+                    )}
+                    <p className="text-sm text-gray-500 ">{item.description}</p>
                   </div>
                 </div>
               ),
