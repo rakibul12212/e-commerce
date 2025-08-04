@@ -31,18 +31,18 @@ const BestSellerProductCard = () => {
               item.isBestSeller && (
                 <div
                   key={index}
-                  className="bg-white flex justify-between gap-x-6 items-center p-4  rounded-md mb-8 border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 hover:scale-105"
+                  className="bg-white flex justify-between gap-x-6 items-center px-4 rounded-md mb-8 border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 hover:scale-105"
                 >
                   <div className="relative">
                     <Image
                       src={item.primaryImg}
                       alt={item.name}
-                      width={150}
-                      height={150}
+                      width={200}
+                      height={100}
                       className="object-cover rounded-md mb-2"
                     />
                     {item.discountPercent > 0 && (
-                      <div className="absolute top-2 left-2 bg-[#B91C1C] text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md">
+                      <div className="absolute top-4 left-2 bg-[#B91C1C] text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md">
                         -{item.discountPercent}%
                       </div>
                     )}

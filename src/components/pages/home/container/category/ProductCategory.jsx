@@ -17,7 +17,7 @@ const ProductCategory = () => {
               width={64}
               height={64}
             />
-            <p className="text-xl font-semibold">{product.category}</p>
+            <p className="text-xl font-semibold uppercase">{product.category}</p>
           </div>
         ))}
       </div>
