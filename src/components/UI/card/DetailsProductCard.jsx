@@ -22,7 +22,7 @@ const DetailsProductCard = () => {
     <div>
       <h1>{product.name}</h1>
       <p>{product.shortDetails}</p>
-      
+      <p>{product.longDetails}</p>
     </div>
   );
 };
