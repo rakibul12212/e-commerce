@@ -1,38 +1,42 @@
 "use client";
 
-import { products } from "@/lib/data/data";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Rating from "../rating/Rating";
 import { useRouter } from "next/navigation";
+import { useCard } from "@/hooks/usecard";
 
 const LatestProductCard = () => {
-      const router = useRouter();
   const [latestProduct, setLatestProduct] = useState([]);
+  const router = useRouter();
+  const { allProducts } = useCard();
+
   const discountPrice = (price, discount) => {
     return (price - (price * discount) / 100).toFixed(2);
   };
 
   useEffect(() => {
-    const latestProductCategories = products.filter((category) => {
+    const latestProductCategories = allProducts.filter((category) => {
       return category.items.some((item) => item.isLatest === true);
     });
     setLatestProduct(latestProductCategories);
-  }, []);
+  }, [allProducts]); 
 
   console.log("latestProduct", latestProduct);
+
   if (latestProduct.length === 0) {
     return <p className="text-lg">No deals available at the moment.</p>;
   }
+
   return (
     <div>
       <div>
-        {latestProduct.map((product, id) =>
+        {latestProduct.map((product, categoryIndex) =>
           product.items.map(
-            (item, index) =>
+            (item, itemIndex) =>
               item.isLatest && (
                 <div
-                  key={index}
+                  key={`${categoryIndex}-${itemIndex}`} // Better key composition
                   className="bg-white flex justify-between gap-x-6 items-center px-4 mt-4 rounded-md border border-gray-200 shadow-sm hover:shadow-md transform  duration-300 ease-in-out hover:scale-105"
                 >
                   <div className="relative">
@@ -58,8 +62,8 @@ const LatestProductCard = () => {
                       size="medium"
                     />
                     <h3
-                      className="text-2xl hover:text-[#6896AD] transform duration-300 ease-in-out font-semibold pb-3"
-                      onClick={() => router.push(`/productDetails/${id}`)}
+                      className="text-2xl hover:text-[#6896AD] transform duration-300 ease-in-out font-semibold pb-3 cursor-pointer"
+                      onClick={() => router.push(`/productDetails/${item.id}`)} // Fixed routing parameter
                     >
                       {item.name}
                     </h3>

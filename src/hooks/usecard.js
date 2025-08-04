@@ -1,6 +1,9 @@
 "use client";
-import CardContext from "@/contexts/productCardContext";
+
+import CardContext from "@/context/productCardContext";
 import { useContext } from "react";
+
+
 
 export const useCard = () => {
   const context = useContext(CardContext);
