@@ -6,7 +6,7 @@ import Rating from "../rating/Rating";
 import { useRouter } from "next/navigation";
 import { useCard } from "@/hooks/usecard";
 
-const FeatureProductCard = () => {
+const FeatureProductCard = ({name}) => {
   const [featureProduct, setFeatureProduct] = useState([]);
   const router = useRouter();
   const { allProducts } = useCard();

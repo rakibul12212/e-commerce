@@ -1,7 +1,12 @@
+import DetailsProductPage from "@/components/pages/home/container/DetailsProductPage/DetailsProductPage";
 import React from "react";
 
-const ProductDetailsPage = () => {
-  return <div>ProductDetailsPage</div>;
+const ProductDetails = () => {
+  return (
+    <div>
+      <DetailsProductPage />
+    </div>
+  );
 };
 
-export default ProductDetailsPage;
+export default ProductDetails;
