@@ -22,7 +22,7 @@ const Deals = () => {
       <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 mt-4">
         {categoriesWithDeals.map((deal, id) => (
           <div key={id} className="">
-            <p className="text-lg font-semibold bg-gray-50 p-4 rounded-md shadow-md text-center space-y-2 hover:bg-gray-100 hover:shadow-lg transition duration-200 uppercase">
+            <p className="text-lg font-semibold bg-gray-50 p-4 rounded-md shadow-md text-center space-y-2 hover:bg-gray-100 hover:shadow-lg transition duration-200 hover:scale-105 uppercase">
               {deal.category}
             </p>
           </div>

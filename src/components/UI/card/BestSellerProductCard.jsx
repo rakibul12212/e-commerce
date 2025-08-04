@@ -5,30 +5,30 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Rating from "../rating/Rating";
 
-const FeatureProductCard = () => {
-  const [featureProduct, setFeatureProduct] = useState([]);
+const BestSellerProductCard = () => {
+  const [BestSellerProduct, setBestSellerProduct] = useState([]);
   const discountPrice = (price, discount) => {
     return (price - (price * discount) / 100).toFixed(2);
   };
 
   useEffect(() => {
-    const featureProductCategories = products.filter((category) => {
-      return category.items.some((item) => item.isFeature === true);
+    const BestSellerProductCategories = products.filter((category) => {
+      return category.items.some((item) => item.isBestSeller === true);
     });
-    setFeatureProduct(featureProductCategories);
+    setBestSellerProduct(BestSellerProductCategories);
   }, []);
 
-  console.log("featureProduct", featureProduct);
-  if (featureProduct.length === 0) {
+  console.log("BestSellerProduct", BestSellerProduct);
+  if (BestSellerProduct.length === 0) {
     return <p className="text-lg">No deals available at the moment.</p>;
   }
   return (
     <div>
       <div>
-        {featureProduct.map((product, id) =>
+        {BestSellerProduct.map((product, id) =>
           product.items.map(
             (item, index) =>
-              item.isFeature && (
+              item.isBestSeller && (
                 <div
                   key={index}
                   className="bg-white flex justify-between gap-x-6 items-center p-4  rounded-md mb-8 border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 hover:scale-105"
@@ -79,4 +79,4 @@ const FeatureProductCard = () => {
   );
 };
 
-export default FeatureProductCard;
+export default BestSellerProductCard;

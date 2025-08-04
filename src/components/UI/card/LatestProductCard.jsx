@@ -5,30 +5,30 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Rating from "../rating/Rating";
 
-const FeatureProductCard = () => {
-  const [featureProduct, setFeatureProduct] = useState([]);
-  const discountPrice = (price, discount) => {
-    return (price - (price * discount) / 100).toFixed(2);
-  };
+const LatestProductCard = () => {
+    const [latestProduct, setLatestProduct] = useState([]);
+    const discountPrice = (price, discount) => {
+      return (price - (price * discount) / 100).toFixed(2);
+    };
 
-  useEffect(() => {
-    const featureProductCategories = products.filter((category) => {
-      return category.items.some((item) => item.isFeature === true);
-    });
-    setFeatureProduct(featureProductCategories);
-  }, []);
+    useEffect(() => {
+      const latestProductCategories = products.filter((category) => {
+        return category.items.some((item) => item.isLatest === true);
+      });
+      setLatestProduct(latestProductCategories);
+    }, []);
 
-  console.log("featureProduct", featureProduct);
-  if (featureProduct.length === 0) {
-    return <p className="text-lg">No deals available at the moment.</p>;
-  }
+    console.log("latestProduct", latestProduct);
+    if (latestProduct.length === 0) {
+      return <p className="text-lg">No deals available at the moment.</p>;
+    }
   return (
     <div>
       <div>
-        {featureProduct.map((product, id) =>
+        {latestProduct.map((product, id) =>
           product.items.map(
             (item, index) =>
-              item.isFeature && (
+              item.isLatest && (
                 <div
                   key={index}
                   className="bg-white flex justify-between gap-x-6 items-center p-4  rounded-md mb-8 border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 hover:scale-105"
@@ -79,4 +79,4 @@ const FeatureProductCard = () => {
   );
 };
 
-export default FeatureProductCard;
+export default LatestProductCard;
