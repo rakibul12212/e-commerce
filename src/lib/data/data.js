@@ -1,18 +1,20 @@
 const products = [
   {
     category: "smartphone",
-    categoryImg: "https://example.com/images/category_smartphone.jpg",
+    categoryImg:
+      "https://www.techlandbd.com/cache/images/uploads/categories-featured/smartphone_cache_optimize-70.webp",
     items: [
       {
         id: "SP001",
         name: "Galaxy S23 Ultra",
         price: 1199.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/galaxy_s23_ultra.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0152506193/cover_cache_optimize-60.webp",
         detailsImg: [
-          "https://example.com/images/galaxy_s23_ultra_side.jpg",
-          "https://example.com/images/galaxy_s23_ultra_back.jpg",
-          "https://example.com/images/galaxy_s23_ultra_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506193/picture-thum-1_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506193/picture-thum-2_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506193/picture-thum-3_cache_optimize-70.webp",
         ],
         shortDetails:
           "Flagship smartphone with 6.8-inch AMOLED display and 200MP camera.",
@@ -43,6 +45,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: "smartphone deals",
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -50,11 +54,12 @@ const products = [
         name: "Galaxy A54",
         price: 449.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/galaxy_a54.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0152506172/cover_cache_optimize-60.webp",
         detailsImg: [
-          "https://example.com/images/galaxy_a54_side.jpg",
-          "https://example.com/images/galaxy_a54_back.jpg",
-          "https://example.com/images/galaxy_a54_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506172/cover_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506172/picture-thum-1_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506172/picture-thum-2_cache_optimize-70.webp",
         ],
         shortDetails: "Mid-range smartphone with 6.4-inch AMOLED display.",
         longDetails:
@@ -83,6 +88,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: true,
+        deals: "smartphone deals",
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -90,11 +97,12 @@ const products = [
         name: "iPhone 15 Pro",
         price: 999.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/iphone_15_pro.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0082506598/cover_cache_optimize-60.webp",
         detailsImg: [
-          "https://example.com/images/iphone_15_pro_side.jpg",
-          "https://example.com/images/iphone_15_pro_back.jpg",
-          "https://example.com/images/iphone_15_pro_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0082506598/picture-thum-1_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082506598/picture-thum-2_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082506598/picture-thum-3_cache_optimize-70.webp",
         ],
         shortDetails:
           "Premium smartphone with A17 Pro chip and titanium design.",
@@ -124,6 +132,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: "smartphone deals",
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -131,11 +141,12 @@ const products = [
         name: "iPhone 14",
         price: 799.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/iphone_14.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0082506604/cover_cache_optimize-60.webp",
         detailsImg: [
-          "https://example.com/images/iphone_14_side.jpg",
-          "https://example.com/images/iphone_14_back.jpg",
-          "https://example.com/images/iphone_14_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0082506604/picture-thum-1_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082506604/picture-thum-2_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082506604/picture-thum-3_cache_optimize-70.webp",
         ],
         shortDetails: "Reliable smartphone with A15 Bionic chip.",
         longDetails:
@@ -164,6 +175,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: false,
+        deals: "smartphone deals",
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -171,11 +184,12 @@ const products = [
         name: "Pixel 8 Pro",
         price: 899.99,
         discountPercent: 8,
-        primaryImg: "https://example.com/images/pixel_8_pro.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1952506260/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/pixel_8_pro_side.jpg",
-          "https://example.com/images/pixel_8_pro_back.jpg",
-          "https://example.com/images/pixel_8_pro_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1952506260/picture-thum-1_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1952506260/picture-thum-2_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1952506260/picture-thum-3_cache_optimize-70.webp",
         ],
         shortDetails: "AI-powered smartphone with 6.7-inch OLED display.",
         longDetails:
@@ -204,6 +218,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: "smartphone deals",
+        isDeal: true,
         isBestSeller: false,
       },
       {
@@ -211,11 +227,12 @@ const products = [
         name: "OnePlus 11",
         price: 799.99,
         discountPercent: 7,
-        primaryImg: "https://example.com/images/oneplus_11.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P2942506022/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/oneplus_11_side.jpg",
-          "https://example.com/images/oneplus_11_back.jpg",
-          "https://example.com/images/oneplus_11_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P2942506022/picture-thum-1_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P2942506022/picture-thum-2_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P2942506022/picture-thum-3_cache_optimize-70.webp",
         ],
         shortDetails:
           "High-performance smartphone with 6.7-inch AMOLED display.",
@@ -245,6 +262,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: true,
+        deals: "smartphone deals",
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -252,11 +271,12 @@ const products = [
         name: "Xperia 1 V",
         price: 1399.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/xperia_1_v.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1952506259/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/xperia_1_v_side.jpg",
-          "https://example.com/images/xperia_1_v_back.jpg",
-          "https://example.com/images/xperia_1_v_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1952506259/picture-thum-1_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1952506259/picture-thum-2_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1952506259/picture-thum-3_cache_optimize-70.webp",
         ],
         shortDetails: "Cinematic smartphone with 4K HDR OLED display.",
         longDetails:
@@ -285,6 +305,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: "smartphone deals",
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -292,11 +314,12 @@ const products = [
         name: "Mi 13 Pro",
         price: 899.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/mi_13_pro.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1072506149/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/mi_13_pro_side.jpg",
-          "https://example.com/images/mi_13_pro_back.jpg",
-          "https://example.com/images/mi_13_pro_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1072506149/picture-thum-1_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1072506149/picture-thum-1_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1072506149/picture-thum-2_cache_optimize-70.webp",
         ],
         shortDetails: "High-end smartphone with Leica-tuned cameras.",
         longDetails:
@@ -325,6 +348,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: "smartphone deals",
+        isDeal: true,
         isBestSeller: false,
       },
       {
@@ -332,11 +357,12 @@ const products = [
         name: "Moto Edge 40",
         price: 599.99,
         discountPercent: 12,
-        primaryImg: "https://example.com/images/moto_edge_40.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P4662506003/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/moto_edge_40_side.jpg",
-          "https://example.com/images/moto_edge_40_back.jpg",
-          "https://example.com/images/moto_edge_40_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P4662506003/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P4662506003/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P4662506003/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Sleek smartphone with 6.55-inch OLED display.",
         longDetails:
@@ -365,6 +391,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: true,
+        deals: "smartphone deals",
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -372,11 +400,12 @@ const products = [
         name: "ROG Phone 7",
         price: 999.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/rog_phone_7.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P5902506005/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/rog_phone_7_side.jpg",
-          "https://example.com/images/rog_phone_7_back.jpg",
-          "https://example.com/images/rog_phone_7_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P5902506005/picture-thum-1_cache_optimize-70.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P5902506005/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P5902506005/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "Gaming smartphone with 6.78-inch AMOLED display.",
         longDetails:
@@ -405,24 +434,28 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: "smartphone deals",
+        isDeal: true,
         isBestSeller: false,
       },
     ],
   },
   {
     category: "laptop",
-    categoryImg: "https://example.com/images/category_laptop.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/laptop_cache_optimize-70.webp",
     items: [
       {
         id: "LP001",
         name: "MacBook Pro 16",
         price: 2499.99,
         discountPercent: 12,
-        primaryImg: "https://example.com/images/macbook_pro_16.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0082506967/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/macbook_pro_16_side.jpg",
-          "https://example.com/images/macbook_pro_16_keyboard.jpg",
-          "https://example.com/images/macbook_pro_16_display.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0082506961/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082506961/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082506961/picture-3_cache_optimize-40.webp",
         ],
         shortDetails:
           "High-performance laptop with M2 Max chip and 16-inch Retina display.",
@@ -452,6 +485,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -459,11 +494,12 @@ const products = [
         name: "MacBook Air 13",
         price: 1099.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/macbook_air_13.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0082506961/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/macbook_air_13_side.jpg",
-          "https://example.com/images/macbook_air_13_keyboard.jpg",
-          "https://example.com/images/macbook_air_13_display.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0082506961/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082506961/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082506961/picture-3_cache_optimize-40.webp",
         ],
         shortDetails:
           "Lightweight laptop with M2 chip and 13.6-inch Retina display.",
@@ -493,6 +529,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -500,11 +538,12 @@ const products = [
         name: "XPS 13",
         price: 1399.99,
         discountPercent: 8,
-        primaryImg: "https://example.com/images/xps_13.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0032507003/cover-1752745033_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/xps_13_side.jpg",
-          "https://example.com/images/xps_13_keyboard.jpg",
-          "https://example.com/images/xps_13_display.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0032507003/picture-1-1752750284_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0032507003/picture-2-1752750316_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0032507003/picture-4-1752750346_cache_optimize-40.webp",
         ],
         shortDetails: "Premium ultrabook with 13.4-inch 4K display.",
         longDetails:
@@ -533,6 +572,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -540,11 +581,12 @@ const products = [
         name: "Inspiron 16",
         price: 899.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/inspiron_16.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0062506235/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/inspiron_16_side.jpg",
-          "https://example.com/images/inspiron_16_keyboard.jpg",
-          "https://example.com/images/inspiron_16_display.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0062506235/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0062506235/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0062506235/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Versatile laptop with 16-inch FHD+ display.",
         longDetails:
@@ -573,6 +615,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: false,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -580,11 +624,12 @@ const products = [
         name: "Spectre x360 14",
         price: 1599.99,
         discountPercent: 7,
-        primaryImg: "https://example.com/images/spectre_x360_14.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0172506643/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/spectre_x360_14_side.jpg",
-          "https://example.com/images/spectre_x360_14_keyboard.jpg",
-          "https://example.com/images/spectre_x360_14_display.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0172506643/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172506643/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172506643/picture-4_cache_optimize-40.webp",
         ],
         shortDetails: "Convertible laptop with 13.5-inch OLED display.",
         longDetails:
@@ -613,6 +658,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -620,11 +667,12 @@ const products = [
         name: "ThinkPad X1 Carbon Gen 11",
         price: 1799.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/thinkpad_x1_carbon.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0102508003/cover-1754195319_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/thinkpad_x1_carbon_side.jpg",
-          "https://example.com/images/thinkpad_x1_carbon_keyboard.jpg",
-          "https://example.com/images/thinkpad_x1_carbon_display.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0102508003/picture-2-1754196472_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0102508003/picture-3-1754196486_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0102508003/picture-1-1754195319_cache_optimize-40.webp",
         ],
         shortDetails: "Business ultrabook with 14-inch 2.8K OLED display.",
         longDetails:
@@ -653,6 +701,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -660,11 +710,12 @@ const products = [
         name: "ROG Zephyrus G14",
         price: 1499.99,
         discountPercent: 8,
-        primaryImg: "https://example.com/images/rog_zephyrus_g14.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0082507045/cover-1753876307_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/rog_zephyrus_g14_side.jpg",
-          "https://example.com/images/rog_zephyrus_g14_keyboard.jpg",
-          "https://example.com/images/rog_zephyrus_g14_display.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0082507045/picture-1-1753936098_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082507045/picture-2-1753936113_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082507045/picture-3-1753936134_cache_optimize-40.webp",
         ],
         shortDetails: "Gaming laptop with 14-inch QHD display and RTX 4060.",
         longDetails:
@@ -693,6 +744,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -700,11 +753,12 @@ const products = [
         name: "Surface Laptop 5",
         price: 1299.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/surface_laptop_5.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0972506041/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/surface_laptop_5_side.jpg",
-          "https://example.com/images/surface_laptop_5_keyboard.jpg",
-          "https://example.com/images/surface_laptop_5_display.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0972506041/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0972506041/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0972506041/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Sleek laptop with 13.5-inch PixelSense display.",
         longDetails:
@@ -733,6 +787,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -740,11 +796,12 @@ const products = [
         name: "Acer Predator Helios 300",
         price: 1199.99,
         discountPercent: 12,
-        primaryImg: "https://example.com/images/predator_helios_300.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0112507001/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/predator_helios_300_side.jpg",
-          "https://example.com/images/predator_helios_300_keyboard.jpg",
-          "https://example.com/images/predator_helios_300_display.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0112507001/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0112507001/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0112507001/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "Gaming laptop with 15.6-inch FHD 144Hz display.",
         longDetails:
@@ -773,6 +830,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: false,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -780,11 +839,12 @@ const products = [
         name: "Razer Blade 15",
         price: 1999.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/razer_blade_15.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0322507008/cover-1752900250_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/razer_blade_15_side.jpg",
-          "https://example.com/images/razer_blade_15_keyboard.jpg",
-          "https://example.com/images/razer_blade_15_display.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0322507008/picture-1-1752900358_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0322507008/picture-4-1752900521_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0322507008/picture-3-1752900456_cache_optimize-40.webp",
         ],
         shortDetails: "Premium gaming laptop with 15.6-inch QHD 240Hz display.",
         longDetails:
@@ -813,24 +873,28 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
     ],
   },
   {
     category: "air-conditioner",
-    categoryImg: "https://example.com/images/category_airconditioner.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/air-conditioner_cache_optimize-70.webp",
     items: [
       {
         id: "AC001",
         name: "Inverter Split AC 1.5 Ton",
         price: 599.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/lg_inverter_ac.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lg_inverter_ac_side.jpg",
-          "https://example.com/images/lg_inverter_ac_remote.jpg",
-          "https://example.com/images/lg_inverter_ac_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "1.5-ton inverter AC with energy-saving technology.",
         longDetails:
@@ -859,6 +923,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: false,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -866,11 +932,12 @@ const products = [
         name: "Window AC 1 Ton",
         price: 399.99,
         discountPercent: 12,
-        primaryImg: "https://example.com/images/lg_window_ac.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P2812506095/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lg_window_ac_side.jpg",
-          "https://example.com/images/lg_window_ac_front.jpg",
-          "https://example.com/images/lg_window_ac_controls.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "1-ton window AC with energy-efficient cooling.",
         longDetails:
@@ -899,6 +966,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: false,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -906,11 +975,12 @@ const products = [
         name: "Inverter Split AC 1.5 Ton",
         price: 649.99,
         discountPercent: 8,
-        primaryImg: "https://example.com/images/daikin_inverter_ac.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P2812506095/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/daikin_inverter_ac_side.jpg",
-          "https://example.com/images/daikin_inverter_ac_remote.jpg",
-          "https://example.com/images/daikin_inverter_ac_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "1.5-ton inverter AC with eco-friendly refrigerant.",
         longDetails:
@@ -939,6 +1009,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -946,11 +1018,12 @@ const products = [
         name: "Mitsubishi Heavy Duty SRK18YL",
         price: 699.99,
         discountPercent: 7,
-        primaryImg: "https://example.com/images/mitsubishi_srk18yl.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P2812506095/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/mitsubishi_srk18yl_side.jpg",
-          "https://example.com/images/mitsubishi_srk18yl_remote.jpg",
-          "https://example.com/images/mitsubishi_srk18yl_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "1.5-ton inverter AC with durable design.",
         longDetails:
@@ -979,6 +1052,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -986,11 +1061,12 @@ const products = [
         name: "Carrier Durafresh 2 Ton",
         price: 799.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/carrier_durafresh.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P2812506095/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/carrier_durafresh_side.jpg",
-          "https://example.com/images/carrier_durafresh_remote.jpg",
-          "https://example.com/images/carrier_durafresh_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "2-ton inverter AC with air purifier.",
         longDetails:
@@ -1019,6 +1095,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -1026,11 +1104,12 @@ const products = [
         name: "Voltas Inverter Split AC 1.2 Ton",
         price: 499.99,
         discountPercent: 12,
-        primaryImg: "https://example.com/images/voltas_inverter_ac.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P5662506008/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/voltas_inverter_ac_side.jpg",
-          "https://example.com/images/voltas_inverter_ac_remote.jpg",
-          "https://example.com/images/voltas_inverter_ac_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "1.2-ton inverter AC with dust filter.",
         longDetails:
@@ -1059,6 +1138,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: false,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -1066,11 +1147,12 @@ const products = [
         name: "Blue Star Inverter AC 1.5 Ton",
         price: 579.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/blue_star_inverter_ac.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P5662506008/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/blue_star_inverter_ac_side.jpg",
-          "https://example.com/images/blue_star_inverter_ac_remote.jpg",
-          "https://example.com/images/blue_star_inverter_ac_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "1.5-ton inverter AC with precision cooling.",
         longDetails:
@@ -1099,6 +1181,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -1106,11 +1190,12 @@ const products = [
         name: "Panasonic Inverter AC 1 Ton",
         price: 429.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/panasonic_inverter_ac.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P5662506008/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/panasonic_inverter_ac_side.jpg",
-          "https://example.com/images/panasonic_inverter_ac_remote.jpg",
-          "https://example.com/images/panasonic_inverter_ac_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "1-ton inverter AC with nanoe-G air purification.",
         longDetails:
@@ -1139,6 +1224,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: false,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -1146,11 +1233,12 @@ const products = [
         name: "Hitachi Inverter AC 1.8 Ton",
         price: 749.99,
         discountPercent: 8,
-        primaryImg: "https://example.com/images/hitachi_inverter_ac.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P6222506054/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/hitachi_inverter_ac_side.jpg",
-          "https://example.com/images/hitachi_inverter_ac_remote.jpg",
-          "https://example.com/images/hitachi_inverter_ac_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "1.8-ton inverter AC with tropical design.",
         longDetails:
@@ -1179,6 +1267,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -1186,11 +1276,12 @@ const products = [
         name: "Godrej Inverter AC 1.5 Ton",
         price: 549.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/godrej_inverter_ac.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P3982506027/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/godrej_inverter_ac_side.jpg",
-          "https://example.com/images/godrej_inverter_ac_remote.jpg",
-          "https://example.com/images/godrej_inverter_ac_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506161/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "1.5-ton inverter AC with anti-bacterial filter.",
         longDetails:
@@ -1219,24 +1310,28 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
     ],
   },
   {
     category: "desktop",
-    categoryImg: "https://example.com/images/category_desktop.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/desktop_cache_optimize-70.webp",
     items: [
       {
         id: "DT001",
         name: "iMac 24-inch",
         price: 1299.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/imac_24.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0512507008/cover-1752209125_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/imac_24_side.jpg",
-          "https://example.com/images/imac_24_back.jpg",
-          "https://example.com/images/imac_24_display.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0512507009/cover-1753159578_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506154/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         ],
         shortDetails:
           "All-in-one desktop with M1 chip and 24-inch 4.5K Retina display.",
@@ -1266,6 +1361,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: false,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -1273,11 +1370,12 @@ const products = [
         name: "Mac Studio",
         price: 1999.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/mac_studio.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/mac_studio_front.jpg",
-          "https://example.com/images/mac_studio_ports.jpg",
-          "https://example.com/images/mac_studio_side.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0512507009/cover-1753159578_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506154/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         ],
         shortDetails:
           "Compact powerhouse with M1 Max chip for professional workflows.",
@@ -1305,6 +1403,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -1312,11 +1412,12 @@ const products = [
         name: "Dell XPS 8940",
         price: 1099.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/dell_xps.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/dell_xps_side.jpg",
-          "https://example.com/images/dell_xps_inside.jpg",
-          "https://example.com/images/dell_xps_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0512507009/cover-1753159578_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506154/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         ],
         shortDetails:
           "Powerful tower desktop with 11th Gen Intel Core i7 processor.",
@@ -1344,6 +1445,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: false,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -1351,11 +1454,12 @@ const products = [
         name: "HP Envy 32 All-in-One",
         price: 1499.99,
         discountPercent: 20,
-        primaryImg: "https://example.com/images/hp_envy32.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0592506144/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/hp_envy32_side.jpg",
-          "https://example.com/images/hp_envy32_stand.jpg",
-          "https://example.com/images/hp_envy32_ports.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0512507009/cover-1753159578_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506154/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Premium all-in-one with 4K display and pop-up webcam.",
         longDetails:
@@ -1384,6 +1488,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -1391,11 +1497,12 @@ const products = [
         name: "Lenovo ThinkCentre M75q Tiny",
         price: 699.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/lenovo_tiny.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0592506143/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lenovo_tiny_side.jpg",
-          "https://example.com/images/lenovo_tiny_ports.jpg",
-          "https://example.com/images/lenovo_tiny_stand.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0512507009/cover-1753159578_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506154/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Ultra-compact business desktop with AMD Ryzen power.",
         longDetails:
@@ -1422,6 +1529,8 @@ const products = [
         isFeature: false,
         isFlashSale: false,
         isLatest: false,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -1429,11 +1538,12 @@ const products = [
         name: "Microsoft Surface Studio 2",
         price: 3499.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/surface_studio.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0592506148/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/surface_studio_angle.jpg",
-          "https://example.com/images/surface_studio_drawing.jpg",
-          "https://example.com/images/surface_studio_ports.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0512507009/cover-1753159578_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506154/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         ],
         shortDetails:
           "Creative workstation with 28-inch touch display and zero-gravity hinge.",
@@ -1462,6 +1572,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: false,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -1469,11 +1581,12 @@ const products = [
         name: "ASUS ROG Strix G15",
         price: 1799.99,
         discountPercent: 12,
-        primaryImg: "https://example.com/images/asus_rog.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P2932506218/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/asus_rog_side.jpg",
-          "https://example.com/images/asus_rog_rgb.jpg",
-          "https://example.com/images/asus_rog_inside.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0512507009/cover-1753159578_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506154/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Gaming desktop with liquid cooling and RGB lighting.",
         longDetails:
@@ -1500,6 +1613,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -1507,11 +1622,12 @@ const products = [
         name: "Acer Aspire TC-895",
         price: 599.99,
         discountPercent: 25,
-        primaryImg: "https://example.com/images/acer_aspire.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0592506105/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/acer_aspire_side.jpg",
-          "https://example.com/images/acer_aspire_front.jpg",
-          "https://example.com/images/acer_aspire_ports.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0512507009/cover-1753159578_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506154/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         ],
         shortDetails:
           "Affordable desktop with 10th Gen Intel Core i5 performance.",
@@ -1539,6 +1655,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: false,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -1546,11 +1664,12 @@ const products = [
         name: "Alienware Aurora R13",
         price: 2499.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/alienware.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0512507009/cover-1753159578_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/alienware_side.jpg",
-          "https://example.com/images/alienware_rgb.jpg",
-          "https://example.com/images/alienware_inside.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0512507009/cover-1753159578_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506154/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         ],
         shortDetails:
           "Premium gaming desktop with 12th Gen Intel and liquid cooling.",
@@ -1578,6 +1697,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -1585,11 +1706,12 @@ const products = [
         name: "Lenovo Yoga AIO 7",
         price: 1599.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/yoga_aio.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/yoga_aio_stand.jpg",
-          "https://example.com/images/yoga_aio_ports.jpg",
-          "https://example.com/images/yoga_aio_tilt.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0512507009/cover-1753159578_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506154/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         ],
         shortDetails:
           "Versatile all-in-one with 4K display and rotating hinge.",
@@ -1618,24 +1740,28 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
     ],
   },
   {
     category: "processor",
-    categoryImg: "https://example.com/images/category_processor.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/processor_cache_optimize-70.webp",
     items: [
       {
         id: "PR001",
         name: "Ryzen 9 7950X",
         price: 699.99,
         discountPercent: 8,
-        primaryImg: "https://example.com/images/ryzen_9_7950x.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0572506256/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/ryzen_9_7950x_top.jpg",
-          "https://example.com/images/ryzen_9_7950x_side.jpg",
-          "https://example.com/images/ryzen_9_7950x_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506256/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506256/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506256/cover_cache_optimize-40.webp",
         ],
         shortDetails: "High-performance CPU with 16 cores and 32 threads.",
         longDetails:
@@ -1664,6 +1790,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -1671,11 +1799,12 @@ const products = [
         name: "Ryzen 7 7700X",
         price: 399.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/ryzen_7_7700x.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0592506125/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/ryzen_7_7700x_top.jpg",
-          "https://example.com/images/ryzen_7_7700x_side.jpg",
-          "https://example.com/images/ryzen_7_7700x_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506125/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506125/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506125/cover_cache_optimize-40.webp",
         ],
         shortDetails: "8-core, 16-thread processor with 5.4GHz boost clock.",
         longDetails:
@@ -1704,6 +1833,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -1711,11 +1842,12 @@ const products = [
         name: "Core i9-13900K",
         price: 589.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/core_i9_13900k.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0572506027/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/core_i9_13900k_top.jpg",
-          "https://example.com/images/core_i9_13900k_side.jpg",
-          "https://example.com/images/core_i9_13900k_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506027/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506027/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506027/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Intel's flagship 24-core hybrid architecture processor.",
         longDetails:
@@ -1744,6 +1876,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -1751,11 +1885,12 @@ const products = [
         name: "Core i7-13700K",
         price: 419.99,
         discountPercent: 7,
-        primaryImg: "https://example.com/images/core_i7_13700k.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0572506064/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/core_i7_13700k_top.jpg",
-          "https://example.com/images/core_i7_13700k_side.jpg",
-          "https://example.com/images/core_i7_13700k_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506064/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506064/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506064/cover_cache_optimize-40.webp",
         ],
         shortDetails: "16-core hybrid processor with 5.4GHz boost clock.",
         longDetails:
@@ -1784,6 +1919,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -1791,11 +1928,12 @@ const products = [
         name: "Ryzen 5 7600X",
         price: 299.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/ryzen_5_7600x.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0592506112/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/ryzen_5_7600x_top.jpg",
-          "https://example.com/images/ryzen_5_7600x_side.jpg",
-          "https://example.com/images/ryzen_5_7600x_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506112/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506112/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506112/cover_cache_optimize-40.webp",
         ],
         shortDetails: "6-core, 12-thread processor with 5.3GHz boost.",
         longDetails:
@@ -1824,6 +1962,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -1831,11 +1971,12 @@ const products = [
         name: "Threadripper PRO 5995WX",
         price: 6499.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/threadripper_pro_5995wx.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0592506112/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/threadripper_pro_5995wx_top.jpg",
-          "https://example.com/images/threadripper_pro_5995wx_side.jpg",
-          "https://example.com/images/threadripper_pro_5995wx_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506112/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506112/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506112/cover_cache_optimize-40.webp",
         ],
         shortDetails: "64-core, 128-thread workstation powerhouse.",
         longDetails:
@@ -1864,6 +2005,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -1871,11 +2014,12 @@ const products = [
         name: "Core i5-13600K",
         price: 319.99,
         discountPercent: 12,
-        primaryImg: "https://example.com/images/core_i5_13600k.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0572506243/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/core_i5_13600k_top.jpg",
-          "https://example.com/images/core_i5_13600k_side.jpg",
-          "https://example.com/images/core_i5_13600k_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506243/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506243/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506243/cover_cache_optimize-40.webp",
         ],
         shortDetails: "14-core hybrid processor with great value.",
         longDetails:
@@ -1904,6 +2048,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -1911,11 +2057,12 @@ const products = [
         name: "Ryzen 9 7900X3D",
         price: 599.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/ryzen_9_7900x3d.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0592506113/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/ryzen_9_7900x3d_top.jpg",
-          "https://example.com/images/ryzen_9_7900x3d_side.jpg",
-          "https://example.com/images/ryzen_9_7900x3d_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506113/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506113/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506113/cover_cache_optimize-40.webp",
         ],
         shortDetails: "12-core processor with 3D V-Cache technology.",
         longDetails:
@@ -1944,6 +2091,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -1951,11 +2100,12 @@ const products = [
         name: "Core i3-13100F",
         price: 119.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/core_i3_13100f.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0572506218/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/core_i3_13100f_top.jpg",
-          "https://example.com/images/core_i3_13100f_side.jpg",
-          "https://example.com/images/core_i3_13100f_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506218/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506218/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0572506218/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Budget 4-core processor without integrated graphics.",
         longDetails:
@@ -1984,6 +2134,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -1991,11 +2143,12 @@ const products = [
         name: "Ryzen 3 7300X",
         price: 149.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/ryzen_3_7300x.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0592506082/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/ryzen_3_7300x_top.jpg",
-          "https://example.com/images/ryzen_3_7300x_side.jpg",
-          "https://example.com/images/ryzen_3_7300x_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506082/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506082/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506082/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Entry-level 4-core AM5 processor.",
         longDetails:
@@ -2024,24 +2177,28 @@ const products = [
         isFeature: false,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
     ],
   },
   {
     category: "motherboard",
-    categoryImg: "https://example.com/images/category_motherboard.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/motherboard_cache_optimize-70.webp",
     items: [
       {
         id: "MB001",
         name: "ROG Strix Z790-E",
         price: 399.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/asus_rog_strix_z790e.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0082508009/cover-1754218347_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/asus_rog_strix_z790e_ports.jpg",
-          "https://example.com/images/asus_rog_strix_z790e_top.jpg",
-          "https://example.com/images/asus_rog_strix_z790e_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0082508009/picture-2-1754221372_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082508009/picture-3-1754221387_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082508009/picture-1-1754218347_cache_optimize-40.webp",
         ],
         shortDetails:
           "High-end motherboard with Intel Z790 chipset and DDR5 support.",
@@ -2071,6 +2228,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -2078,11 +2237,12 @@ const products = [
         name: "TUF Gaming Z790-Plus",
         price: 299.99,
         discountPercent: 8,
-        primaryImg: "https://example.com/images/asus_tuf_z790_plus.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0082508008/cover-1754211732_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/asus_tuf_z790_plus_ports.jpg",
-          "https://example.com/images/asus_tuf_z790_plus_top.jpg",
-          "https://example.com/images/asus_tuf_z790_plus_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0082508008/picture-2-1754214282_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082508008/picture-3-1754214300_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082508008/picture-1-1754211732_cache_optimize-40.webp",
         ],
         shortDetails:
           "Durable motherboard with Intel Z790 chipset and DDR5 support.",
@@ -2112,6 +2272,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -2119,11 +2281,12 @@ const products = [
         name: "TUF Gaming Z790-Plus",
         price: 299.99,
         discountPercent: 8,
-        primaryImg: "https://example.com/images/asus_tuf_z790_plus.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0122506395/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/asus_tuf_z790_plus_ports.jpg",
-          "https://example.com/images/asus_tuf_z790_plus_top.jpg",
-          "https://example.com/images/asus_tuf_z790_plus_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506395/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506395/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506395/picture-4_cache_optimize-40.webp",
         ],
         shortDetails:
           "Durable motherboard with Intel Z790 chipset and DDR5 support.",
@@ -2160,11 +2323,12 @@ const products = [
         name: "MAG B660 Tomahawk",
         price: 219.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/msi_b660_tomahawk.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0122506671/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/msi_b660_tomahawk_ports.jpg",
-          "https://example.com/images/msi_b660_tomahawk_top.jpg",
-          "https://example.com/images/msi_b660_tomahawk_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506671/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506671/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506671/picture-3_cache_optimize-40.webp",
         ],
         shortDetails:
           "Mid-range motherboard with Intel B660 chipset and DDR4 support.",
@@ -2201,11 +2365,12 @@ const products = [
         name: "Aorus Elite AX",
         price: 259.99,
         discountPercent: 7,
-        primaryImg: "https://example.com/images/gigabyte_aorus_elite_ax.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0122506438/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/gigabyte_aorus_elite_ax_ports.jpg",
-          "https://example.com/images/gigabyte_aorus_elite_ax_top.jpg",
-          "https://example.com/images/gigabyte_aorus_elite_ax_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506438/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506438/picture-5_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506438/picture-4_cache_optimize-40.webp",
         ],
         shortDetails:
           "Gaming motherboard with AMD B650 chipset and DDR5 support.",
@@ -2242,11 +2407,12 @@ const products = [
         name: "Prime B550M-A",
         price: 129.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/asus_prime_b550m.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0122506766/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/asus_prime_b550m_ports.jpg",
-          "https://example.com/images/asus_prime_b550m_top.jpg",
-          "https://example.com/images/asus_prime_b550m_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506766/picture-4_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506766/picture-3_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506766/picture-5_cache_optimize-40.webp",
         ],
         shortDetails:
           "Budget motherboard with AMD B550 chipset and DDR4 support.",
@@ -2283,11 +2449,12 @@ const products = [
         name: "MEG X670E ACE",
         price: 499.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/msi_meg_x670e_ace.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0122506737/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/msi_meg_x670e_ace_ports.jpg",
-          "https://example.com/images/msi_meg_x670e_ace_top.jpg",
-          "https://example.com/images/msi_meg_x670e_ace_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506737/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506737/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506737/picture-3_cache_optimize-40.webp",
         ],
         shortDetails:
           "Premium motherboard with AMD X670 chipset and DDR5 support.",
@@ -2324,11 +2491,12 @@ const products = [
         name: "B550 AORUS Pro",
         price: 179.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/gigabyte_b550_aorus_pro.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0122506738/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/gigabyte_b550_aorus_pro_ports.jpg",
-          "https://example.com/images/gigabyte_b550_aorus_pro_top.jpg",
-          "https://example.com/images/gigabyte_b550_aorus_pro_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506738/picture-4_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506738/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506738/picture-3_cache_optimize-40.webp",
         ],
         shortDetails:
           "Mid-range motherboard with AMD B550 chipset and DDR4 support.",
@@ -2365,11 +2533,12 @@ const products = [
         name: "Z690 AORUS Master",
         price: 349.99,
         discountPercent: 6,
-        primaryImg: "https://example.com/images/gigabyte_z690_aorus_master.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0082508001/cover-1754106828_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/gigabyte_z690_aorus_master_ports.jpg",
-          "https://example.com/images/gigabyte_z690_aorus_master_top.jpg",
-          "https://example.com/images/gigabyte_z690_aorus_master_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0082508001/cover-1754106828_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082508001/picture-2-1754106851_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082508001/picture-1-1754106828_cache_optimize-40.webp",
         ],
         shortDetails:
           "High-end motherboard with Intel Z690 chipset and DDR5 support.",
@@ -2406,11 +2575,12 @@ const products = [
         name: "MPG Z790 Edge",
         price: 329.99,
         discountPercent: 7,
-        primaryImg: "https://example.com/images/msi_mpg_z790_edge.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0082508009/cover-1754218347_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/msi_mpg_z790_edge_ports.jpg",
-          "https://example.com/images/msi_mpg_z790_edge_top.jpg",
-          "https://example.com/images/msi_mpg_z790_edge_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0082508009/picture-2-1754221372_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082508009/picture-3-1754221387_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0082508009/picture-1-1754218347_cache_optimize-40.webp",
         ],
         shortDetails:
           "Premium motherboard with Intel Z790 chipset and DDR5 support.",
@@ -2447,11 +2617,12 @@ const products = [
         name: "B550M DS3H",
         price: 109.99,
         discountPercent: 12,
-        primaryImg: "https://example.com/images/gigabyte_b550m_ds3h.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0122506188/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/gigabyte_b550m_ds3h_ports.jpg",
-          "https://example.com/images/gigabyte_b550m_ds3h_top.jpg",
-          "https://example.com/images/gigabyte_b550m_ds3h_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506188/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506188/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506188/picture-3_cache_optimize-40.webp",
         ],
         shortDetails:
           "Budget motherboard with AMD B550 chipset and DDR4 support.",
@@ -2487,18 +2658,20 @@ const products = [
   },
   {
     category: "ssd",
-    categoryImg: "https://example.com/images/category_ssd.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/ssd_cache_optimize-70.webp",
     items: [
       {
         id: "SSD001",
         name: "990 Pro 1TB",
         price: 149.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/samsung_990_pro.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0302508001/cover-1754136291_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/samsung_990_pro_top.jpg",
-          "https://example.com/images/samsung_990_pro_side.jpg",
-          "https://example.com/images/samsung_990_pro_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0302508001/cover-1754136291_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0302508001/cover-1754136291_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0302508001/cover-1754136291_cache_optimize-40.webp",
         ],
         shortDetails: "High-performance NVMe SSD with 1TB capacity.",
         longDetails:
@@ -2534,11 +2707,12 @@ const products = [
         name: "870 EVO 1TB",
         price: 119.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/samsung_870_evo.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0302508002/cover-1754196890_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/samsung_870_evo_front.jpg",
-          "https://example.com/images/samsung_870_evo_back.jpg",
-          "https://example.com/images/samsung_870_evo_package.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0302508002/cover-1754196890_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0302508002/cover-1754196890_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0302508002/cover-1754196890_cache_optimize-40.webp",
         ],
         shortDetails: "Reliable SATA SSD with 1TB capacity.",
         longDetails:
@@ -2574,11 +2748,12 @@ const products = [
         name: "WD Black SN850X 1TB",
         price: 129.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/wd_black_sn850x.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0372506249/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/wd_black_sn850x_top.jpg",
-          "https://example.com/images/wd_black_sn850x_side.jpg",
-          "https://example.com/images/wd_black_sn850x_heatsink.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506249/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506249/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506249/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Premium gaming NVMe SSD with heatsink option.",
         longDetails:
@@ -2614,11 +2789,12 @@ const products = [
         name: "Crucial P5 Plus 1TB",
         price: 109.99,
         discountPercent: 20,
-        primaryImg: "https://example.com/images/crucial_p5_plus.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0372506016/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/crucial_p5_plus_top.jpg",
-          "https://example.com/images/crucial_p5_plus_label.jpg",
-          "https://example.com/images/crucial_p5_plus_package.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506016/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506016/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506016/cover_cache_optimize-40.webp",
         ],
         shortDetails: "High-speed PCIe 4.0 SSD with 1TB capacity.",
         longDetails:
@@ -2654,11 +2830,12 @@ const products = [
         name: "SanDisk Extreme Pro 1TB",
         price: 139.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/sandisk_extreme_pro.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0372506378/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/sandisk_extreme_pro_top.jpg",
-          "https://example.com/images/sandisk_extreme_pro_side.jpg",
-          "https://example.com/images/sandisk_extreme_pro_heatsink.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506378/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506378/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506378/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Professional-grade NVMe SSD with heatsink.",
         longDetails:
@@ -2694,11 +2871,12 @@ const products = [
         name: "Kingston KC3000 1TB",
         price: 124.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/kingston_kc3000.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0372506100/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/kingston_kc3000_top.jpg",
-          "https://example.com/images/kingston_kc3000_label.jpg",
-          "https://example.com/images/kingston_kc3000_package.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506100/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506100/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506100/cover_cache_optimize-40.webp",
         ],
         shortDetails: "High-performance PCIe 4.0 SSD for enthusiasts.",
         longDetails:
@@ -2734,11 +2912,12 @@ const products = [
         name: "Seagate FireCuda 530 1TB",
         price: 134.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/seagate_firecuda530.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0372506379/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/seagate_firecuda530_top.jpg",
-          "https://example.com/images/seagate_firecuda530_heatsink.jpg",
-          "https://example.com/images/seagate_firecuda530_package.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506379/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506379/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372506379/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Premium gaming SSD with optional heatsink.",
         longDetails:
@@ -2774,11 +2953,12 @@ const products = [
         name: "ADATA XPG GAMMIX S70 Blade 1TB",
         price: 119.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/adata_s70_blade.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0152506368/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/adata_s70_blade_top.jpg",
-          "https://example.com/images/adata_s70_blade_side.jpg",
-          "https://example.com/images/adata_s70_blade_package.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506368/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506368/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506368/cover_cache_optimize-40.webp",
         ],
         shortDetails: "High-speed PCIe 4.0 SSD for gaming.",
         longDetails:
@@ -2814,11 +2994,12 @@ const products = [
         name: "Corsair MP600 PRO XT 1TB",
         price: 129.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/corsair_mp600_pro_xt.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0152506104/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/corsair_mp600_pro_xt_top.jpg",
-          "https://example.com/images/corsair_mp600_pro_xt_heatsink.jpg",
-          "https://example.com/images/corsair_mp600_pro_xt_package.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506104/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506104/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506104/cover_cache_optimize-40.webp",
         ],
         shortDetails: "High-performance PCIe 4.0 SSD with heatsink.",
         longDetails:
@@ -2854,11 +3035,12 @@ const products = [
         name: "Intel 670p 1TB",
         price: 89.99,
         discountPercent: 25,
-        primaryImg: "https://example.com/images/intel_670p.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0152506130/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/intel_670p_top.jpg",
-          "https://example.com/images/intel_670p_label.jpg",
-          "https://example.com/images/intel_670p_package.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506130/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506130/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0152506130/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Affordable NVMe SSD with QLC technology.",
         longDetails:
@@ -2893,18 +3075,20 @@ const products = [
   },
   {
     category: "graphics card",
-    categoryImg: "https://example.com/images/category_graphics_card.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/graphics-card_cache_optimize-70.webp",
     items: [
       {
         id: "GC001",
         name: "GeForce RTX 4080",
         price: 1199.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/nvidia_rtx_4080.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0402506006/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/nvidia_rtx_4080_side.jpg",
-          "https://example.com/images/nvidia_rtx_4080_ports.jpg",
-          "https://example.com/images/nvidia_rtx_4080_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0402506006/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0402506006/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0402506006/cover_cache_optimize-40.webp",
         ],
         shortDetails: "High-end GPU with 16GB GDDR6X memory.",
         longDetails:
@@ -2940,10 +3124,12 @@ const products = [
         name: "GeForce RTX 4070",
         price: 599.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/nvidia_rtx_4070.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0402506072/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/nvidia_rtx_4070_side.jpg",
-          "https://example.com/images/nvidia_rtx_4070_ports.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0402506072/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0402506072/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0402506072/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Mid-range GPU with 12GB GDDR6X memory.",
         longDetails:
@@ -2979,10 +3165,12 @@ const products = [
         name: "Radeon RX 7900 XT",
         price: 899.99,
         discountPercent: 8,
-        primaryImg: "https://example.com/images/amd_rx_7900xt.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0392506196/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/amd_rx_7900xt_side.jpg",
-          "https://example.com/images/amd_rx_7900xt_ports.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0392506196/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0392506196/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0392506196/cover_cache_optimize-40.webp",
         ],
         shortDetails: "High-end AMD GPU with 20GB GDDR6 memory.",
         longDetails:
@@ -3017,10 +3205,12 @@ const products = [
         name: "MSI GeForce RTX 4090 Gaming X Trio",
         price: 1699.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/msi_rtx_4090.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0482506029/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/msi_rtx_4090_side.jpg",
-          "https://example.com/images/msi_rtx_4090_cooler.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0482506029/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0482506029/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0482506029/cover_cache_optimize-40.webp",
         ],
         shortDetails:
           "Flagship GPU with 24GB GDDR6X memory and premium cooling.",
@@ -3057,10 +3247,12 @@ const products = [
         name: "ASUS ROG Strix RX 7800 XT",
         price: 549.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/asus_rx_7800xt.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0412507014/cover-1753937383_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/asus_rx_7800xt_side.jpg",
-          "https://example.com/images/asus_rx_7800xt_backplate.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0412507014/cover-1753937383_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0412507014/cover-1753937383_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0412507014/cover-1753937383_cache_optimize-40.webp",
         ],
         shortDetails: "Premium AMD GPU with 16GB GDDR6 memory.",
         longDetails:
@@ -3095,10 +3287,12 @@ const products = [
         name: "Gigabyte AORUS GeForce RTX 4070 Ti",
         price: 849.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/gigabyte_rtx_4070ti.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0412507015/cover-1753941659_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/gigabyte_rtx_4070ti_side.jpg",
-          "https://example.com/images/gigabyte_rtx_4070ti_lcd.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0412507015/cover-1753941659_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0412507015/cover-1753941659_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0412507015/cover-1753941659_cache_optimize-40.webp",
         ],
         shortDetails: "Premium RTX 4070 Ti with LCD screen and RGB fusion.",
         longDetails:
@@ -3134,10 +3328,12 @@ const products = [
         name: "Sapphire Nitro+ RX 7700 XT",
         price: 469.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/sapphire_rx_7700xt.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0412507016/cover-1753945975_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/sapphire_rx_7700xt_side.jpg",
-          "https://example.com/images/sapphire_rx_7700xt_cooler.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0412507016/cover-1753945975_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0412507016/cover-1753945975_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0412507016/cover-1753945975_cache_optimize-40.webp",
         ],
         shortDetails: "High-performance 1080p/1440p GPU with 12GB GDDR6.",
         longDetails:
@@ -3172,10 +3368,12 @@ const products = [
         name: "ZOTAC Gaming GeForce RTX 4060 Ti",
         price: 399.99,
         discountPercent: 12,
-        primaryImg: "https://example.com/images/zotac_rtx_4060ti.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0412507001/cover-1752924276_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/zotac_rtx_4060ti_side.jpg",
-          "https://example.com/images/zotac_rtx_4060ti_ice.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0412507001/cover-1752924276_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0412507001/cover-1752924276_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0412507001/cover-1752924276_cache_optimize-40.webp",
         ],
         shortDetails: "Compact 1080p gaming GPU with 8GB GDDR6 memory.",
         longDetails:
@@ -3211,10 +3409,12 @@ const products = [
         name: "PowerColor Hellhound RX 7600",
         price: 269.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/powercolor_rx_7600.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0392506005/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/powercolor_rx_7600_side.jpg",
-          "https://example.com/images/powercolor_rx_7600_led.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0392506005/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0392506005/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0392506005/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Budget-friendly 1080p GPU with 8GB GDDR6 memory.",
         longDetails:
@@ -3249,10 +3449,12 @@ const products = [
         name: "EVGA GeForce RTX 3060 XC Gaming",
         price: 299.99,
         discountPercent: 20,
-        primaryImg: "https://example.com/images/evga_rtx_3060.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0392506231/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/evga_rtx_3060_side.jpg",
-          "https://example.com/images/evga_rtx_3060_back.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0392506231/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0392506231/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0392506231/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Popular 1080p GPU with 12GB GDDR6 memory.",
         longDetails:
@@ -3287,18 +3489,20 @@ const products = [
   },
   {
     category: "ram",
-    categoryImg: "https://example.com/images/category_ram.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/ram_cache_optimize-70.webp",
     items: [
       {
         id: "RAM001",
         name: "Vengeance DDR5 32GB",
         price: 139.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/corsair_vengeance_ddr5.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0432506209/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/corsair_vengeance_ddr5_side.jpg",
-          "https://example.com/images/corsair_vengeance_ddr5_top.jpg",
-          "https://example.com/images/corsair_vengeance_ddr5_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506209/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506209/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506209/cover_cache_optimize-40.webp",
         ],
         shortDetails: "High-performance DDR5 RAM with 32GB capacity.",
         longDetails:
@@ -3334,11 +3538,12 @@ const products = [
         name: "Dominator Platinum RGB DDR5 64GB",
         price: 299.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/corsair_dominator_ddr5.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0432506210/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/corsair_dominator_ddr5_side.jpg",
-          "https://example.com/images/corsair_dominator_ddr5_top.jpg",
-          "https://example.com/images/corsair_dominator_ddr5_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506210/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506210/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506210/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Premium DDR5 RAM with 64GB capacity and RGB lighting.",
         longDetails:
@@ -3374,11 +3579,12 @@ const products = [
         name: "Trident Z5 RGB DDR5 32GB",
         price: 159.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/gskill_trident_ddr5.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0432506321/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/gskill_trident_ddr5_side.jpg",
-          "https://example.com/images/gskill_trident_ddr5_top.jpg",
-          "https://example.com/images/gskill_trident_ddr5_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506321/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506321/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506321/cover_cache_optimize-40.webp",
         ],
         shortDetails: "High-speed DDR5 RAM with RGB lighting and sleek design.",
         longDetails:
@@ -3414,11 +3620,12 @@ const products = [
         name: "Ripjaws S5 DDR5 16GB",
         price: 89.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/gskill_ripjaws_ddr5.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0432506217/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/gskill_ripjaws_ddr5_side.jpg",
-          "https://example.com/images/gskill_ripjaws_ddr5_top.jpg",
-          "https://example.com/images/gskill_ripjaws_ddr5_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506217/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506217/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506217/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Affordable DDR5 RAM with solid performance.",
         longDetails:
@@ -3454,11 +3661,12 @@ const products = [
         name: "Fury Beast DDR5 32GB",
         price: 129.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/kingston_fury_ddr5.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0392506165/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/kingston_fury_ddr5_side.jpg",
-          "https://example.com/images/kingston_fury_ddr5_top.jpg",
-          "https://example.com/images/kingston_fury_ddr5_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0392506165/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0392506165/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0392506165/cover_cache_optimize-40.webp",
         ],
         shortDetails: "High-performance DDR5 RAM with aggressive styling.",
         longDetails:
@@ -3494,11 +3702,12 @@ const products = [
         name: "HyperX Predator DDR4 32GB",
         price: 119.99,
         discountPercent: 20,
-        primaryImg: "https://example.com/images/kingston_hyperx_ddr4.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0442506181/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/kingston_hyperx_ddr4_side.jpg",
-          "https://example.com/images/kingston_hyperx_ddr4_top.jpg",
-          "https://example.com/images/kingston_hyperx_ddr4_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0442506181/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0442506181/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0442506181/cover_cache_optimize-40.webp",
         ],
         shortDetails: "High-speed DDR4 RAM for gaming enthusiasts.",
         longDetails:
@@ -3534,11 +3743,12 @@ const products = [
         name: "Ballistix DDR4 16GB",
         price: 79.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/crucial_ballistix_ddr4.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0432506219/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/crucial_ballistix_ddr4_side.jpg",
-          "https://example.com/images/crucial_ballistix_ddr4_top.jpg",
-          "https://example.com/images/crucial_ballistix_ddr4_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506219/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506219/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0432506219/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Affordable DDR4 RAM with solid performance.",
         longDetails:
@@ -3574,11 +3784,12 @@ const products = [
         name: "T-Force Delta RGB DDR4 32GB",
         price: 149.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/team_tforce_ddr4.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P3472506006/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/team_tforce_ddr4_side.jpg",
-          "https://example.com/images/team_tforce_ddr4_top.jpg",
-          "https://example.com/images/team_tforce_ddr4_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P3472506006/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P3472506006/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P3472506006/cover_cache_optimize-40.webp",
         ],
         shortDetails: "RGB DDR4 RAM with vibrant lighting effects.",
         longDetails:
@@ -3614,11 +3825,12 @@ const products = [
         name: "Viper Steel DDR4 16GB",
         price: 69.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/patriot_viper_ddr4.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0612506079/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/patriot_viper_ddr4_side.jpg",
-          "https://example.com/images/patriot_viper_ddr4_top.jpg",
-          "https://example.com/images/patriot_viper_ddr4_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0612506079/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0612506079/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0612506079/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Budget-friendly DDR4 RAM with solid performance.",
         longDetails:
@@ -3654,11 +3866,12 @@ const products = [
         name: "OLOy Blade RGB DDR4 32GB",
         price: 129.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/oloy_blade_ddr4.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0622506032/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/oloy_blade_ddr4_side.jpg",
-          "https://example.com/images/oloy_blade_ddr4_top.jpg",
-          "https://example.com/images/oloy_blade_ddr4_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0622506032/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0622506032/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0622506032/cover_cache_optimize-40.webp",
         ],
         shortDetails: "RGB DDR4 RAM with aggressive styling.",
         longDetails:
@@ -3693,18 +3906,20 @@ const products = [
   },
   {
     category: "television",
-    categoryImg: "https://example.com/images/category_television.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/television_cache_optimize-70.webp",
     items: [
       {
         id: "TV001",
         name: "OLED C3 55-inch",
         price: 1499.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/lg_oled_c3_55.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0112507016/cover-1753334746_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lg_oled_c3_55_side.jpg",
-          "https://example.com/images/lg_oled_c3_55_back.jpg",
-          "https://example.com/images/lg_oled_c3_55_remote.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0112507016/picture-1-1753334746_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0112507016/picture-2-1753334746_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0112507016/picture-3-1753334746_cache_optimize-40.webp",
         ],
         shortDetails: "55-inch 4K OLED TV with Dolby Vision and webOS.",
         longDetails:
@@ -3733,6 +3948,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -3740,11 +3957,12 @@ const products = [
         name: "NanoCell 75-inch",
         price: 1899.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/lg_nanocell_75.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0112507003/cover-1752732999_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lg_oled_c3_55_side.jpg",
-          "https://example.com/images/lg_oled_c3_55_back.jpg",
-          "https://example.com/images/lg_oled_c3_55_remote.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0112507003/cover-1752732999_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0112507003/picture-1-1752732999_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0112507003/picture-2-1752732999_cache_optimize-40.webp",
         ],
         shortDetails: "75-inch NanoCell 4K TV with ThinQ AI.",
         longDetails:
@@ -3773,6 +3991,8 @@ const products = [
         isFeature: false,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -3780,11 +4000,12 @@ const products = [
         name: "Samsung QLED Q80C 65-inch",
         price: 1699.99,
         discountPercent: 12,
-        primaryImg: "https://example.com/images/samsung_q80c_65.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0112507004/cover-1752744209_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lg_oled_c3_55_side.jpg",
-          "https://example.com/images/lg_oled_c3_55_back.jpg",
-          "https://example.com/images/lg_oled_c3_55_remote.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0112507004/picture-1-1752744230_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0112507004/picture-3-1752744258_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0112507004/picture-3-1752744424_cache_optimize-40.webp",
         ],
         shortDetails: "65-inch 4K QLED TV with Quantum HDR+.",
         longDetails:
@@ -3813,6 +4034,8 @@ const products = [
         isFeature: true,
         isFlashSale: true,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -3820,11 +4043,12 @@ const products = [
         name: "Sony Bravia XR A80L 55-inch",
         price: 1799.0,
         discountPercent: 8,
-        primaryImg: "https://example.com/images/sony_a80l_55.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0532506242/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lg_oled_c3_55_side.jpg",
-          "https://example.com/images/lg_oled_c3_55_back.jpg",
-          "https://example.com/images/lg_oled_c3_55_remote.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506242/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506242/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506242/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "55-inch OLED 4K TV with Google TV.",
         longDetails:
@@ -3853,6 +4077,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -3860,11 +4086,12 @@ const products = [
         name: "Samsung Crystal UHD 43-inch",
         price: 399.0,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/samsung_crystal_43.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0532506087/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lg_oled_c3_55_side.jpg",
-          "https://example.com/images/lg_oled_c3_55_back.jpg",
-          "https://example.com/images/lg_oled_c3_55_remote.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506087/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506087/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506087/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "43-inch Crystal UHD 4K Smart TV.",
         longDetails:
@@ -3893,6 +4120,8 @@ const products = [
         isFeature: false,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -3900,11 +4129,12 @@ const products = [
         name: "Sony X75K 50-inch",
         price: 649.99,
         discountPercent: 6,
-        primaryImg: "https://example.com/images/sony_x75k_50.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0532506234/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lg_oled_c3_55_side.jpg",
-          "https://example.com/images/lg_oled_c3_55_back.jpg",
-          "https://example.com/images/lg_oled_c3_55_remote.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506234/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506234/picture-3_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506234/picture-4_cache_optimize-40.webp",
         ],
         shortDetails: "50-inch 4K HDR Smart TV with Google TV.",
         longDetails:
@@ -3933,6 +4163,8 @@ const products = [
         isFeature: false,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -3940,11 +4172,12 @@ const products = [
         name: "TCL QLED C645 55-inch",
         price: 529.99,
         discountPercent: 7,
-        primaryImg: "https://example.com/images/tcl_c645_55.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0532506089/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lg_oled_c3_55_side.jpg",
-          "https://example.com/images/lg_oled_c3_55_back.jpg",
-          "https://example.com/images/lg_oled_c3_55_remote.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506089/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506089/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506089/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "55-inch QLED TV with Dolby Vision and Google TV.",
         longDetails:
@@ -3973,6 +4206,8 @@ const products = [
         isFeature: true,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
       {
@@ -3980,11 +4215,12 @@ const products = [
         name: "Hisense U7K 65-inch",
         price: 899.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/hisense_u7k_65.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0532506228/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lg_oled_c3_55_side.jpg",
-          "https://example.com/images/lg_oled_c3_55_back.jpg",
-          "https://example.com/images/lg_oled_c3_55_remote.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506228/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506228/picture-4_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506228/picture-5_cache_optimize-40.webp",
         ],
         shortDetails: "65-inch ULED Mini-LED TV with Google TV.",
         longDetails:
@@ -4013,6 +4249,8 @@ const products = [
         isFeature: false,
         isFlashSale: true,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: true,
       },
       {
@@ -4020,11 +4258,12 @@ const products = [
         name: "Panasonic HX750 55-inch",
         price: 599.99,
         discountPercent: 9,
-        primaryImg: "https://example.com/images/panasonic_hx750_55.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0532506230/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lg_oled_c3_55_side.jpg",
-          "https://example.com/images/lg_oled_c3_55_back.jpg",
-          "https://example.com/images/lg_oled_c3_55_remote.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506230/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506230/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0532506230/picture-3_cache_optimize-40.webp",
         ],
         shortDetails: "55-inch 4K HDR Android TV.",
         longDetails:
@@ -4053,24 +4292,28 @@ const products = [
         isFeature: false,
         isFlashSale: false,
         isLatest: true,
+        deals: false,
+        isDeal: false,
         isBestSeller: false,
       },
     ],
   },
   {
     category: "router",
-    categoryImg: "https://example.com/images/category_router.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/router_cache_optimize-70.webp",
     items: [
       {
         id: "RT001",
         name: "Archer AX73",
         price: 199.99,
         discountPercent: 8,
-        primaryImg: "https://example.com/images/tplink_archer_ax73.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0792506343/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/tplink_archer_ax73_side.jpg",
-          "https://example.com/images/tplink_archer_ax73_top.jpg",
-          "https://example.com/images/tplink_archer_ax73_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506343/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506343/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506343/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Wi-Fi 6 router with 5400Mbps speed.",
         longDetails:
@@ -4106,11 +4349,12 @@ const products = [
         name: "Archer C4000",
         price: 179.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/tplink_archer_c4000.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P3002506066/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/tplink_archer_ax73_side.jpg",
-          "https://example.com/images/tplink_archer_ax73_top.jpg",
-          "https://example.com/images/tplink_archer_ax73_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P3002506066/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P3002506066/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P3002506066/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Tri-band router with 4000Mbps combined speed.",
         longDetails:
@@ -4146,11 +4390,12 @@ const products = [
         name: "Netgear Nighthawk AX5400",
         price: 209.99,
         discountPercent: 12,
-        primaryImg: "https://example.com/images/netgear_nighthawk_ax5400.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P3002506046/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/tplink_archer_ax73_side.jpg",
-          "https://example.com/images/tplink_archer_ax73_top.jpg",
-          "https://example.com/images/tplink_archer_ax73_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P3002506046/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P3002506046/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P3002506046/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Wi-Fi 6 router with dual-band AX5400 speed.",
         longDetails:
@@ -4186,11 +4431,12 @@ const products = [
         name: "Asus RT-AX88U",
         price: 299.0,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/asus_rt_ax88u.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P3002506010/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/tplink_archer_ax73_side.jpg",
-          "https://example.com/images/tplink_archer_ax73_top.jpg",
-          "https://example.com/images/tplink_archer_ax73_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P3002506010/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P3002506010/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P3002506010/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Dual-band Wi-Fi 6 gaming router with 8 LAN ports.",
         longDetails:
@@ -4226,11 +4472,12 @@ const products = [
         name: "D-Link DIR-X5460",
         price: 159.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/dlink_dir_x5460.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0792506326/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/tplink_archer_ax73_side.jpg",
-          "https://example.com/images/tplink_archer_ax73_top.jpg",
-          "https://example.com/images/tplink_archer_ax73_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506326/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506326/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506326/cover_cache_optimize-40.webp",
         ],
         shortDetails: "AX5400 Wi-Fi 6 router with high coverage.",
         longDetails:
@@ -4266,11 +4513,12 @@ const products = [
         name: "Tenda AC23",
         price: 69.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/tenda_ac23.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0792506067/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/tplink_archer_ax73_side.jpg",
-          "https://example.com/images/tplink_archer_ax73_top.jpg",
-          "https://example.com/images/tplink_archer_ax73_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506067/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506067/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506067/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Wi-Fi 5 router with 7 antennas and Gigabit ports.",
         longDetails:
@@ -4306,11 +4554,12 @@ const products = [
         name: "Linksys MR7350",
         price: 119.0,
         discountPercent: 7,
-        primaryImg: "https://example.com/images/linksys_mr7350.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0792506068/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/tplink_archer_ax73_side.jpg",
-          "https://example.com/images/tplink_archer_ax73_top.jpg",
-          "https://example.com/images/tplink_archer_ax73_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506068/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506068/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506068/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Mesh-ready Wi-Fi 6 router with 1.2Gbps speed.",
         longDetails:
@@ -4346,11 +4595,12 @@ const products = [
         name: "TP-Link Deco X20 (2-pack)",
         price: 189.99,
         discountPercent: 9,
-        primaryImg: "https://example.com/images/tplink_deco_x20.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0792506266/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/tplink_archer_ax73_side.jpg",
-          "https://example.com/images/tplink_archer_ax73_top.jpg",
-          "https://example.com/images/tplink_archer_ax73_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506266/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506266/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506266/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Wi-Fi 6 mesh system for seamless whole-home coverage.",
         longDetails:
@@ -4386,11 +4636,12 @@ const products = [
         name: "Netgear Orbi RBK752",
         price: 299.99,
         discountPercent: 13,
-        primaryImg: "https://example.com/images/netgear_orbi_rbk752.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0792506080/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/tplink_archer_ax73_side.jpg",
-          "https://example.com/images/tplink_archer_ax73_top.jpg",
-          "https://example.com/images/tplink_archer_ax73_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506080/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506080/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0792506080/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Tri-band Mesh Wi-Fi 6 System (2-pack).",
         longDetails:
@@ -4425,18 +4676,20 @@ const products = [
   },
   {
     category: "monitor",
-    categoryImg: "https://example.com/images/category_monitor.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/monitor_cache_optimize-70.webp",
     items: [
       {
         id: "MN001",
         name: "UltraSharp 27 4K",
         price: 499.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/dell_ultrasharp_27.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0132508001/cover-1754204029_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/dell_ultrasharp_27_side.jpg",
-          "https://example.com/images/dell_ultrasharp_27_back.jpg",
-          "https://example.com/images/dell_ultrasharp_27_stand.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0132508001/cover-1754204029_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0132508001/cover-1754204029_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0132508001/cover-1754204029_cache_optimize-40.webp",
         ],
         shortDetails: "27-inch 4K monitor with IPS panel.",
         longDetails:
@@ -4472,10 +4725,12 @@ const products = [
         name: 'S2721QS 27" 4K UHD',
         price: 349.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/dell_s2721qs.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P7112508002/cover-1754048447_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/dell_s2721qs_side.jpg",
-          "https://example.com/images/dell_s2721qs_back.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P7112508002/cover-1754048447_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P7112508002/cover-1754048447_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P7112508002/cover-1754048447_cache_optimize-40.webp",
         ],
         shortDetails: "27-inch 4K UHD monitor with AMD FreeSync.",
         longDetails:
@@ -4510,10 +4765,12 @@ const products = [
         name: 'Odyssey G7 32" QHD',
         price: 699.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/samsung_odyssey_g7.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0102508001/cover-1754019589_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/samsung_odyssey_g7_side.jpg",
-          "https://example.com/images/samsung_odyssey_g7_curve.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0102508001/cover-1754019589_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0102508001/cover-1754019589_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0102508001/cover-1754019589_cache_optimize-40.webp",
         ],
         shortDetails: "32-inch QHD gaming monitor with 240Hz refresh rate.",
         longDetails:
@@ -4548,10 +4805,12 @@ const products = [
         name: 'UltraFine 27" 5K',
         price: 1299.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/lg_ultrafine_5k.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0182507001/cover-1752295379_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lg_ultrafine_5k_side.jpg",
-          "https://example.com/images/lg_ultrafine_5k_ports.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0182507001/cover-1752295379_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0182507001/cover-1752295379_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0182507001/cover-1752295379_cache_optimize-40.webp",
         ],
         shortDetails: "27-inch 5K monitor with Thunderbolt 3.",
         longDetails:
@@ -4586,10 +4845,12 @@ const products = [
         name: "ROG Swift PG279Q",
         price: 799.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/asus_rog_swift.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1952507001/cover-1752144279_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/asus_rog_swift_side.jpg",
-          "https://example.com/images/asus_rog_swift_stand.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1952507001/cover-1752144279_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1952507001/cover-1752144279_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1952507001/cover-1752144279_cache_optimize-40.webp",
         ],
         shortDetails: "27-inch WQHD gaming monitor with 165Hz.",
         longDetails:
@@ -4624,10 +4885,12 @@ const products = [
         name: "Predator XB273K",
         price: 899.99,
         discountPercent: 20,
-        primaryImg: "https://example.com/images/acer_predator.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0142506295/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/acer_predator_side.jpg",
-          "https://example.com/images/acer_predator_ports.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0142506295/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0142506295/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0142506295/cover_cache_optimize-40.webp",
         ],
         shortDetails: "27-inch 4K UHD gaming monitor with 144Hz.",
         longDetails:
@@ -4662,10 +4925,12 @@ const products = [
         name: "ProArt PA32UCX",
         price: 3499.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/asus_proart.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0122506110/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/asus_proart_side.jpg",
-          "https://example.com/images/asus_proart_calibration.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506110/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506110/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0122506110/cover_cache_optimize-40.webp",
         ],
         shortDetails: "32-inch 4K HDR professional monitor.",
         longDetails:
@@ -4700,10 +4965,12 @@ const products = [
         name: "27GN950-B UltraGear",
         price: 899.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/lg_ultragear.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P6672507001/cover-1753876826_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lg_ultragear_side.jpg",
-          "https://example.com/images/lg_ultragear_ports.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P6672507001/cover-1753876826_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P6672507001/cover-1753876826_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P6672507001/cover-1753876826_cache_optimize-40.webp",
         ],
         shortDetails: "27-inch 4K Nano IPS gaming monitor with 144Hz.",
         longDetails:
@@ -4738,10 +5005,12 @@ const products = [
         name: "Alienware AW3420DW",
         price: 1299.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/dell_alienware.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P4702507003/cover-1751868052_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/dell_alienware_side.jpg",
-          "https://example.com/images/dell_alienware_curve.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P4702507003/cover-1751868052_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P4702507003/cover-1751868052_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P4702507003/cover-1751868052_cache_optimize-40.webp",
         ],
         shortDetails: "34-inch curved gaming monitor with 120Hz.",
         longDetails:
@@ -4776,10 +5045,12 @@ const products = [
         name: "ViewSonic VP2458",
         price: 199.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/viewsonic_vp2458.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P4912506018/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/viewsonic_vp2458_side.jpg",
-          "https://example.com/images/viewsonic_vp2458_ports.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P4912506018/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P4912506018/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P4912506018/cover_cache_optimize-40.webp",
         ],
         shortDetails: "24-inch Full HD professional monitor.",
         longDetails:
@@ -4813,18 +5084,20 @@ const products = [
   },
   {
     category: "gaming chair",
-    categoryImg: "https://example.com/images/category_gaming_chair.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/gaming-chair_cache_optimize-70.webp",
     items: [
       {
         id: "GC001",
         name: "Titan Evo 2022",
         price: 499.99,
         discountPercent: 8,
-        primaryImg: "https://example.com/images/secretlab_titan_evo.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/secretlab_titan_evo_side.jpg",
-          "https://example.com/images/secretlab_titan_evo_back.jpg",
-          "https://example.com/images/secretlab_titan_evo_seat.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-2_cache_optimize-40.webp",
         ],
         shortDetails: "Ergonomic gaming chair with 4D armrests.",
         longDetails:
@@ -4849,16 +5122,21 @@ const products = [
         warranty: "5 years manufacturer warranty",
         isWarranty: true,
         stockQuantity: 20,
+        isFeature: false,
+        isFlashSale: false,
+        isBestSaller: false,
       },
       {
         id: "GC002",
         name: "Omega 2020",
         price: 429.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/secretlab_omega_2020.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P4472506001/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/secretlab_omega_side.jpg",
-          "https://example.com/images/secretlab_omega_back.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-2_cache_optimize-40.webp",
         ],
         shortDetails: "Premium PU leather gaming chair with lumbar support.",
         longDetails:
@@ -4883,16 +5161,21 @@ const products = [
         warranty: "3 years manufacturer warranty",
         isWarranty: true,
         stockQuantity: 15,
+        isFeature: false,
+        isFlashSale: false,
+        isBestSaller: false,
       },
       {
         id: "GC003",
         name: "DXRacer Formula Series",
         price: 349.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/dxracer_formula.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1242506077/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/dxracer_formula_side.jpg",
-          "https://example.com/images/dxracer_formula_recline.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-2_cache_optimize-40.webp",
         ],
         shortDetails: "Racing-style gaming chair with ergonomic support.",
         longDetails:
@@ -4917,16 +5200,21 @@ const products = [
         warranty: "2 years manufacturer warranty",
         isWarranty: true,
         stockQuantity: 25,
+        isFeature: false,
+        isFlashSale: false,
+        isBestSaller: false,
       },
       {
         id: "GC004",
         name: "Noblechairs Hero",
         price: 479.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/noblechairs_hero.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1242506077/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/noblechairs_hero_side.jpg",
-          "https://example.com/images/noblechairs_hero_back.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-2_cache_optimize-40.webp",
         ],
         shortDetails: "Luxury gaming chair with premium leather finish.",
         longDetails:
@@ -4951,16 +5239,21 @@ const products = [
         warranty: "5 years manufacturer warranty",
         isWarranty: true,
         stockQuantity: 12,
+        isFeature: false,
+        isFlashSale: false,
+        isBestSaller: false,
       },
       {
         id: "GC005",
         name: "AKRacing Masters Series",
         price: 399.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/akracing_masters.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1242506048/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/akracing_masters_side.jpg",
-          "https://example.com/images/akracing_masters_recline.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-2_cache_optimize-40.webp",
         ],
         shortDetails: "Pro gaming chair with wide seat and high backrest.",
         longDetails:
@@ -4985,16 +5278,21 @@ const products = [
         warranty: "3 years manufacturer warranty",
         isWarranty: true,
         stockQuantity: 18,
+        isFeature: false,
+        isFlashSale: false,
+        isBestSaller: false,
       },
       {
         id: "GC006",
         name: "Razer Iskur",
         price: 499.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/razer_iskur.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1242506047/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/razer_iskur_side.jpg",
-          "https://example.com/images/razer_iskur_lumbar.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-2_cache_optimize-40.webp",
         ],
         shortDetails: "Ergonomic gaming chair with built-in lumbar support.",
         longDetails:
@@ -5019,16 +5317,21 @@ const products = [
         warranty: "3 years manufacturer warranty",
         isWarranty: true,
         stockQuantity: 10,
+        isFeature: false,
+        isFlashSale: false,
+        isBestSaller: false,
       },
       {
         id: "GC007",
         name: "Corsair T3 Rush",
         price: 349.99,
         discountPercent: 12,
-        primaryImg: "https://example.com/images/corsair_t3_rush.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1242506044/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/corsair_t3_side.jpg",
-          "https://example.com/images/corsair_t3_fabric.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-2_cache_optimize-40.webp",
         ],
         shortDetails: "Breathable fabric gaming chair with ergonomic design.",
         longDetails:
@@ -5053,16 +5356,21 @@ const products = [
         warranty: "2 years manufacturer warranty",
         isWarranty: true,
         stockQuantity: 22,
+        isFeature: false,
+        isFlashSale: false,
+        isBestSaller: false,
       },
       {
         id: "GC008",
         name: "AndaSeat Kaiser 3",
         price: 449.99,
         discountPercent: 7,
-        primaryImg: "https://example.com/images/andaseat_kaiser3.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1272506357/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/andaseat_kaiser3_side.jpg",
-          "https://example.com/images/andaseat_kaiser3_recline.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-2_cache_optimize-40.webp",
         ],
         shortDetails: "XL-sized gaming chair with premium cold-cure foam.",
         longDetails:
@@ -5087,16 +5395,21 @@ const products = [
         warranty: "5 years manufacturer warranty",
         isWarranty: true,
         stockQuantity: 14,
+        isFeature: false,
+        isFlashSale: false,
+        isBestSaller: false,
       },
       {
         id: "GC009",
         name: "Vertagear SL5800",
         price: 399.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/vertagear_sl5800.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1422506538/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/vertagear_sl5800_side.jpg",
-          "https://example.com/images/vertagear_sl5800_back.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-2_cache_optimize-40.webp",
         ],
         shortDetails: "Premium ergonomic gaming chair with steel frame.",
         longDetails:
@@ -5121,16 +5434,21 @@ const products = [
         warranty: "3 years manufacturer warranty",
         isWarranty: true,
         stockQuantity: 16,
+        isFeature: false,
+        isFlashSale: false,
+        isBestSaller: false,
       },
       {
         id: "GC010",
         name: "Cougar Armor One",
         price: 299.99,
         discountPercent: 20,
-        primaryImg: "https://example.com/images/cougar_armor_one.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1242506075/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/cougar_armor_side.jpg",
-          "https://example.com/images/cougar_armor_recline.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1332506115/picture-2_cache_optimize-40.webp",
         ],
         shortDetails: "Budget-friendly gaming chair with racing design.",
         longDetails:
@@ -5155,23 +5473,28 @@ const products = [
         warranty: "2 years manufacturer warranty",
         isWarranty: true,
         stockQuantity: 30,
+        isFeature: false,
+        isFlashSale: false,
+        isBestSaller: false,
       },
     ],
   },
   {
     category: "case",
-    categoryImg: "https://example.com/images/category_case.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/case_cache_optimize-70.webp",
     items: [
       {
         id: "CS001",
         name: "PC-O11 Dynamic",
         price: 149.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/lianli_pc_o11_dynamic.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0322508002/cover-1754117767_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lianli_pc_o11_dynamic_side.jpg",
-          "https://example.com/images/lianli_pc_o11_dynamic_front.jpg",
-          "https://example.com/images/lianli_pc_o11_dynamic_interior.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0322508002/cover-1754117767_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0322508002/cover-1754117767_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0322508002/cover-1754117767_cache_optimize-40.webp",
         ],
         shortDetails: "Mid-tower case with dual-chamber design.",
         longDetails:
@@ -5207,11 +5530,12 @@ const products = [
         name: "Lancool 205 Mesh",
         price: 89.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/lianli_lancool_205.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0322508001/cover-1754115083_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/lianli_lancool_205_side.jpg",
-          "https://example.com/images/lianli_lancool_205_front.jpg",
-          "https://example.com/images/lianli_lancool_205_rear.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0322508001/cover-1754115083_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0322508001/cover-1754115083_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0322508001/cover-1754115083_cache_optimize-40.webp",
         ],
         shortDetails: "Mesh front panel for optimal airflow.",
         longDetails:
@@ -5247,11 +5571,12 @@ const products = [
         name: "H7 Flow RGB",
         price: 129.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/nzxt_h7_flow.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1412507005/cover-1752655606_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/nzxt_h7_flow_side.jpg",
-          "https://example.com/images/nzxt_h7_flow_top.jpg",
-          "https://example.com/images/nzxt_h7_flow_interior.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1412507005/cover-1752655606_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1412507005/cover-1752655606_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1412507005/cover-1752655606_cache_optimize-40.webp",
         ],
         shortDetails: "Premium airflow-focused case with RGB.",
         longDetails:
@@ -5287,11 +5612,12 @@ const products = [
         name: "4000D Airflow",
         price: 94.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/corsair_4000d.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P3322507001/cover-1752037782_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/corsair_4000d_side.jpg",
-          "https://example.com/images/corsair_4000d_front.jpg",
-          "https://example.com/images/corsair_4000d_rear.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P3322507001/cover-1752037782_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P3322507001/cover-1752037782_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P3322507001/cover-1752037782_cache_optimize-40.webp",
         ],
         shortDetails: "Award-winning airflow optimized case.",
         longDetails:
@@ -5327,11 +5653,12 @@ const products = [
         name: "Torrent Compact",
         price: 159.99,
         discountPercent: 20,
-        primaryImg: "https://example.com/images/fractal_torrent.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1222506119/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/fractal_torrent_side.jpg",
-          "https://example.com/images/fractal_torrent_front.jpg",
-          "https://example.com/images/fractal_torrent_bottom.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506119/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506119/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506119/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Innovative bottom-to-top airflow design.",
         longDetails:
@@ -5407,11 +5734,12 @@ const products = [
         name: "Phanteks Eclipse P500A",
         price: 139.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/phanteks_p500a.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1222506074/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/phanteks_p500a_side.jpg",
-          "https://example.com/images/phanteks_p500a_front.jpg",
-          "https://example.com/images/phanteks_p500a_interior.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506074/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506074/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506074/cover_cache_optimize-40.webp",
         ],
         shortDetails: "High-airflow case with RGB lighting.",
         longDetails:
@@ -5447,11 +5775,12 @@ const products = [
         name: "Define 7 Compact",
         price: 119.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/fractal_define7.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1222506051/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/fractal_define7_side.jpg",
-          "https://example.com/images/fractal_define7_front.jpg",
-          "https://example.com/images/fractal_define7_interior.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506051/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506051/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506051/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Silent-focused case with sound dampening.",
         longDetails:
@@ -5487,11 +5816,12 @@ const products = [
         name: "iCUE 5000X RGB",
         price: 199.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/corsair_5000x.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1222506052/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/corsair_5000x_side.jpg",
-          "https://example.com/images/corsair_5000x_front.jpg",
-          "https://example.com/images/corsair_5000x_top.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506052/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506052/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506052/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Premium case with three RGB fans.",
         longDetails:
@@ -5527,11 +5857,12 @@ const products = [
         name: "Meshify 2 Compact",
         price: 129.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/fractal_meshify2.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1222506077/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/fractal_meshify2_side.jpg",
-          "https://example.com/images/fractal_meshify2_front.jpg",
-          "https://example.com/images/fractal_meshify2_interior.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506077/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506077/cover_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506077/cover_cache_optimize-40.webp",
         ],
         shortDetails: "Compact case with angular mesh design.",
         longDetails:
@@ -5566,18 +5897,20 @@ const products = [
   },
   {
     category: "power supply",
-    categoryImg: "https://example.com/images/category_power_supply.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/power-supply_cache_optimize-70.webp",
     items: [
       {
         id: "PS001",
         name: "RM850x",
         price: 149.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/corsair_rm850x.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0372508001/picture-3-1754039561_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/corsair_rm850x_side.jpg",
-          "https://example.com/images/corsair_rm850x_connectors.jpg",
-          "https://example.com/images/corsair_rm850x_box.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372508001/picture-3-1754039561_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372508001/picture-3-1754039561_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372508001/picture-3-1754039561_cache_optimize-40.webp",
         ],
         shortDetails: "850W modular PSU with 80+ Gold certification.",
         longDetails:
@@ -5613,10 +5946,12 @@ const products = [
         name: "SF750",
         price: 179.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/corsair_sf750.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0372507006/cover-1752294147_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/corsair_sf750_side.jpg",
-          "https://example.com/images/corsair_sf750_connectors.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507006/cover-1752294147_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507006/cover-1752294147_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507006/cover-1752294147_cache_optimize-40.webp",
         ],
         shortDetails: "750W SFX PSU with 80+ Platinum certification.",
         longDetails:
@@ -5652,10 +5987,12 @@ const products = [
         name: "SuperNOVA 850 G6",
         price: 159.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/evga_supernova_g6.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/cover-1752319917_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/evga_supernova_g6_side.jpg",
-          "https://example.com/images/evga_supernova_g6_cables.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-2-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-3-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-4-1752319917_cache_optimize-40.webp",
         ],
         shortDetails: "850W ATX PSU with 80+ Gold certification.",
         longDetails:
@@ -5691,10 +6028,12 @@ const products = [
         name: "Focus GX-750",
         price: 129.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/seasonic_focus_gx750.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0442506156/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/seasonic_focus_gx750_side.jpg",
-          "https://example.com/images/seasonic_focus_gx750_connectors.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-2-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-3-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-4-1752319917_cache_optimize-40.webp",
         ],
         shortDetails: "750W fully modular PSU with 80+ Gold certification.",
         longDetails:
@@ -5730,10 +6069,12 @@ const products = [
         name: "PRIME TX-1000",
         price: 299.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/seasonic_prime_tx1000.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0372507012/cover-1752648345_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/seasonic_prime_tx1000_side.jpg",
-          "https://example.com/images/seasonic_prime_tx1000_cables.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-2-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-3-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-4-1752319917_cache_optimize-40.webp",
         ],
         shortDetails: "1000W Titanium PSU with ultra-high efficiency.",
         longDetails:
@@ -5769,10 +6110,12 @@ const products = [
         name: "Super Flower Leadex III 850W",
         price: 139.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/superflower_leadex3.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0372507011/cover-1752487221_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/superflower_leadex3_side.jpg",
-          "https://example.com/images/superflower_leadex3_cables.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-2-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-3-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-4-1752319917_cache_optimize-40.webp",
         ],
         shortDetails: "850W Gold PSU with silent fan and modular design.",
         longDetails:
@@ -5808,10 +6151,12 @@ const products = [
         name: "Thermaltake Toughpower GF1 750W",
         price: 119.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/thermaltake_gf1_750.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0372507011/cover-1752487221_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/thermaltake_gf1_750_side.jpg",
-          "https://example.com/images/thermaltake_gf1_750_cables.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-2-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-3-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-4-1752319917_cache_optimize-40.webp",
         ],
         shortDetails: "750W Gold PSU with fully modular cables.",
         longDetails:
@@ -5847,10 +6192,12 @@ const products = [
         name: "be quiet! Straight Power 11 1000W",
         price: 199.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/bequiet_sp11_1000.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0372507009/cover-1752317514_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/bequiet_sp11_1000_side.jpg",
-          "https://example.com/images/bequiet_sp11_1000_cables.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-2-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-3-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-4-1752319917_cache_optimize-40.webp",
         ],
         shortDetails: "1000W Platinum PSU with ultra-silent operation.",
         longDetails:
@@ -5886,10 +6233,12 @@ const products = [
         name: "Cooler Master V850 Gold V2",
         price: 129.99,
         discountPercent: 8,
-        primaryImg: "https://example.com/images/cm_v850_gold.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0442506156/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/cm_v850_gold_side.jpg",
-          "https://example.com/images/cm_v850_gold_cables.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-2-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-3-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-4-1752319917_cache_optimize-40.webp",
         ],
         shortDetails: "850W Gold PSU with fully modular design.",
         longDetails:
@@ -5925,10 +6274,12 @@ const products = [
         name: "ASUS ROG Thor 1200W Platinum II",
         price: 349.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/asus_rog_thor_1200.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0372507008/cover-1752313271_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/asus_rog_thor_1200_side.jpg",
-          "https://example.com/images/asus_rog_thor_1200_display.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-2-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-3-1752319917_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0372507010/picture-4-1752319917_cache_optimize-40.webp",
         ],
         shortDetails: "1200W Platinum PSU with OLED power display.",
         longDetails:
@@ -5963,18 +6314,20 @@ const products = [
   },
   {
     category: "printer",
-    categoryImg: "https://example.com/images/category_printer.jpg",
+    categoryImg:
+      "https://techlandbd.com/cache/images/uploads/categories-featured/printer_cache_optimize-70.webp",
     items: [
       {
         id: "PR001",
         name: "EcoTank ET-4760",
         price: 499.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/epson_ecotank_et4760.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/epson_ecotank_et4760_side.jpg",
-          "https://example.com/images/epson_ecotank_et4760_tray.jpg",
-          "https://example.com/images/epson_ecotank_et4760_front.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-4_cache_optimize-40.webp",
         ],
         shortDetails: "All-in-one inkjet printer with high-capacity ink tanks.",
         longDetails:
@@ -6010,68 +6363,96 @@ const products = [
         name: "WorkForce Pro WF-7840",
         price: 699.99,
         discountPercent: 5,
-        primaryImg: "https://example.com/images/epson_wf7840.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/epson_wf7840_side.jpg",
-          "https://example.com/images/epson_wf7840_rear.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-4_cache_optimize-40.webp",
         ],
         shortDetails:
           "High-speed business inkjet printer with large paper capacity.",
         longDetails:
           "The Epson WorkForce Pro WF-7840 is a high-speed business inkjet printer with a 500-sheet paper capacity, auto-duplexing, and PrecisionCore technology for sharp prints. Supports Wi-Fi, Ethernet, and USB connectivity.",
         specifications: {
-          type: "Inkjet",
+          type: "Inkjet, all-in-one",
           printSpeed: "40 ppm (black/color)",
           resolution: "4800x2400 dpi",
           paperCapacity: "500 sheets",
           connectivity: "Wi-Fi, Ethernet, USB",
           features: "Auto-duplex, PrecisionCore",
+          scanner: "Flatbed, 1200x2400 dpi",
           dimensions: "622 x 528 x 432 mm",
           weight: "28.5kg",
+          inkType: "Pigment",
         },
         isStock: true,
-        isDiscount: false,
+        isDiscount: true,
+        PID: "EP-WF7840-002",
+        SKU: "EP-WF7840-BK",
         brand: "Epson",
-        model: "WF-7840",
-        warranty: "2 years",
+        model: "WorkForce Pro WF-7840",
+        warranty: "2 years manufacturer warranty",
+        isWarranty: true,
         stockQuantity: 12,
         isFeature: true,
+        isFlashSale: false,
+        isLatest: false,
+        isBestSaller: true,
       },
       {
         id: "PR003",
-        name: "HP OfficeJet Pro 9025e",
+        name: "OfficeJet Pro 9025e",
         price: 329.99,
         discountPercent: 15,
-        primaryImg: "https://example.com/images/hp_9025e.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/hp_9025e_side.jpg",
-          "https://example.com/images/hp_9025e_tray.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-4_cache_optimize-40.webp",
         ],
         shortDetails: "Smart all-in-one printer for office productivity.",
         longDetails:
           "The HP OfficeJet Pro 9025e is a smart all-in-one printer with fast printing (24 ppm), automatic duplex, and seamless mobile printing. Includes 6 months of Instant Ink included.",
         specifications: {
           type: "Inkjet, all-in-one",
-          printSpeed: "24 ppm",
+          printSpeed: "24 ppm (black), 20 ppm (color)",
           resolution: "1200x1200 dpi",
           paperCapacity: "250 sheets",
           connectivity: "Wi-Fi, Ethernet, USB",
           features: "Auto-duplex, Instant Ink compatible",
+          scanner: "Flatbed, 1200x1200 dpi",
+          dimensions: "437 x 396 x 318 mm",
+          weight: "11.7kg",
+          inkType: "Pigment",
         },
         isStock: true,
         isDiscount: true,
+        PID: "HP-OJ9025-003",
+        SKU: "HP-OJ9025-BK",
         brand: "HP",
         model: "OfficeJet Pro 9025e",
-        warranty: "1 year",
+        warranty: "1 year manufacturer warranty",
+        isWarranty: true,
         stockQuantity: 30,
+        isFeature: true,
+        isFlashSale: true,
+        isLatest: true,
+        isBestSaller: true,
       },
       {
         id: "PR004",
-        name: "Canon PIXMA TR8620a",
+        name: "PIXMA TR8620a",
         price: 249.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/canon_tr8620a.jpg",
-        detailsImg: ["https://example.com/images/canon_tr8620a_open.jpg"],
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/cover_cache_optimize-40.webp",
+        detailsImg: [
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-4_cache_optimize-40.webp",
+        ],
         shortDetails: "All-in-one printer with 5-color individual ink system.",
         longDetails:
           'The Canon PIXMA TR8620a offers versatile all-in-one functionality with a 5-color individual ink system for vibrant photos. Features a 2.7" touchscreen and automatic document feeder.',
@@ -6081,41 +6462,79 @@ const products = [
           resolution: "4800x1200 dpi",
           paperCapacity: "200 sheets",
           connectivity: "Wi-Fi, USB",
+          features: 'Auto-duplex, 2.7" touchscreen, ADF',
+          scanner: "Flatbed, 1200x1200 dpi",
+          dimensions: "438 x 351 x 190 mm",
+          weight: "7.9kg",
+          inkType: "Dye-based, pigment black",
         },
         isStock: true,
+        isDiscount: false,
+        PID: "CN-TR8620-004",
+        SKU: "CN-TR8620-BK",
         brand: "Canon",
         model: "PIXMA TR8620a",
-        warranty: "1 year",
+        warranty: "1 year manufacturer warranty",
+        isWarranty: true,
         stockQuantity: 18,
+        isFeature: true,
+        isFlashSale: false,
+        isLatest: true,
+        isBestSaller: false,
       },
       {
         id: "PR005",
-        name: "Brother HL-L2395DW",
+        name: "HL-L2395DW",
         price: 199.99,
         discountPercent: 10,
-        primaryImg: "https://example.com/images/brother_hll2395dw.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/cover_cache_optimize-40.webp",
+        detailsImg: [
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-4_cache_optimize-40.webp",
+        ],
         shortDetails: "Compact monochrome laser printer with wireless.",
         longDetails:
           "The Brother HL-L2395DW is a compact monochrome laser printer with wireless connectivity, automatic duplex printing, and fast print speeds up to 36 ppm.",
         specifications: {
-          type: "Laser",
+          type: "Laser, all-in-one",
           printSpeed: "36 ppm",
           resolution: "2400x600 dpi",
           paperCapacity: "250 sheets",
           connectivity: "Wi-Fi, USB",
+          features: 'Auto-duplex, 2.7" touchscreen',
+          scanner: "Flatbed, 1200x1200 dpi",
+          dimensions: "410 x 398 x 272 mm",
+          weight: "10.4kg",
+          toner: "Standard yield",
         },
         isStock: true,
         isDiscount: true,
+        PID: "BR-HLL2395-005",
+        SKU: "BR-HLL2395-BK",
         brand: "Brother",
         model: "HL-L2395DW",
-        warranty: "1 year",
+        warranty: "1 year manufacturer warranty",
+        isWarranty: true,
         stockQuantity: 22,
+        isFeature: true,
+        isFlashSale: false,
+        isLatest: false,
+        isBestSaller: true,
       },
       {
         id: "PR006",
-        name: "HP LaserJet Pro M404dn",
+        name: "LaserJet Pro M404dn",
         price: 349.99,
-        primaryImg: "https://example.com/images/hp_m404dn.jpg",
+        discountPercent: 0,
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/cover_cache_optimize-40.webp",
+        detailsImg: [
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-4_cache_optimize-40.webp",
+        ],
         shortDetails: "Fast monochrome laser printer for offices.",
         longDetails:
           "The HP LaserJet Pro M404dn delivers fast monochrome printing (40 ppm) with Ethernet connectivity and a 350-sheet input tray.",
@@ -6125,76 +6544,156 @@ const products = [
           resolution: "1200x1200 dpi",
           paperCapacity: "350 sheets",
           connectivity: "Ethernet, USB",
+          features: "Auto-duplex",
+          dimensions: "381 x 357 x 216 mm",
+          weight: "8.5kg",
+          toner: "Standard yield",
         },
         isStock: true,
+        isDiscount: false,
+        PID: "HP-M404-006",
+        SKU: "HP-M404-BK",
         brand: "HP",
         model: "LaserJet Pro M404dn",
-        warranty: "1 year",
+        warranty: "1 year manufacturer warranty",
+        isWarranty: true,
         stockQuantity: 10,
+        isFeature: true,
+        isFlashSale: false,
+        isLatest: false,
+        isBestSaller: false,
       },
       {
         id: "PR007",
-        name: "Epson SureColor P800",
+        name: "SureColor P800",
         price: 1299.99,
-        primaryImg: "https://example.com/images/epson_p800.jpg",
+        discountPercent: 0,
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/cover_cache_optimize-40.webp",
+        detailsImg: [
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-4_cache_optimize-40.webp",
+        ],
         shortDetails: "Professional photo printer with UltraChrome HD ink.",
         longDetails:
           'The Epson SureColor P800 is a professional-grade photo printer with UltraChrome HD ink technology, supporting up to 17" wide-format printing.',
         specifications: {
           type: "Inkjet",
           resolution: "2880x1440 dpi",
-          inkType: "UltraChrome HD",
+          paperCapacity: "120 sheets",
           connectivity: "USB, Ethernet",
+          features: "Wide-format, UltraChrome HD",
+          dimensions: "684 x 376 x 250 mm",
+          weight: "19.5kg",
+          inkType: "UltraChrome HD",
         },
         isStock: true,
+        isDiscount: false,
+        PID: "EP-SC800-007",
+        SKU: "EP-SC800-BK",
         brand: "Epson",
         model: "SureColor P800",
-        warranty: "2 years",
+        warranty: "2 years manufacturer warranty",
+        isWarranty: true,
         stockQuantity: 5,
+        isFeature: true,
+        isFlashSale: false,
+        isLatest: true,
+        isBestSaller: false,
       },
       {
         id: "PR008",
-        name: "Canon imagePROGRAF PRO-1000",
+        name: "imagePROGRAF PRO-1000",
         price: 1499.99,
-        primaryImg: "https://example.com/images/canon_pro1000.jpg",
+        discountPercent: 0,
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/cover_cache_optimize-40.webp",
+        detailsImg: [
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-4_cache_optimize-40.webp",
+        ],
         shortDetails: 'Professional 17" large-format printer.',
         longDetails:
           "The Canon imagePROGRAF PRO-1000 delivers gallery-quality prints with LUCIA PRO 12-ink system and advanced color accuracy.",
         specifications: {
           type: "Inkjet",
           resolution: "2400x1200 dpi",
+          paperCapacity: "150 sheets",
+          connectivity: "Wi-Fi, USB, Ethernet",
+          features: "Wide-format, LUCIA PRO 12-ink",
+          dimensions: "723 x 435 x 285 mm",
+          weight: "32.3kg",
           inkType: "LUCIA PRO 12-ink",
         },
         isStock: true,
+        isDiscount: false,
+        PID: "CN-PRO1000-008",
+        SKU: "CN-PRO1000-BK",
         brand: "Canon",
         model: "imagePROGRAF PRO-1000",
-        warranty: "2 years",
+        warranty: "2 years manufacturer warranty",
+        isWarranty: true,
         stockQuantity: 3,
+        isFeature: true,
+        isFlashSale: false,
+        isLatest: true,
+        isBestSaller: false,
       },
       {
         id: "PR009",
-        name: "Brother MFC-J995DW",
+        name: "MFC-J995DW",
         price: 299.99,
-        primaryImg: "https://example.com/images/brother_mfcj995dw.jpg",
+        discountPercent: 0,
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/cover_cache_optimize-40.webp",
+        detailsImg: [
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-4_cache_optimize-40.webp",
+        ],
         shortDetails: "Inkjet all-in-one with high-yield ink bottles.",
         longDetails:
           "The Brother MFC-J995DW is an all-in-one inkjet with high-yield ink bottles, automatic duplex, and a 250-sheet paper capacity.",
         specifications: {
           type: "Inkjet, all-in-one",
           printSpeed: "27 ppm (black), 22 ppm (color)",
+          resolution: "6000x1200 dpi",
           paperCapacity: "250 sheets",
+          connectivity: "Wi-Fi, USB, NFC",
+          features: 'Auto-duplex, 2.7" touchscreen',
+          scanner: "Flatbed, 1200x2400 dpi",
+          dimensions: "420 x 341 x 194 mm",
+          weight: "8.7kg",
+          inkType: "Pigment",
         },
         isStock: true,
+        isDiscount: false,
+        PID: "BR-MFCJ995-009",
+        SKU: "BR-MFCJ995-BK",
         brand: "Brother",
         model: "MFC-J995DW",
-        warranty: "1 year",
+        warranty: "1 year manufacturer warranty",
+        isWarranty: true,
         stockQuantity: 15,
+        isFeature: true,
+        isFlashSale: false,
+        isLatest: true,
+        isBestSaller: true,
       },
       {
         id: "PR010",
-        name: "Xerox VersaLink C405",
+        name: "VersaLink C405",
         price: 799.99,
-        primaryImg: "https://example.com/images/xerox_c405.jpg",
+        discountPercent: 0,
+         primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/cover_cache_optimize-40.webp",
+        detailsImg: [
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-2_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0172507001/picture-4_cache_optimize-40.webp",
+        ],
         shortDetails: "Color laser all-in-one with touchscreen.",
         longDetails:
           'The Xerox VersaLink C405 is a color laser all-in-one with a 4.3" touchscreen, mobile printing, and advanced security features.',
@@ -6202,12 +6701,27 @@ const products = [
           type: "Laser, all-in-one",
           printSpeed: "35 ppm",
           resolution: "1200x2400 dpi",
+          paperCapacity: "550 sheets",
+          connectivity: "Wi-Fi, Ethernet, USB",
+          features: 'Auto-duplex, 4.3" touchscreen',
+          scanner: "Flatbed, 600x600 dpi",
+          dimensions: "432 x 540 x 599 mm",
+          weight: "33kg",
+          toner: "High-yield",
         },
         isStock: true,
+        isDiscount: false,
+        PID: "XR-C405-010",
+        SKU: "XR-C405-BK",
         brand: "Xerox",
         model: "VersaLink C405",
-        warranty: "1 year",
+        warranty: "1 year manufacturer warranty",
+        isWarranty: true,
         stockQuantity: 8,
+        isFeature: true,
+        isFlashSale: false,
+        isLatest: true,
+        isBestSaller: false,
       },
     ],
   },
