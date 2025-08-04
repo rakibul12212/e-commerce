@@ -12,7 +12,7 @@ const Deals = () => {
     setCategoriesWithDeals(dealsCategories);
   }, []);
 
-  console.log(categoriesWithDeals);
+  console.log("Deals",categoriesWithDeals);
   if (categoriesWithDeals.length === 0) {
     return <p className="text-lg">No deals available at the moment.</p>;
   }
