@@ -4,8 +4,10 @@ import { products } from "@/lib/data/data";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Rating from "../rating/Rating";
+import { useRouter } from "next/navigation";
 
 const LatestProductCard = () => {
+      const router = useRouter();
   const [latestProduct, setLatestProduct] = useState([]);
   const discountPrice = (price, discount) => {
     return (price - (price * discount) / 100).toFixed(2);
@@ -31,7 +33,7 @@ const LatestProductCard = () => {
               item.isLatest && (
                 <div
                   key={index}
-                  className="bg-white flex justify-between gap-x-6 items-center px-4 rounded-md mb-8 border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 hover:scale-105"
+                  className="bg-white flex justify-between gap-x-6 items-center px-4 mt-4 rounded-md border border-gray-200 shadow-sm hover:shadow-md transform  duration-300 ease-in-out hover:scale-105"
                 >
                   <div className="relative">
                     <Image
@@ -55,7 +57,12 @@ const LatestProductCard = () => {
                       reviewCount={item.reviewCount}
                       size="medium"
                     />
-                    <h3 className="text-2xl font-semibold pb-3">{item.name}</h3>
+                    <h3
+                      className="text-2xl hover:text-[#6896AD] transform duration-300 ease-in-out font-semibold pb-3"
+                      onClick={() => router.push(`/productDetails/${id}`)}
+                    >
+                      {item.name}
+                    </h3>
                     {item.isDiscount ? (
                       <p>
                         <span className="text-[#6896AD] text-2xl font-bold">
