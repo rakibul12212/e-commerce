@@ -34,7 +34,7 @@ const BestSellerProductCard = () => {
             (item) =>
               item.isBestSeller && (
                 <div
-                  key={item.id || `${product.id}-${item.name}`}
+                  key={item.id }
                   className="bg-white flex justify-between gap-x-6 items-center px-4 mt-4 rounded-md border border-gray-200 shadow-sm hover:shadow-md transform duration-300 ease-in-out hover:scale-105"
                 >
                   <div className="relative">

@@ -31,12 +31,12 @@ const FeatureProductCard = () => {
   return (
     <div>
       <div>
-        {featureProduct.map((product, categoryIndex) =>
+        {featureProduct.map((product) =>
           product.items.map(
-            (item, itemIndex) =>
+            (item) =>
               item.isFeature && (
                 <div
-                  key={`${categoryIndex}-${itemIndex}`}
+                  key={item.id}
                   className="bg-white flex justify-between gap-x-6 items-center px-4 mt-4 rounded-md border border-gray-200 shadow-sm hover:shadow-md transform duration-300 ease-in-out hover:scale-105"
                 >
                   <div className="relative">
@@ -63,13 +63,7 @@ const FeatureProductCard = () => {
                     />
                     <h3
                       className="text-2xl hover:text-[#6896AD] transform duration-300 ease-in-out font-semibold pb-3 cursor-pointer"
-                      onClick={() =>
-                        router.push(
-                          `/productDetails/${
-                            item.id || `${categoryIndex}-${itemIndex}`
-                          }`,
-                        )
-                      }
+                      onClick={() => router.push(`/productDetails/${item.id}`)}
                     >
                       {item.name}
                     </h3>
