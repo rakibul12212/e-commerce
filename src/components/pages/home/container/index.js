@@ -8,6 +8,7 @@ import FeatureProduct from "./FeatureProduct/FeatureProduct";
 import LatestProduct from "./LatestProduct/LatestProduct";
 import BestSellerProduct from "./BestSellerProduct/BestSellerProduct";
 
+
 const HomePage = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const HomePage = () => {
           <LatestProduct />
           <BestSellerProduct />
         </div>
+       
         <About />
       </div>
       <div className="fixed z-20 bottom-10 right-4">

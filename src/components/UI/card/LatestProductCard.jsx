@@ -36,7 +36,7 @@ const LatestProductCard = () => {
             (item) =>
               item.isLatest && (
                 <div
-                  key={item.id} 
+                  key={item.id}
                   className="bg-white flex justify-between gap-x-6 items-center px-4 mt-4 rounded-md border border-gray-200 shadow-sm hover:shadow-md transform  duration-300 ease-in-out hover:scale-105"
                 >
                   <div className="relative">
@@ -63,7 +63,11 @@ const LatestProductCard = () => {
                     />
                     <h3
                       className="text-2xl hover:text-[#6896AD] transform duration-300 ease-in-out font-semibold pb-3 cursor-pointer"
-                      onClick={() => router.push(`/productDetails/${item.id}`)} // Fixed routing parameter
+                      onClick={() =>
+                        router.push(
+                          `/productDetails/${item.category}/${item.id}`,
+                        )
+                      }
                     >
                       {item.name}
                     </h3>

@@ -5,6 +5,7 @@ export const products = [
       "https://www.techlandbd.com/cache/images/uploads/categories-featured/smartphone_cache_optimize-70.webp",
     items: [
       {
+        category: "smartphone",
         id: "SP001",
         name: "Galaxy S23 Ultra",
         price: 1199.99,
@@ -52,6 +53,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "smartphone",
         id: "SP002",
         name: "Galaxy A54",
         price: 449.99,
@@ -97,6 +99,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "smartphone",
         id: "SP003",
         name: "iPhone 15 Pro",
         price: 999.99,
@@ -143,6 +146,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "smartphone",
         id: "SP004",
         name: "iPhone 14",
         price: 799.99,
@@ -188,6 +192,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "smartphone",
         id: "SP005",
         name: "Pixel 8 Pro",
         price: 899.99,
@@ -233,6 +238,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "smartphone",
         id: "SP006",
         name: "OnePlus 11",
         price: 799.99,
@@ -279,6 +285,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "smartphone",
         id: "SP007",
         name: "Xperia 1 V",
         price: 1399.99,
@@ -324,6 +331,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "smartphone",
         id: "SP008",
         name: "Mi 13 Pro",
         price: 899.99,
@@ -369,6 +377,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "smartphone",
         id: "SP009",
         name: "Moto Edge 40",
         price: 599.99,
@@ -414,6 +423,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "smartphone",
         id: "SP010",
         name: "ROG Phone 7",
         price: 999.99,
@@ -466,6 +476,7 @@ export const products = [
       "https://techlandbd.com/cache/images/uploads/categories-featured/laptop_cache_optimize-70.webp",
     items: [
       {
+        category: "laptop",
         id: "LP001",
         name: "MacBook Pro 16",
         price: 2499.99,
@@ -512,6 +523,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "laptop",
         id: "LP002",
         name: "MacBook Air 13",
         price: 1099.99,
@@ -558,6 +570,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "laptop",
         id: "LP003",
         name: "XPS 13",
         price: 1399.99,
@@ -603,6 +616,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "laptop",
         id: "LP004",
         name: "Inspiron 16",
         price: 899.99,
@@ -648,6 +662,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "laptop",
         id: "LP005",
         name: "Spectre x360 14",
         price: 1599.99,
@@ -693,6 +708,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "laptop",
         id: "LP006",
         name: "ThinkPad X1 Carbon Gen 11",
         price: 1799.99,
@@ -738,6 +754,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "laptop",
         id: "LP007",
         name: "ROG Zephyrus G14",
         price: 1499.99,
@@ -783,6 +800,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "laptop",
         id: "LP008",
         name: "Surface Laptop 5",
         price: 1299.99,
@@ -828,6 +846,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "laptop",
         id: "LP009",
         name: "Acer Predator Helios 300",
         price: 1199.99,
@@ -873,6 +892,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "laptop",
         id: "LP010",
         name: "Razer Blade 15",
         price: 1999.99,
@@ -920,11 +940,12 @@ export const products = [
     ],
   },
   {
-    category: "air-conditioner",
+    category: "airconditioner",
     categoryImg:
       "https://techlandbd.com/cache/images/uploads/categories-featured/air-conditioner_cache_optimize-70.webp",
     items: [
       {
+        category: "air-conditioner",
         id: "AC001",
         name: "Inverter Split AC 1.5 Ton",
         price: 599.99,
@@ -970,6 +991,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "airconditioner",
         id: "AC002",
         name: "Window AC 1 Ton",
         price: 399.99,
@@ -1015,6 +1037,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "airconditioner",
         id: "AC003",
         name: "Inverter Split AC 1.5 Ton",
         price: 649.99,
@@ -1060,6 +1083,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "airconditioner",
         id: "AC004",
         name: "Mitsubishi Heavy Duty SRK18YL",
         price: 699.99,
@@ -1105,6 +1129,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "airconditioner",
         id: "AC005",
         name: "Carrier Durafresh 2 Ton",
         price: 799.99,
@@ -1150,6 +1175,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "airconditioner",
         id: "AC006",
         name: "Voltas Inverter Split AC 1.2 Ton",
         price: 499.99,
@@ -1195,6 +1221,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "airconditioner",
         id: "AC007",
         name: "Blue Star Inverter AC 1.5 Ton",
         price: 579.99,
@@ -1240,6 +1267,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "airconditioner",
         id: "AC008",
         name: "Panasonic Inverter AC 1 Ton",
         price: 429.99,
@@ -1285,6 +1313,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "airconditioner",
         id: "AC009",
         name: "Hitachi Inverter AC 1.8 Ton",
         price: 749.99,
@@ -1330,6 +1359,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "airconditioner",
         id: "AC010",
         name: "Godrej Inverter AC 1.5 Ton",
         price: 549.99,
@@ -1382,6 +1412,7 @@ export const products = [
       "https://techlandbd.com/cache/images/uploads/categories-featured/desktop_cache_optimize-70.webp",
     items: [
       {
+        category: "desktop",
         id: "DT001",
         name: "iMac 24-inch",
         price: 1299.99,
@@ -1428,6 +1459,7 @@ export const products = [
         isBestSeller: true,
       },
       {
+        category: "desktop",
         id: "DT002",
         name: "Mac Studio",
         price: 1999.99,
@@ -1472,6 +1504,7 @@ export const products = [
         isBestSeller: true,
       },
       {
+        category: "desktop",
         id: "DT003",
         name: "Dell XPS 8940",
         price: 1099.99,
@@ -1516,6 +1549,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "desktop",
         id: "DT004",
         name: "HP Envy 32 All-in-One",
         price: 1499.99,
@@ -1561,6 +1595,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "desktop",
         id: "DT005",
         name: "Lenovo ThinkCentre M75q Tiny",
         price: 699.99,
@@ -1604,6 +1639,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "desktop",
         id: "DT006",
         name: "Microsoft Surface Studio 2",
         price: 3499.99,
@@ -1649,6 +1685,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "desktop",
         id: "DT007",
         name: "ASUS ROG Strix G15",
         price: 1799.99,
@@ -1692,6 +1729,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "desktop",
         id: "DT008",
         name: "Acer Aspire TC-895",
         price: 599.99,
@@ -1736,6 +1774,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "desktop",
         id: "DT009",
         name: "Alienware Aurora R13",
         price: 2499.99,
@@ -1780,6 +1819,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "desktop",
         id: "DT010",
         name: "Lenovo Yoga AIO 7",
         price: 1599.99,
@@ -1832,6 +1872,7 @@ export const products = [
       "https://techlandbd.com/cache/images/uploads/categories-featured/processor_cache_optimize-70.webp",
     items: [
       {
+        category: "processor",
         id: "PR001",
         name: "Ryzen 9 7950X",
         price: 699.99,
@@ -1877,6 +1918,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "processor",
         id: "PR002",
         name: "Ryzen 7 7700X",
         price: 399.99,
@@ -1922,6 +1964,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "processor",
         id: "PR003",
         name: "Core i9-13900K",
         price: 589.99,
@@ -1967,6 +2010,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "processor",
         id: "PR004",
         name: "Core i7-13700K",
         price: 419.99,
@@ -2012,6 +2056,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "processor",
         id: "PR005",
         name: "Ryzen 5 7600X",
         price: 299.99,
@@ -2057,6 +2102,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "processor",
         id: "PR006",
         name: "Threadripper PRO 5995WX",
         price: 6499.99,
@@ -2102,6 +2148,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "processor",
         id: "PR007",
         name: "Core i5-13600K",
         price: 319.99,
@@ -2147,6 +2194,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "processor",
         id: "PR008",
         name: "Ryzen 9 7900X3D",
         price: 599.99,
@@ -2192,6 +2240,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "processor",
         id: "PR009",
         name: "Core i3-13100F",
         price: 119.99,
@@ -2237,6 +2286,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "processor",
         id: "PR010",
         name: "Ryzen 3 7300X",
         price: 149.99,
@@ -2289,6 +2339,7 @@ export const products = [
       "https://techlandbd.com/cache/images/uploads/categories-featured/motherboard_cache_optimize-70.webp",
     items: [
       {
+        category: "motherboard",
         id: "MB001",
         name: "ROG Strix Z790-E",
         price: 399.99,
@@ -2335,6 +2386,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "motherboard",
         id: "MB002",
         name: "TUF Gaming Z790-Plus",
         price: 299.99,
@@ -2381,6 +2433,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "motherboard",
         id: "MB002",
         name: "TUF Gaming Z790-Plus",
         price: 299.99,
@@ -2427,6 +2480,7 @@ export const products = [
         isDeal: true,
       },
       {
+        category: "motherboard",
         id: "MB003",
         name: "MAG B660 Tomahawk",
         price: 219.99,
@@ -2473,6 +2527,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "motherboard",
         id: "MB004",
         name: "Aorus Elite AX",
         price: 259.99,
@@ -2519,6 +2574,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "motherboard",
         id: "MB005",
         name: "Prime B550M-A",
         price: 129.99,
@@ -2565,6 +2621,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "motherboard",
         id: "MB006",
         name: "MEG X670E ACE",
         price: 499.99,
@@ -2611,6 +2668,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "motherboard",
         id: "MB007",
         name: "B550 AORUS Pro",
         price: 179.99,
@@ -2657,6 +2715,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "motherboard",
         id: "MB008",
         name: "Z690 AORUS Master",
         price: 349.99,
@@ -2703,6 +2762,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "motherboard",
         id: "MB009",
         name: "MPG Z790 Edge",
         price: 329.99,
@@ -2749,6 +2809,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "motherboard",
         id: "MB010",
         name: "B550M DS3H",
         price: 109.99,
@@ -2802,6 +2863,7 @@ export const products = [
       "https://techlandbd.com/cache/images/uploads/categories-featured/ssd_cache_optimize-70.webp",
     items: [
       {
+        category: "ssd",
         id: "SSD001",
         name: "990 Pro 1TB",
         price: 149.99,
@@ -2847,6 +2909,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ssd",
         id: "SSD002",
         name: "870 EVO 1TB",
         price: 119.99,
@@ -2892,6 +2955,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ssd",
         id: "SSD003",
         name: "WD Black SN850X 1TB",
         price: 129.99,
@@ -2937,6 +3001,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ssd",
         id: "SSD004",
         name: "Crucial P5 Plus 1TB",
         price: 109.99,
@@ -2982,6 +3047,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ssd",
         id: "SSD005",
         name: "SanDisk Extreme Pro 1TB",
         price: 139.99,
@@ -3027,6 +3093,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ssd",
         id: "SSD006",
         name: "Kingston KC3000 1TB",
         price: 124.99,
@@ -3072,6 +3139,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ssd",
         id: "SSD007",
         name: "Seagate FireCuda 530 1TB",
         price: 134.99,
@@ -3117,6 +3185,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ssd",
         id: "SSD008",
         name: "ADATA XPG GAMMIX S70 Blade 1TB",
         price: 119.99,
@@ -3162,6 +3231,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ssd",
         id: "SSD009",
         name: "Corsair MP600 PRO XT 1TB",
         price: 129.99,
@@ -3207,6 +3277,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ssd",
         id: "SSD010",
         name: "Intel 670p 1TB",
         price: 89.99,
@@ -3259,6 +3330,7 @@ export const products = [
       "https://techlandbd.com/cache/images/uploads/categories-featured/graphics-card_cache_optimize-70.webp",
     items: [
       {
+        category: "graphics card",
         id: "GC001",
         name: "GeForce RTX 4080",
         price: 1199.99,
@@ -3304,6 +3376,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "graphics card",
         id: "GC002",
         name: "GeForce RTX 4070",
         price: 599.99,
@@ -3349,6 +3422,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "graphics card",
         id: "GC003",
         name: "Radeon RX 7900 XT",
         price: 899.99,
@@ -3393,6 +3467,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "graphics card",
         id: "GC004",
         name: "MSI GeForce RTX 4090 Gaming X Trio",
         price: 1699.99,
@@ -3439,6 +3514,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "graphics card",
         id: "GC005",
         name: "ASUS ROG Strix RX 7800 XT",
         price: 549.99,
@@ -3483,6 +3559,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "graphics card",
         id: "GC006",
         name: "Gigabyte AORUS GeForce RTX 4070 Ti",
         price: 849.99,
@@ -3528,6 +3605,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "graphics card",
         id: "GC007",
         name: "Sapphire Nitro+ RX 7700 XT",
         price: 469.99,
@@ -3572,6 +3650,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "graphics card",
         id: "GC008",
         name: "ZOTAC Gaming GeForce RTX 4060 Ti",
         price: 399.99,
@@ -3617,6 +3696,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "graphics card",
         id: "GC009",
         name: "PowerColor Hellhound RX 7600",
         price: 269.99,
@@ -3661,6 +3741,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "graphics card",
         id: "GC010",
         name: "EVGA GeForce RTX 3060 XC Gaming",
         price: 299.99,
@@ -3713,6 +3794,7 @@ export const products = [
       "https://techlandbd.com/cache/images/uploads/categories-featured/ram_cache_optimize-70.webp",
     items: [
       {
+        category: "ram",
         id: "RAM001",
         name: "Vengeance DDR5 32GB",
         price: 139.99,
@@ -3758,6 +3840,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ram",
         id: "RAM002",
         name: "Dominator Platinum RGB DDR5 64GB",
         price: 299.99,
@@ -3803,6 +3886,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ram",
         id: "RAM003",
         name: "Trident Z5 RGB DDR5 32GB",
         price: 159.99,
@@ -3848,6 +3932,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ram",
         id: "RAM004",
         name: "Ripjaws S5 DDR5 16GB",
         price: 89.99,
@@ -3893,6 +3978,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ram",
         id: "RAM005",
         name: "Fury Beast DDR5 32GB",
         price: 129.99,
@@ -3938,6 +4024,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ram",
         id: "RAM006",
         name: "HyperX Predator DDR4 32GB",
         price: 119.99,
@@ -3983,6 +4070,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ram",
         id: "RAM007",
         name: "Ballistix DDR4 16GB",
         price: 79.99,
@@ -4028,6 +4116,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ram",
         id: "RAM008",
         name: "T-Force Delta RGB DDR4 32GB",
         price: 149.99,
@@ -4073,6 +4162,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ram",
         id: "RAM009",
         name: "Viper Steel DDR4 16GB",
         price: 69.99,
@@ -4118,6 +4208,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "ram",
         id: "RAM010",
         name: "OLOy Blade RGB DDR4 32GB",
         price: 129.99,
@@ -4170,6 +4261,7 @@ export const products = [
       "https://techlandbd.com/cache/images/uploads/categories-featured/television_cache_optimize-70.webp",
     items: [
       {
+        category: "television",
         id: "TV001",
         name: "OLED C3 55-inch",
         price: 1499.99,
@@ -4215,6 +4307,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "television",
         id: "TV002",
         name: "NanoCell 75-inch",
         price: 1899.99,
@@ -4260,6 +4353,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "television",
         id: "TV003",
         name: "Samsung QLED Q80C 65-inch",
         price: 1699.99,
@@ -4305,6 +4399,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "television",
         id: "TV004",
         name: "Sony Bravia XR A80L 55-inch",
         price: 1799.0,
@@ -4350,6 +4445,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "television",
         id: "TV005",
         name: "Samsung Crystal UHD 43-inch",
         price: 399.0,
@@ -4395,6 +4491,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "television",
         id: "TV006",
         name: "Sony X75K 50-inch",
         price: 649.99,
@@ -4440,6 +4537,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "television",
         id: "TV007",
         name: "TCL QLED C645 55-inch",
         price: 529.99,
@@ -4485,6 +4583,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "television",
         id: "TV008",
         name: "Hisense U7K 65-inch",
         price: 899.99,
@@ -4530,6 +4629,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "television",
         id: "TV009",
         name: "Panasonic HX750 55-inch",
         price: 599.99,
@@ -4582,6 +4682,7 @@ export const products = [
       "https://techlandbd.com/cache/images/uploads/categories-featured/router_cache_optimize-70.webp",
     items: [
       {
+        category: "router",
         id: "RT001",
         name: "Archer AX73",
         price: 199.99,
@@ -4627,6 +4728,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "router",
         id: "RT002",
         name: "Archer C4000",
         price: 179.99,
@@ -4672,6 +4774,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "router",
         id: "RT003",
         name: "Netgear Nighthawk AX5400",
         price: 209.99,
@@ -4717,6 +4820,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "router",
         id: "RT004",
         name: "Asus RT-AX88U",
         price: 299.0,
@@ -4762,6 +4866,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "router",
         id: "RT005",
         name: "D-Link DIR-X5460",
         price: 159.99,
@@ -4807,6 +4912,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "router",
         id: "RT006",
         name: "Tenda AC23",
         price: 69.99,
@@ -4852,6 +4958,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "router",
         id: "RT007",
         name: "Linksys MR7350",
         price: 119.0,
@@ -4897,6 +5004,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "router",
         id: "RT008",
         name: "TP-Link Deco X20 (2-pack)",
         price: 189.99,
@@ -4942,6 +5050,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "router",
         id: "RT009",
         name: "Netgear Orbi RBK752",
         price: 299.99,
@@ -4994,6 +5103,7 @@ export const products = [
       "https://techlandbd.com/cache/images/uploads/categories-featured/monitor_cache_optimize-70.webp",
     items: [
       {
+        category: "monitor",
         id: "MN001",
         name: "UltraSharp 27 4K",
         price: 499.99,
@@ -5039,6 +5149,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "monitor",
         id: "MN002",
         name: 'S2721QS 27" 4K UHD',
         price: 349.99,
@@ -5083,6 +5194,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "monitor",
         id: "MN003",
         name: 'Odyssey G7 32" QHD',
         price: 699.99,
@@ -5127,6 +5239,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "monitor",
         id: "MN004",
         name: 'UltraFine 27" 5K',
         price: 1299.99,
@@ -5171,6 +5284,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "monitor",
         id: "MN005",
         name: "ROG Swift PG279Q",
         price: 799.99,
@@ -5215,6 +5329,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "monitor",
         id: "MN006",
         name: "Predator XB273K",
         price: 899.99,
@@ -5259,6 +5374,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "monitor",
         id: "MN007",
         name: "ProArt PA32UCX",
         price: 3499.99,
@@ -5303,6 +5419,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "monitor",
         id: "MN008",
         name: "27GN950-B UltraGear",
         price: 899.99,
@@ -5347,6 +5464,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "monitor",
         id: "MN009",
         name: "Alienware AW3420DW",
         price: 1299.99,
@@ -5391,6 +5509,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "monitor",
         id: "MN010",
         name: "ViewSonic VP2458",
         price: 199.99,
@@ -5437,11 +5556,12 @@ export const products = [
     ],
   },
   {
-    category: "gaming chair",
+    category: "gamingchair",
     categoryImg:
       "https://techlandbd.com/cache/images/uploads/categories-featured/gaming-chair_cache_optimize-70.webp",
     items: [
       {
+        category: "gamingchair",
         id: "GCR001",
         name: "Titan Evo 2022",
         price: 499.99,
@@ -5485,6 +5605,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "gamingchair",
         id: "GCR002",
         name: "Omega 2020",
         price: 429.99,
@@ -5528,6 +5649,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "gamingchair",
         id: "GCR003",
         name: "DXRacer Formula Series",
         price: 349.99,
@@ -5571,6 +5693,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "gamingchair",
         id: "GCR004",
         name: "Noblechairs Hero",
         price: 479.99,
@@ -5614,6 +5737,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "gamingchair",
         id: "GCR005",
         name: "AKRacing Masters Series",
         price: 399.99,
@@ -5657,6 +5781,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "gamingchair",
         id: "GCR006",
         name: "Razer Iskur",
         price: 499.99,
@@ -5700,6 +5825,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "gamingchair",
         id: "GCR007",
         name: "Corsair T3 Rush",
         price: 349.99,
@@ -5743,6 +5869,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "gamingchair",
         id: "GCR008",
         name: "AndaSeat Kaiser 3",
         price: 449.99,
@@ -5786,6 +5913,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "gamingchair",
         id: "GCR009",
         name: "Vertagear SL5800",
         price: 399.99,
@@ -5829,6 +5957,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "gamingchair",
         id: "GCR010",
         name: "Cougar Armor One",
         price: 299.99,
@@ -5879,6 +6008,7 @@ export const products = [
       "https://techlandbd.com/cache/images/uploads/categories-featured/case_cache_optimize-70.webp",
     items: [
       {
+        category: "case",
         id: "CS001",
         name: "PC-O11 Dynamic",
         price: 149.99,
@@ -5924,6 +6054,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "case",
         id: "CS002",
         name: "Lancool 205 Mesh",
         price: 89.99,
@@ -5969,6 +6100,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "case",
         id: "CS003",
         name: "H7 Flow RGB",
         price: 129.99,
@@ -6014,6 +6146,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "case",
         id: "CS004",
         name: "4000D Airflow",
         price: 94.99,
@@ -6059,6 +6192,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "case",
         id: "CS005",
         name: "Torrent Compact",
         price: 159.99,
@@ -6104,6 +6238,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "case",
         id: "CS006",
         name: "MasterBox TD500 Mesh",
         price: 109.99,
@@ -6148,6 +6283,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "case",
         id: "CS007",
         name: "Phanteks Eclipse P500A",
         price: 139.99,
@@ -6193,6 +6329,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "case",
         id: "CS008",
         name: "Define 7 Compact",
         price: 119.99,
@@ -6238,6 +6375,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "case",
         id: "CS009",
         name: "iCUE 5000X RGB",
         price: 199.99,
@@ -6283,6 +6421,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "case",
         id: "CS010",
         name: "Meshify 2 Compact",
         price: 129.99,
@@ -6335,6 +6474,7 @@ export const products = [
       "https://techlandbd.com/cache/images/uploads/categories-featured/power-supply_cache_optimize-70.webp",
     items: [
       {
+        category: "power supply",
         id: "PS001",
         name: "RM850x",
         price: 149.99,
@@ -6380,6 +6520,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "power supply",
         id: "PS002",
         name: "SF750",
         price: 179.99,
@@ -6425,6 +6566,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "power supply",
         id: "PS003",
         name: "SuperNOVA 850 G6",
         price: 159.99,
@@ -6470,6 +6612,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "power supply",
         id: "PS004",
         name: "Focus GX-750",
         price: 129.99,
@@ -6515,6 +6658,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "power supply",
         id: "PS005",
         name: "PRIME TX-1000",
         price: 299.99,
@@ -6560,6 +6704,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "power supply",
         id: "PS006",
         name: "Super Flower Leadex III 850W",
         price: 139.99,
@@ -6605,6 +6750,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "power supply",
         id: "PS007",
         name: "Thermaltake Toughpower GF1 750W",
         price: 119.99,
@@ -6650,6 +6796,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "power supply",
         id: "PS008",
         name: "be quiet! Straight Power 11 1000W",
         price: 199.99,
@@ -6695,6 +6842,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "power supply",
         id: "PS009",
         name: "Cooler Master V850 Gold V2",
         price: 129.99,
@@ -6740,6 +6888,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "power supply",
         id: "PS010",
         name: "ASUS ROG Thor 1200W Platinum II",
         price: 349.99,
@@ -6792,6 +6941,7 @@ export const products = [
       "https://techlandbd.com/cache/images/uploads/categories-featured/printer_cache_optimize-70.webp",
     items: [
       {
+        category: "printer",
         id: "PR001",
         name: "EcoTank ET-4760",
         price: 499.99,
@@ -6837,6 +6987,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "printer",
         id: "PR002",
         name: "WorkForce Pro WF-7840",
         price: 699.99,
@@ -6883,6 +7034,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "printer",
         id: "PR003",
         name: "OfficeJet Pro 9025e",
         price: 329.99,
@@ -6928,6 +7080,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "printer",
         id: "PR004",
         name: "PIXMA TR8620a",
         price: 249.99,
@@ -6973,6 +7126,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "printer",
         id: "PR005",
         name: "HL-L2395DW",
         price: 199.99,
@@ -7018,6 +7172,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "printer",
         id: "PR006",
         name: "LaserJet Pro M404dn",
         price: 349.99,
@@ -7062,6 +7217,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "printer",
         id: "PR007",
         name: "SureColor P800",
         price: 1299.99,
@@ -7105,6 +7261,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "printer",
         id: "PR008",
         name: "imagePROGRAF PRO-1000",
         price: 1499.99,
@@ -7148,6 +7305,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "printer",
         id: "PR009",
         name: "MFC-J995DW",
         price: 299.99,
@@ -7193,6 +7351,7 @@ export const products = [
         isBestSeller: false,
       },
       {
+        category: "printer",
         id: "PR010",
         name: "VersaLink C405",
         price: 799.99,

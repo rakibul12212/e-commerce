@@ -63,7 +63,9 @@ const FeatureProductCard = () => {
                     />
                     <h3
                       className="text-2xl hover:text-[#6896AD] transform duration-300 ease-in-out font-semibold pb-3 cursor-pointer"
-                      onClick={() => router.push(`/productDetails/${item.id}`)}
+                      onClick={() =>
+                        router.push(`/productDetails/${item.category}/${item.id}`)
+                      }
                     >
                       {item.name}
                     </h3>
