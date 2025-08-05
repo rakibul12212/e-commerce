@@ -6,8 +6,10 @@ import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import Rating from "../rating/Rating";
 import { RiErrorWarningLine } from "react-icons/ri";
-import { FiPlus } from "react-icons/fi";
+import { FaRegCircleCheck } from "react-icons/fa6";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import { RiArrowRightSLine } from "react-icons/ri";
+import Tab from "../tab/Tab";
 
 const DetailsProductCard = () => {
   const params = useParams();
@@ -29,30 +31,30 @@ const DetailsProductCard = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8  mx-auto p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8  mx-auto p-4 border border-gray-300 rounded-lg shadow-md bg-white">
         <div className="space-y-4">
-          <div className="border rounded-lg p-4 bg-white shadow-sm">
+          <div className=" rounded-lg p-4 bg-white shadow-sm">
             <Image
               src={product.primaryImg}
               alt={product.name}
               width={400}
               height={400}
-              className="w-full h-auto object-cover rounded-md"
+              className="w-full h-auto object-contain rounded-lg"
             />
           </div>
           <div className="grid grid-cols-3 gap-2">
             {product.detailsImg &&
               product.detailsImg.map((item, index) => (
                 <div
-                  className="border rounded-md p-2 bg-white shadow-sm hover:shadow-md transition-shadow"
+                  className="border border-gray-100 rounded-md p-2 bg-white shadow-sm hover:shadow-md transition-shadow cursor-pointer"
                   key={index}
                 >
                   <Image
                     src={item}
                     alt={`${product.name} view ${index + 1}`}
                     width={120}
-                    height={120}
-                    className="w-full h-24 object-cover rounded-sm"
+                    height={150}
+                    className="w-full h-32 object-cover rounded-md"
                   />
                 </div>
               ))}
@@ -61,7 +63,7 @@ const DetailsProductCard = () => {
 
         <div className="flex flex-col space-y-4">
           <h1 className="text-3xl font-bold text-gray-900">{product.name}</h1>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
             <p className="flex items-center space-x-2 border border-gray-300 rounded px-3 py-1 text-lg ">
               <span className="text-lg font-medium text-gray-700">Stock:</span>
               {product.stockQuantity === 0 ? (
@@ -109,39 +111,93 @@ const DetailsProductCard = () => {
             <ul className="space-y-2">
               {product.specifications.display && (
                 <li className="flex ">
-                  <span className="text-gray-600">Display:</span>
-                  <span className="font-medium text-gray-800">
+                  <span className="text-gray-600 min-w-[100px]">Display:</span>
+                  <span className="font-medium text-gray-800 text-right">
                     {product.specifications.display}
                   </span>
                 </li>
               )}
               {product.specifications.memory && (
                 <li className="flex ">
-                  <span className="text-gray-600">Memory:</span>
-                  <span className="font-medium text-gray-800">
+                  <span className="text-gray-600 min-w-[100px]">Memory:</span>
+                  <span className="font-medium text-gray-800 text-right">
                     {product.specifications.memory}
                   </span>
                 </li>
               )}
               {product.specifications.processor && (
                 <li className="flex ">
-                  <span className="text-gray-600">Processor:</span>
-                  <span className="font-medium text-gray-800">
+                  <span className="text-gray-600 min-w-[100px]">
+                    Processor:
+                  </span>
+                  <span className="font-medium text-gray-800 text-right">
                     {product.specifications.processor}
                   </span>
                 </li>
               )}
               {product.specifications.storage && (
                 <li className="flex ">
-                  <span className="text-gray-600">Storage:</span>
-                  <span className="font-medium text-gray-800">
+                  <span className="text-gray-600 min-w-[100px]">Storage:</span>
+                  <span className="font-medium text-gray-800 text-right">
                     {product.specifications.storage}
+                  </span>
+                </li>
+              )}
+              {product.specifications.camera && (
+                <li className="flex ">
+                  <span className="text-gray-600 min-w-[100px]">Camera:</span>
+                  <span className="font-medium text-gray-800 text-right">
+                    {product.specifications.camera}
+                  </span>
+                </li>
+              )}
+              {product.specifications.battery && (
+                <li className="flex ">
+                  <span className="text-gray-600 min-w-[100px]">Battery:</span>
+                  <span className="font-medium text-gray-800 text-right">
+                    {product.specifications.battery}
+                  </span>
+                </li>
+              )}
+              {product.specifications.os && (
+                <li className="flex ">
+                  <span className="text-gray-600 min-w-[100px]">OS:</span>
+                  <span className="font-medium text-gray-800 text-right">
+                    {product.specifications.os}
+                  </span>
+                </li>
+              )}
+              {product.specifications.connectivity && (
+                <li className="flex ">
+                  <span className="text-gray-600 min-w-[100px]">
+                    Connectivity:
+                  </span>
+                  <span className="font-medium text-gray-800 text-right">
+                    {product.specifications.connectivity}
+                  </span>
+                </li>
+              )}
+              {product.specifications.weight && (
+                <li className="flex ">
+                  <span className="text-gray-600 min-w-[100px]">Weight:</span>
+                  <span className="font-medium text-gray-800 text-right">
+                    {product.specifications.weight}
+                  </span>
+                </li>
+              )}
+              {product.specifications.dimensions && (
+                <li className="flex ">
+                  <span className="text-gray-600 min-w-[100px]">
+                    Dimensions:
+                  </span>
+                  <span className="font-medium text-gray-800 text-right">
+                    {product.specifications.dimensions}
                   </span>
                 </li>
               )}
             </ul>
           </div>
-          <div className="bg-gray-50 rounded-lg p-4">
+          <div className="border border-gray-300 rounded-lg p-4">
             <h3 className="text-lg font-semibold text-gray-800 mb-3">
               {product.isDiscount ? "Discounted Price" : "Price"}
             </h3>
@@ -159,6 +215,12 @@ const DetailsProductCard = () => {
                 ${product.price}
               </span>
             )}
+            <u className="text-md text-gray-500 mt-4 flex items-center space-x-2">
+              <span>
+                <FaPlus size={ 14} />
+              </span>
+              <span>Available Payment Method</span>
+            </u>
           </div>
           <div className="bg-white  rounded-lg p-4 shadow-sm">
             <div className="flex items-center space-x-3">
@@ -210,15 +272,35 @@ const DetailsProductCard = () => {
               </button>
             </div>
           </div>
-          <div className="bg-gray-50 rounded-lg p-4">
-            <p className="flex items-center space-x-1">
-              <span>
-                <RiErrorWarningLine />
-              </span>
-              <span>Product Disclaimer</span>
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-between">
+              <p className="flex items-center space-x-1">
+                <span>
+                  <RiErrorWarningLine />
+                </span>
+                <span>Product Disclaimer</span>
+              </p>
+              <p>
+                <RiArrowRightSLine size={20} />
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-between">
+              <p className="flex items-center space-x-1">
+                <span>
+                  <FaRegCircleCheck />
+                </span>
+                <span>Any Suggestion?</span>
+              </p>
+              <p>
+                <RiArrowRightSLine size={20} />
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+      {/* details */}
+      <div className="mt-8">
+        <Tab />
       </div>
     </div>
   );
