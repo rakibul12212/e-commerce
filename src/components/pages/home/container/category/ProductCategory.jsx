@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import React from "react";
 
 const ProductCategory = () => {
-  
+  const router = useRouter();
   return (
     <div>
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 py-4 ">
@@ -22,8 +22,12 @@ const ProductCategory = () => {
               height={64}
             />
             <p
-              className="text-xl font-semibold uppercase"
-              onClick={() => router.push(`/category/${category.toLowerCase()}`)}
+              className="text-xl font-semibold uppercase cursor-pointer"
+              onClick={() =>
+                router.push(
+                  `/categoryproduct/${product.category.toLowerCase()}`,
+                )
+              }
             >
               {product.category}
             </p>

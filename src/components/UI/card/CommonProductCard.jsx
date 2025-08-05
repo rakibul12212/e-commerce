@@ -9,7 +9,17 @@ import Button from "../buttons/button";
 import { FiHeart, FiShoppingCart } from "react-icons/fi";
 import { PiPauseLight } from "react-icons/pi";
 
-const CommonProductCard = () => {
+const CommonProductCard = ({
+  id,
+  primaryImg,
+  name,
+  rating,
+  stockQuantity,
+  isDiscount,
+  discountPercent,
+  price,
+  
+}) => {
   const [allProductData, setAllProductData] = useState([]);
   const { allProducts } = useCard();
   const router = useRouter();
