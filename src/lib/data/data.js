@@ -1780,9 +1780,9 @@ export const products = [
         price: 2499.99,
         discountPercent: 0,
         primaryImg:
-          "https://techlandbd.com/cache/images/uploads/products/P0512507009/cover-1753159578_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506154/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://techlandbd.com/cache/images/uploads/products/P0512507009/cover-1753159578_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P0592506154/cover_cache_optimize-40.webp",
           "https://techlandbd.com/cache/images/uploads/products/P0592506154/cover_cache_optimize-40.webp",
           "https://techlandbd.com/cache/images/uploads/products/P0592506149/cover_cache_optimize-40.webp",
         ],
@@ -2434,7 +2434,7 @@ export const products = [
       },
       {
         category: "motherboard",
-        id: "MB002",
+        id: "MB003",
         name: "TUF Gaming Z790-Plus",
         price: 299.99,
         discountPercent: 8,
@@ -2481,7 +2481,7 @@ export const products = [
       },
       {
         category: "motherboard",
-        id: "MB003",
+        id: "MB004",
         name: "MAG B660 Tomahawk",
         price: 219.99,
         discountPercent: 10,
@@ -2528,7 +2528,7 @@ export const products = [
       },
       {
         category: "motherboard",
-        id: "MB004",
+        id: "MB005",
         name: "Aorus Elite AX",
         price: 259.99,
         discountPercent: 7,
@@ -2575,7 +2575,7 @@ export const products = [
       },
       {
         category: "motherboard",
-        id: "MB005",
+        id: "MB006",
         name: "Prime B550M-A",
         price: 129.99,
         discountPercent: 10,
@@ -2622,7 +2622,7 @@ export const products = [
       },
       {
         category: "motherboard",
-        id: "MB006",
+        id: "MB007",
         name: "MEG X670E ACE",
         price: 499.99,
         discountPercent: 5,
@@ -2669,7 +2669,7 @@ export const products = [
       },
       {
         category: "motherboard",
-        id: "MB007",
+        id: "MB008",
         name: "B550 AORUS Pro",
         price: 179.99,
         discountPercent: 10,
@@ -2716,7 +2716,7 @@ export const products = [
       },
       {
         category: "motherboard",
-        id: "MB008",
+        id: "MB009",
         name: "Z690 AORUS Master",
         price: 349.99,
         discountPercent: 6,
@@ -2763,7 +2763,7 @@ export const products = [
       },
       {
         category: "motherboard",
-        id: "MB009",
+        id: "MB010",
         name: "MPG Z790 Edge",
         price: 329.99,
         discountPercent: 7,
@@ -2810,7 +2810,7 @@ export const products = [
       },
       {
         category: "motherboard",
-        id: "MB010",
+        id: "MB011",
         name: "B550M DS3H",
         price: 109.99,
         discountPercent: 12,
@@ -6243,11 +6243,12 @@ export const products = [
         name: "MasterBox TD500 Mesh",
         price: 109.99,
         discountPercent: 0,
-        primaryImg: "https://example.com/images/coolermaster_td500.jpg",
+        primaryImg:
+          "https://techlandbd.com/cache/images/uploads/products/P1222506119/cover_cache_optimize-40.webp",
         detailsImg: [
-          "https://example.com/images/coolermaster_td500_side.jpg",
-          "https://example.com/images/coolermaster_td500_front.jpg",
-          "https://example.com/images/coolermaster_td500_top.jpg",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506119/picture-1_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506119/picture-3_cache_optimize-40.webp",
+          "https://techlandbd.com/cache/images/uploads/products/P1222506119/picture-4_cache_optimize-40.webp",
         ],
         shortDetails: "Mesh front panel with ARGB lighting.",
         longDetails:
@@ -6942,7 +6943,7 @@ export const products = [
     items: [
       {
         category: "printer",
-        id: "PR001",
+        id: "PRI001",
         name: "EcoTank ET-4760",
         price: 499.99,
         discountPercent: 10,
@@ -6988,7 +6989,7 @@ export const products = [
       },
       {
         category: "printer",
-        id: "PR002",
+        id: "PRI002",
         name: "WorkForce Pro WF-7840",
         price: 699.99,
         discountPercent: 5,
@@ -7035,7 +7036,7 @@ export const products = [
       },
       {
         category: "printer",
-        id: "PR003",
+        id: "PRI003",
         name: "OfficeJet Pro 9025e",
         price: 329.99,
         discountPercent: 15,
@@ -7081,7 +7082,7 @@ export const products = [
       },
       {
         category: "printer",
-        id: "PR004",
+        id: "PRI004",
         name: "PIXMA TR8620a",
         price: 249.99,
         discountPercent: 0,
@@ -7127,7 +7128,7 @@ export const products = [
       },
       {
         category: "printer",
-        id: "PR005",
+        id: "PRI005",
         name: "HL-L2395DW",
         price: 199.99,
         discountPercent: 10,
@@ -7173,7 +7174,7 @@ export const products = [
       },
       {
         category: "printer",
-        id: "PR006",
+        id: "PRI006",
         name: "LaserJet Pro M404dn",
         price: 349.99,
         discountPercent: 0,
@@ -7218,7 +7219,7 @@ export const products = [
       },
       {
         category: "printer",
-        id: "PR007",
+        id: "PRI007",
         name: "SureColor P800",
         price: 1299.99,
         discountPercent: 0,
@@ -7262,7 +7263,7 @@ export const products = [
       },
       {
         category: "printer",
-        id: "PR008",
+        id: "PRI008",
         name: "imagePROGRAF PRO-1000",
         price: 1499.99,
         discountPercent: 0,
@@ -7306,7 +7307,7 @@ export const products = [
       },
       {
         category: "printer",
-        id: "PR009",
+        id: "PRI009",
         name: "MFC-J995DW",
         price: 299.99,
         discountPercent: 0,
@@ -7352,7 +7353,7 @@ export const products = [
       },
       {
         category: "printer",
-        id: "PR010",
+        id: "PRI010",
         name: "VersaLink C405",
         price: 799.99,
         discountPercent: 0,

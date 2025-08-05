@@ -22,7 +22,7 @@ const ProductCategory = () => {
               height={64}
             />
             <p
-              className="text-xl font-semibold uppercase cursor-pointer"
+              className="text-xl font-semibold hover:text-[#6896AD] transform duration-300 ease-in-out uppercase cursor-pointer"
               onClick={() =>
                 router.push(
                   `/categoryproduct/${product.category.toLowerCase()}`,
