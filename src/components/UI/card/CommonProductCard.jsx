@@ -49,16 +49,18 @@ const CommonProductCard = () => {
           >
             {item.name}
           </h3>
-          <Rating value={item.rating} />
-          <p className="flex items-center space-x-2  text-lg ">
-            {item.stockQuantity === 0 ? (
-              <span className="text-red-600 font-semibold">Stock Out</span>
-            ) : item.stockQuantity < 10 ? (
-              <span className="text-orange-500 font-semibold">Low Stock</span>
-            ) : (
-              <span className="text-green-600 font-semibold">In Stock</span>
-            )}
-          </p>
+          <div className="flex items-center justify-between">
+            <Rating value={item.rating} />
+            <p className="flex items-center space-x-2  text-lg ">
+              {item.stockQuantity === 0 ? (
+                <span className="text-red-600 font-semibold">Stock Out</span>
+              ) : item.stockQuantity < 10 ? (
+                <span className="text-orange-500 font-semibold">Low Stock</span>
+              ) : (
+                <span className="text-green-600 font-semibold">In Stock</span>
+              )}
+            </p>
+          </div>
           {item.isDiscount ? (
             <p>
               <span className="text-[#6896AD] text-2xl font-bold">
@@ -79,7 +81,7 @@ const CommonProductCard = () => {
               <p className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors">
                 <FiShoppingCart size={24} />
               </p>
-              <p className="cursor-pointer bg-gray-50 border border-gray-200 rounded-md p-1 text-gray-300 hover:text-gray-400 hover:bg-gray-100 transition-colors">
+              <p className="cursor-pointer bg-gray-50 border border-gray-200 rounded-md p-1 text-gray-500 hover:text-gray-400 hover:bg-gray-100 transition-colors">
                 <PiPauseLight size={24} />
               </p>
             </div>
