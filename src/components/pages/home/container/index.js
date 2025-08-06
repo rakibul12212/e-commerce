@@ -7,7 +7,7 @@ import Deals from "./Deals/Deals";
 import FeatureProduct from "./FeatureProduct/FeatureProduct";
 import LatestProduct from "./LatestProduct/LatestProduct";
 import BestSellerProduct from "./BestSellerProduct/BestSellerProduct";
-
+import FlashSale from "./FlashSale/FlashSale";
 
 const HomePage = () => {
   return (
@@ -16,12 +16,13 @@ const HomePage = () => {
         <Banner />
         <ProductCategory />
         <Deals />
+        <FlashSale />
         <div className="flex justify-between items-start space-x-4">
           <FeatureProduct />
           <LatestProduct />
           <BestSellerProduct />
         </div>
-       
+
         <About />
       </div>
       <div className="fixed z-20 bottom-10 right-4">
