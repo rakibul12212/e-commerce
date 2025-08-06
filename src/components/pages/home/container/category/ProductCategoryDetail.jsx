@@ -4,6 +4,7 @@ import Button from "@/components/UI/buttons/button";
 import Rating from "@/components/UI/rating/Rating";
 import { useCard } from "@/hooks/usecard";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { FiHeart, FiShoppingCart } from "react-icons/fi";
 import { PiPauseLight } from "react-icons/pi";
@@ -11,6 +12,7 @@ import { PiPauseLight } from "react-icons/pi";
 const ProductCategoryDetail = ({ params }) => {
   const [productCat, setProductCat] = useState([]);
   const { slug } = params || {};
+  const router = useRouter();
 
   if (!slug) {
     return <Loading />;
