@@ -74,27 +74,27 @@ const DetailsProductCard = () => {
                 <span className="text-green-600 font-semibold">In Stock</span>
               )}
             </p>
-            <p className="border border-gray-300 rounded px-3 py-1 text-lg space-x-2">
+            <p className="border border-gray-300 rounded px-3 py-1 text-lg space-x-2 overflow-x-hidden">
               <span className="text-lg font-medium text-gray-700">PID:</span>
-              <span>{product.PID}</span>
+              <span className="truncate">{product.PID}</span>
             </p>
-            <p className="border border-gray-300 rounded px-3 py-1 text-lg space-x-2">
+            <p className="border border-gray-300 rounded px-3 py-1 text-lg space-x-2 overflow-x-hidden">
               <span className="text-lg font-medium text-gray-700">SKU:</span>
-              <span>{product.SKU}</span>
+              <span className="truncate">{product.SKU}</span>
             </p>
-            <p className="border border-gray-300 rounded px-3 py-1 text-lg space-x-2">
+            <p className="border border-gray-300 rounded px-3 py-1 text-lg space-x-2 overflow-x-hidden">
               <span className="text-lg font-medium text-gray-700">Brand:</span>
-              <span>{product.brand}</span>
+              <span className="truncate">{product.brand}</span>
             </p>
-            <p className="border border-gray-300 rounded px-3 py-1 text-lg space-x-2">
-              <span className="text-lg font-medium text-gray-700">Model:</span>
-              <span>{product.model}</span>
+            <p className="border border-gray-300 rounded px-3 py-1 text-lg space-x-2 overflow-x-hidden">
+              <span className="text-lg font-medium text-gray-700 ">Model:</span>
+              <span className="truncate">{product.model}</span>
             </p>
-            <p className="border border-gray-300 rounded px-3 py-1 text-lg space-x-2">
+            <p className="border border-gray-300 rounded px-3 py-1 text-lg space-x-2 overflow-x-hidden">
               <span className="text-lg font-medium text-gray-700">
                 Warranty:
               </span>
-              <span>{product.warranty}</span>
+              <span className="truncate">{product.warranty}</span>
             </p>
           </div>
           <Rating
@@ -217,7 +217,7 @@ const DetailsProductCard = () => {
             )}
             <u className="text-md text-gray-500 mt-4 flex items-center space-x-2">
               <span>
-                <FaPlus size={ 14} />
+                <FaPlus size={14} />
               </span>
               <span>Available Payment Method</span>
             </u>
