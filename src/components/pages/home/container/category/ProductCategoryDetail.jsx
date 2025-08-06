@@ -60,7 +60,7 @@ const ProductCategoryDetail = ({ params }) => {
                 .map((item) => (
                   <label
                     key={item.id}
-                    className="flex items-center p-3 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-50 hover:border-[#6896AD] transition-all duration-300 group"
+                    className="flex items-center p-2  cursor-pointer hover:bg-gray-50 hover:border-[#6896AD] transition-all duration-300 group"
                   >
                     <input
                       type="checkbox"

@@ -6,9 +6,9 @@ import { Autoplay } from "swiper/modules";
 
 import { useCard } from "@/hooks/usecard";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { FiHeart, FiShoppingCart } from "react-icons/fi";
+import { FiChevronLeft, FiChevronRight, FiHeart, FiShoppingCart } from "react-icons/fi";
 import { PiPauseLight } from "react-icons/pi";
 
 import Rating from "@/components/UI/rating/Rating";
@@ -18,11 +18,22 @@ const FlashSale = () => {
   const [flashSaleItems, setFlashSaleItems] = useState([]);
   const router = useRouter();
   const { allProducts } = useCard();
+   const swiperRef = useRef(null);
 
   const discountPrice = (price, discount) =>
     (price - (price * discount) / 100).toFixed(2);
 
+    const handlePrev = () => {
+      if (swiperRef.current) {
+        swiperRef.current.slidePrev();
+      }
+    };
 
+    const handleNext = () => {
+      if (swiperRef.current) {
+        swiperRef.current.slideNext();
+      }
+    };
 
   useEffect(() => {
     const filtered = allProducts.flatMap((category) =>
@@ -40,8 +51,26 @@ const FlashSale = () => {
   return (
     <div className="pt-5">
       <div>
-        <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Flash Sale
+        <div className="flex items-center justify-between mb-4">
+          <p className="text-3xl md:text-4xl font-bold text-gray-900 ">
+            Flash Sale
+          </p>
+          <div className="flex items-center gap-x-4">
+            <button
+              onClick={handlePrev}
+              className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors duration-200 group"
+              aria-label="Previous slide"
+            >
+              <FiChevronLeft className="w-5 h-5 text-gray-600 group-hover:text-gray-800" />
+            </button>
+            <button
+              onClick={handleNext}
+              className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors duration-200 group"
+              aria-label="Next slide"
+            >
+              <FiChevronRight className="w-5 h-5 text-gray-600 group-hover:text-gray-800" />
+            </button>
+          </div>
         </div>
 
         <Swiper
@@ -55,8 +84,9 @@ const FlashSale = () => {
             1024: { slidesPerView: 4, spaceBetween: 16 },
             1280: { slidesPerView: 5, spaceBetween: 16 },
           }}
-          autoplay={{ delay: 2500 }}
+           autoplay={{ delay: 4000 }}
           loop
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
           {flashSaleItems.map((item) => (
             <SwiperSlide key={item.id} className="p-2">

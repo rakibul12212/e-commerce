@@ -23,7 +23,7 @@ const Deals = () => {
         {categoriesWithDeals.map((deal, id) => (
           <div key={id} className="">
             <p className="text-lg font-semibold bg-gray-50 p-4 rounded-md shadow-md text-center space-y-2 hover:bg-gray-100 hover:shadow-lg transform  duration-300 ease-in-out hover:scale-105 uppercase">
-              {deal.category}
+              {deal.category} Deals
             </p>
           </div>
         ))}
