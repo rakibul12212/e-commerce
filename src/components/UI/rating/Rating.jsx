@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const Rating = ({
@@ -67,3 +68,4 @@ const Rating = ({
 };
 
 export default Rating;
+
