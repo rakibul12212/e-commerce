@@ -1,19 +1,28 @@
 import React from "react";
 import Banner from "./banner/banner";
-import { AllProductsPage } from "./allProducts/allProducts";
-import SubCategoryPage from "./subCategoryPage/subCategoryPage";
 import CartBtn from "@/components/UI/buttons/cartBtn";
-import FlashSaleProduct from "./flashSaleProduct/flashSaleProduct";
 import About from "./about/about";
+import ProductCategory from "./category/ProductCategory";
+import Deals from "./Deals/Deals";
+import FeatureProduct from "./FeatureProduct/FeatureProduct";
+import LatestProduct from "./LatestProduct/LatestProduct";
+import BestSellerProduct from "./BestSellerProduct/BestSellerProduct";
+import FlashSale from "./FlashSale/FlashSale";
 
 const HomePage = () => {
   return (
     <div>
-      <div className="">
+      <div className="space-y-20">
         <Banner />
-        <SubCategoryPage />
-        <FlashSaleProduct />
-        <AllProductsPage />
+        <ProductCategory />
+        <Deals />
+        <FlashSale />
+        <div className="flex justify-between items-start space-x-4">
+          <FeatureProduct />
+          <LatestProduct />
+          <BestSellerProduct />
+        </div>
+
         <About />
       </div>
       <div className="fixed z-20 bottom-10 right-4">

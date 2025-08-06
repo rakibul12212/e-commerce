@@ -3,9 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { BsCart3, BsHeart } from "react-icons/bs";
+import { BsCart3, BsHeart, BsPersonCircle } from "react-icons/bs";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-import { useCard } from "@/hooks/useCard";
 
 const navLinks = [
   { href: "/dashboard", label: "Dashboard" },
@@ -15,13 +14,12 @@ const navLinks = [
   { href: "/about", label: "About Us" },
   { href: "/wishlist", label: "Wishlist", icon: "wishlist" },
   { href: "/cart", label: "Cart", icon: "cart" },
+  { href: "/", label: "User", icon: "user" },
 ];
 
 const Navbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { getCartItemsCount } = useCard();
-  const cartItemsCount = getCartItemsCount();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -36,6 +34,13 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex items-center gap-4">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search products..."
+              className="border border-gray-300 rounded-md px-3 py-1 focus:outline-none w-3xl"
+            />
             <nav className="font-semibold">
               <ul className="flex items-center gap-6">
                 {navLinks.map((link) => (
@@ -51,16 +56,11 @@ const Navbar = () => {
                       {link.icon && (
                         <div className="relative">
                           {link.icon === "cart" ? (
-                            <>
-                              <BsCart3 className="text-lg" />
-                              {cartItemsCount > 0 && (
-                                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-medium">
-                                  {cartItemsCount > 99 ? "99+" : cartItemsCount}
-                                </span>
-                              )}
-                            </>
+                            <BsCart3 className="text-lg" />
                           ) : link.icon === "wishlist" ? (
                             <BsHeart className="text-lg" />
+                          ) : link.icon === "user" ? (
+                            <BsPersonCircle className="text-lg" />
                           ) : null}
                         </div>
                       )}
@@ -108,16 +108,11 @@ const Navbar = () => {
                     {link.icon && (
                       <div className="relative">
                         {link.icon === "cart" ? (
-                          <>
-                            <BsCart3 className="text-lg" />
-                            {cartItemsCount > 0 && (
-                              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-medium">
-                                {cartItemsCount > 99 ? "99+" : cartItemsCount}
-                              </span>
-                            )}
-                          </>
+                          <BsCart3 className="text-lg" />
                         ) : link.icon === "wishlist" ? (
                           <BsHeart className="text-lg" />
+                        ) : link.icon === "user" ? (
+                          <BsPersonCircle className="text-lg" />
                         ) : null}
                       </div>
                     )}

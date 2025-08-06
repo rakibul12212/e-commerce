@@ -1,11 +1,12 @@
-import { AllProductsPage } from "@/components/pages/home/container/allProducts/allProducts";
+import AllProducts from "@/components/pages/home/container/AllProducts/AllProducts";
+import React from "react";
 
-const page = () => {
+const ProductsPage = () => {
   return (
-    <>
-      
-      <AllProductsPage />
-    </>
+    <div>
+      <AllProducts />
+    </div>
   );
 };
-export default page;
+
+export default ProductsPage;
