@@ -25,7 +25,7 @@ const BestSellerProductCard = () => {
   if (bestSellerProducts.length === 0) {
     return <p className="text-lg">No deals available at the moment.</p>;
   }
-  console.log("Best Seller Products", bestSellerProducts);
+  
   return (
     <div>
       <div>

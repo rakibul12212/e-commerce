@@ -19,8 +19,6 @@ export const CardProvider = ({ children }) => {
     }, 100);
   }, []);
 
-  console.log("All Products:", allProducts);
-
   return (
     <CardContext.Provider
       value={{

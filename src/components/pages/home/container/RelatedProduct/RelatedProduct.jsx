@@ -6,7 +6,7 @@ import { useCard } from "@/hooks/usecard";
 
 const RelatedProductPage = () => {
   const [relatedProduct, setRelatedProduct] = useState([]);
-  const params = useParams(); // expects { id, category } from dynamic route
+  const params = useParams(); 
     const { allProducts } = useCard();
     const router = useRouter();
 

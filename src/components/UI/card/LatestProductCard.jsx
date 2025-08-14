@@ -22,7 +22,7 @@ const LatestProductCard = () => {
     setLatestProduct(latestProductCategories);
   }, [allProducts]); 
 
-  console.log("latestProduct", latestProduct);
+ 
 
   if (latestProduct.length === 0) {
     return <p className="text-lg">No deals available at the moment.</p>;
