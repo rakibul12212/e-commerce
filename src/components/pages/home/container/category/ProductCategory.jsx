@@ -1,16 +1,18 @@
 "use client";
 import Loading from "@/app/loading";
-import { products } from "@/lib/data/data";
+import { useCard } from "@/hooks/usecard";
+// import { products } from "@/lib/data/data";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 
 const ProductCategory = () => {
+    const { allProducts } = useCard();
   const router = useRouter();
   return (
     <div>
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 py-4 ">
-        {products.map((product, index) => (
+        {allProducts.map((product, index) => (
           <div
             key={product.index}
             className="bg-gray-50 p-4 rounded-md shadow-md flex flex-col items-center space-y-2 hover:bg-gray-100 hover:shadow-lg transform  duration-300 ease-in-out hover:scale-105 "

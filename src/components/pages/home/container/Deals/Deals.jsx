@@ -1,14 +1,15 @@
 "use client";
-import { products } from "@/lib/data/data";
+import { useCard } from "@/hooks/usecard";
 import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
 
 const Deals = () => {
   const [categoriesWithDeals, setCategoriesWithDeals] = useState([]);
+  const { allProducts } = useCard();
     const router = useRouter();
 
   useEffect(() => {
-    const dealsCategories = products.filter((category) => {
+    const dealsCategories = allProducts.filter((category) => {
       return category.items.some((item) => item.isDeal === true);
     });
     setCategoriesWithDeals(dealsCategories);
