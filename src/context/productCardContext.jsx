@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import { products } from "@/lib/data/data";
@@ -11,10 +9,13 @@ export const CardProvider = ({ children }) => {
   const [allProducts, setAllProducts] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // 🛒 Cart State
+  
   const [cartItems, setCartItems] = useState([]);
 
-  // Load products (simulation)
+
+  const [wishlistItems, setWishlistItems] = useState([]);
+
+  
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -23,28 +24,26 @@ export const CardProvider = ({ children }) => {
     }, 100);
   }, []);
 
-  // ➕ Add to Cart
+  
   const addToCart = (product) => {
     setCartItems((prev) => {
       const existing = prev.find((item) => item.id === product.id);
       if (existing) {
-        // If already in cart, increase qty
         return prev.map((item) =>
           item.id === product.id ? { ...item, qty: item.qty + 1 } : item,
         );
       } else {
-        // Add new item
         return [...prev, { ...product, qty: 1 }];
       }
     });
   };
 
-  // ➖ Remove from Cart
+ 
   const removeFromCart = (id) => {
     setCartItems((prev) => prev.filter((item) => item.id !== id));
   };
 
-  // 🔼 Increase Qty
+  
   const increaseQty = (id) => {
     setCartItems((prev) =>
       prev.map((item) =>
@@ -53,7 +52,7 @@ export const CardProvider = ({ children }) => {
     );
   };
 
-  // 🔽 Decrease Qty
+ 
   const decreaseQty = (id) => {
     setCartItems((prev) =>
       prev.map((item) =>
@@ -62,8 +61,30 @@ export const CardProvider = ({ children }) => {
     );
   };
 
-  // 🧹 Clear Cart
+ 
   const clearCart = () => setCartItems([]);
+
+  
+  const addToWishlist = (product) => {
+    setWishlistItems((prev) => {
+      if (prev.find((item) => item.id === product.id)) return prev; 
+      return [...prev, product];
+    });
+  };
+
+
+  const removeFromWishlist = (id) => {
+    setWishlistItems((prev) => prev.filter((item) => item.id !== id));
+  };
+
+ 
+  const toggleWishlist = (product) => {
+    if (wishlistItems.find((item) => item.id === product.id)) {
+      removeFromWishlist(product.id);
+    } else {
+      addToWishlist(product);
+    }
+  };
 
   return (
     <CardContext.Provider
@@ -76,6 +97,10 @@ export const CardProvider = ({ children }) => {
         increaseQty,
         decreaseQty,
         clearCart,
+        wishlistItems,
+        addToWishlist,
+        removeFromWishlist,
+        toggleWishlist, 
       }}
     >
       {children}
@@ -84,4 +109,3 @@ export const CardProvider = ({ children }) => {
 };
 
 export default CardContext;
-

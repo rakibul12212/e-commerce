@@ -10,12 +10,13 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { RiArrowRightSLine } from "react-icons/ri";
 import Tab from "../tab/Tab";
+import { FiHeart } from "react-icons/fi";
 
 const DetailsProductCard = () => {
   const params = useParams();
-  const { allProducts, addToCart } = useCard(); 
+  const { allProducts, addToCart, wishlistItems, toggleWishlist } = useCard();
   const [product, setProduct] = useState(null);
-const router = useRouter();
+  const router = useRouter();
   const discountPrice = (price, discount) => {
     return (price - (price * discount) / 100).toFixed(2);
   };
@@ -254,17 +255,16 @@ const router = useRouter();
                 Buy Now
               </button>
               <button className="p-3 bg-red-50 hover:bg-red-100 text-red-600 rounded-lg transition-colors">
-                <svg
-                  className="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
+                <p
+                  onClick={() => toggleWishlist(product)}
+                  className={`cursor-pointer bg-red-50  transition-colors ${
+                    wishlistItems.find((i) => i.id === product.id)
+                      ? "text-red-600 hover:bg-red-100"
+                      : "text-red-300 hover:text-red-500 hover:bg-red-100"
+                  }`}
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                  <FiHeart size={24} />
+                </p>
               </button>
               <button className="p-3 bg-blue-50 hover:bg-blue-100 text-blue-600 rounded-lg transition-colors">
                 <svg

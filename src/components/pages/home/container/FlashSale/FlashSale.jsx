@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -24,7 +22,12 @@ import Button from "@/components/UI/buttons/button";
 const FlashSale = () => {
   const [flashSaleItems, setFlashSaleItems] = useState([]);
   const router = useRouter();
-  const { allProducts, addToCart } = useCard(); 
+  const {
+    allProducts,
+    addToCart,
+    wishlistItems,
+    toggleWishlist,
+  } = useCard();
   const swiperRef = useRef(null);
 
   const discountPrice = (price, discount) =>
@@ -48,147 +51,154 @@ const FlashSale = () => {
 
   return (
     <div className="pt-5">
-      <div>
-        <div className="flex items-center justify-between mb-4">
-          <p className="text-3xl md:text-4xl font-bold text-gray-900 ">
-            Flash Sale
-          </p>
-          <div className="flex items-center gap-x-4">
-            <button
-              onClick={handlePrev}
-              className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors duration-200 group"
-              aria-label="Previous slide"
-            >
-              <FiChevronLeft className="w-5 h-5 text-gray-600 group-hover:text-gray-800" />
-            </button>
-            <button
-              onClick={handleNext}
-              className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors duration-200 group"
-              aria-label="Next slide"
-            >
-              <FiChevronRight className="w-5 h-5 text-gray-600 group-hover:text-gray-800" />
-            </button>
-          </div>
+      <div className="flex items-center justify-between mb-4">
+        <p className="text-3xl md:text-4xl font-bold text-gray-900">
+          Flash Sale
+        </p>
+        <div className="flex items-center gap-x-4">
+          <button
+            onClick={handlePrev}
+            className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full"
+          >
+            <FiChevronLeft className="w-5 h-5 text-gray-600" />
+          </button>
+          <button
+            onClick={handleNext}
+            className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full"
+          >
+            <FiChevronRight className="w-5 h-5 text-gray-600" />
+          </button>
         </div>
+      </div>
 
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={16}
-          slidesPerView={1}
-          breakpoints={{
-            480: { slidesPerView: 2, spaceBetween: 16 },
-            640: { slidesPerView: 2, spaceBetween: 16 },
-            768: { slidesPerView: 3, spaceBetween: 16 },
-            1024: { slidesPerView: 4, spaceBetween: 16 },
-            1280: { slidesPerView: 5, spaceBetween: 16 },
-          }}
-          autoplay={{ delay: 4000 }}
-          loop
-          onSwiper={(swiper) => (swiperRef.current = swiper)}
-        >
-          {flashSaleItems.map((item) => (
-            <SwiperSlide key={item.id} className="p-2">
-              <div className="bg-white  p-4 mt-4 rounded-md border border-gray-200 shadow-sm hover:shadow-md transform duration-300 ease-in-out hover:scale-105">
-                <div className="relative h-56">
-                  <Image
-                    src={item.primaryImg}
-                    alt={item.name}
-                    fill
-                    className="w-full h-auto object-cover rounded-md mb-2"
-                  />
-                  {item.isDiscount && (
-                    <div className="absolute top-3 left-3 z-10">
-                      <div className="bg-red-600 text-white px-3 py-1 rounded-md text-xs font-bold shadow-lg">
-                        {item.discountPercent}% OFF
-                      </div>
+      <Swiper
+        modules={[Autoplay]}
+        spaceBetween={16}
+        slidesPerView={1}
+        breakpoints={{
+          480: { slidesPerView: 2, spaceBetween: 16 },
+          640: { slidesPerView: 2, spaceBetween: 16 },
+          768: { slidesPerView: 3, spaceBetween: 16 },
+          1024: { slidesPerView: 4, spaceBetween: 16 },
+          1280: { slidesPerView: 5, spaceBetween: 16 },
+        }}
+        autoplay={{ delay: 4000 }}
+        loop
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+      >
+        {flashSaleItems.map((item) => (
+          <SwiperSlide key={item.id} className="p-2">
+            <div className="bg-white p-4 mt-4 rounded-md border border-gray-200 shadow-sm hover:shadow-md transform duration-300 hover:scale-105">
+             
+              <div className="relative h-56">
+                <Image
+                  src={item.primaryImg}
+                  alt={item.name}
+                  fill
+                  className="w-full h-auto object-cover rounded-md mb-2"
+                />
+                {item.isDiscount && (
+                  <div className="absolute top-3 left-3 z-10">
+                    <div className="bg-red-600 text-white px-3 py-1 rounded-md text-xs font-bold shadow-lg">
+                      {item.discountPercent}% OFF
                     </div>
+                  </div>
+                )}
+              </div>
+
+             
+              <h3
+                className="text-2xl text-start hover:text-[#6896AD] font-semibold pt-3 pb-1 cursor-pointer truncate"
+                onClick={() =>
+                  router.push(`/productDetails/${item.category}/${item.id}`)
+                }
+              >
+                {item.name}
+              </h3>
+
+             
+              <div className="flex items-center justify-between">
+                <Rating value={item.rating} />
+                <p className="flex items-center space-x-2 text-lg">
+                  {item.stockQuantity === 0 ? (
+                    <span className="text-red-600 font-semibold">
+                      Stock Out
+                    </span>
+                  ) : item.stockQuantity < 10 ? (
+                    <span className="text-orange-500 font-semibold">
+                      Low Stock
+                    </span>
+                  ) : (
+                    <span className="text-green-600 font-semibold">
+                      In Stock
+                    </span>
                   )}
-                </div>
+                </p>
+              </div>
 
-                <h3
-                  className="text-2xl text-start hover:text-[#6896AD] transform duration-300 ease-in-out font-semibold pt-3 pb-1 cursor-pointer truncate"
-                  onClick={() =>
-                    router.push(`/productDetails/${item.category}/${item.id}`)
-                  }
-                >
-                  {item.name}
-                </h3>
+              
+              <div className="py-3">
+                {item.isDiscount ? (
+                  <p className="text-start">
+                    <span className="text-[#6896AD] text-2xl font-bold">
+                      ${discountPrice(item.price, item.discountPercent)}
+                    </span>
+                    <span className="line-through text-gray-400 text-xl font-semibold ml-4">
+                      ${item.price}
+                    </span>
+                  </p>
+                ) : (
+                  <p className="text-2xl font-bold text-start text-[#6896AD]">
+                    ${item.price}
+                  </p>
+                )}
+              </div>
 
-                <div className="flex items-center justify-between ">
-                  <Rating value={item.rating} />
-                  <p className="flex items-center space-x-2 text-lg">
-                    {item.stockQuantity === 0 ? (
-                      <span className="text-red-600 font-semibold">
-                        Stock Out
-                      </span>
-                    ) : item.stockQuantity < 10 ? (
-                      <span className="text-orange-500 font-semibold">
-                        Low Stock
-                      </span>
-                    ) : (
-                      <span className="text-green-600 font-semibold">
-                        In Stock
-                      </span>
-                    )}
+             
+              <div className="flex justify-between items-center py-4">
+                <div className="flex items-center gap-x-4">
+                  
+                  <p
+                    onClick={() => toggleWishlist(item)}
+                    className={`cursor-pointer bg-red-50 border border-red-200 rounded-md p-1 transition-colors ${
+                      wishlistItems.find((i) => i.id === item.id)
+                        ? "text-red-600 hover:bg-red-100"
+                        : "text-red-300 hover:text-red-500 hover:bg-red-100"
+                    }`}
+                  >
+                    <FiHeart size={24} />
+                  </p>
+
+                  
+                  <p
+                    className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors"
+                    onClick={() => addToCart(item)}
+                  >
+                    <FiShoppingCart size={24} />
+                  </p>
+
+                  <p className="cursor-pointer bg-gray-50 border border-gray-200 rounded-md p-1 text-gray-500 hover:text-gray-400 hover:bg-gray-100 transition-colors">
+                    <PiPauseLight size={24} />
                   </p>
                 </div>
 
-                <div className="py-3">
-                  {item.isDiscount ? (
-                    <p className="text-start">
-                      <span className="text-[#6896AD] text-2xl font-bold">
-                        ${discountPrice(item.price, item.discountPercent)}
-                      </span>
-                      <span className="line-through text-gray-400 text-xl font-semibold ml-4">
-                        ${item.price}
-                      </span>
-                    </p>
-                  ) : (
-                    <p className="text-2xl font-bold text-start text-[#6896AD]">
-                      ${item.price}
-                    </p>
-                  )}
-                </div>
-
-                <div className="flex justify-between items-center py-4">
-                  <div className="flex items-center gap-x-4">
-                    <p className="cursor-pointer bg-red-50 border border-red-200 rounded-md p-1 text-red-300 hover:text-red-400 hover:bg-red-100 transition-colors">
-                      <FiHeart size={24} />
-                    </p>
-
-                    <p
-                      className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors"
-                      onClick={() => {
-                        addToCart(item);
-                      }}
-                    >
-                      <FiShoppingCart size={24} />
-                    </p>
-                    <p className="cursor-pointer bg-gray-50 border border-gray-200 rounded-md p-1 text-gray-500 hover:text-gray-400 hover:bg-gray-100 transition-colors">
-                      <PiPauseLight size={24} />
-                    </p>
-                  </div>
-                  <div>
-                    <Button
-                      variant="secondary"
-                      text="Buy Now"
-                      className="px-8"
-                      disabled={item.stockQuantity === 0}
-                      onClick={() => {
-                        addToCart(item);
-                        router.push("/cart");
-                      }}
-                    />
-                  </div>
-                </div>
+                <Button
+                  variant="secondary"
+                  text="Buy Now"
+                  className="px-8"
+                  disabled={item.stockQuantity === 0}
+                  onClick={() => {
+                    addToCart(item);
+                    router.push("/cart");
+                  }}
+                />
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };
 
 export default FlashSale;
-

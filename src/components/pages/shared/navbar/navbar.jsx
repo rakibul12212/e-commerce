@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { BsCart3, BsHeart, BsPersonCircle } from "react-icons/bs";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-import { useCard } from "@/hooks/usecard"; // ✅ import cart context
+import { useCard } from "@/hooks/usecard"; // cart & wishlist context
 
 const navLinks = [
   { href: "/products", label: "Products" },
@@ -19,10 +19,31 @@ const navLinks = [
 const Navbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { cartItems } = useCard(); // ✅ get cart items
+  const { cartItems, wishlistItems } = useCard();
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const renderIcon = (icon) => {
+    if (icon === "cart") return <BsCart3 className="text-lg" />;
+    if (icon === "wishlist") return <BsHeart className="text-lg" />;
+    if (icon === "user") return <BsPersonCircle className="text-lg" />;
+    return null;
+  };
+
+  const renderBadge = (icon) => {
+    if (icon === "cart" && cartItems.length > 0)
+      return (
+        <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full font-bold">
+          {cartItems.length}
+        </span>
+      );
+    if (icon === "wishlist" && wishlistItems.length > 0)
+      return (
+        <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full font-bold">
+          {wishlistItems.length}
+        </span>
+      );
+    return null;
   };
 
   return (
@@ -33,13 +54,12 @@ const Navbar = () => {
             E-Commerce
           </Link>
 
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-4">
             <input
               type="search"
-              name="search"
-              id="search"
               placeholder="Search products..."
-              className="border border-gray-300 rounded-md px-3 py-1 focus:outline-none w-3xl"
+              className="border border-gray-300 rounded-md px-3 py-1 focus:outline-none w-80"
             />
             <nav className="font-semibold">
               <ul className="flex items-center gap-6">
@@ -55,18 +75,8 @@ const Navbar = () => {
                     >
                       {link.icon && (
                         <div className="relative">
-                          {link.icon === "cart" ? (
-                            <BsCart3 className="text-lg" />
-                          ) : link.icon === "wishlist" ? (
-                            <BsHeart className="text-lg" />
-                          ) : link.icon === "user" ? (
-                            <BsPersonCircle className="text-lg" />
-                          ) : null}
-                          {link.icon === "cart" && cartItems.length > 0 && (
-                            <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full font-bold">
-                              {cartItems.length}
-                            </span>
-                          )}
+                          {renderIcon(link.icon)}
+                          {renderBadge(link.icon)}
                         </div>
                       )}
                       {!link.icon && link.label}
@@ -77,6 +87,7 @@ const Navbar = () => {
             </nav>
           </div>
 
+          {/* Mobile Menu Toggle */}
           <button
             onClick={toggleMenu}
             className="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors"
@@ -107,24 +118,14 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                     className={`flex items-center gap-3 px-3 py-2 rounded-md transition-colors ${
                       pathname === link.href
-                        ? "text-red-500 "
-                        : "text-gray-700 hover:text-red-500 "
+                        ? "text-red-500"
+                        : "text-gray-700 hover:text-red-500"
                     }`}
                   >
                     {link.icon && (
                       <div className="relative">
-                        {link.icon === "cart" ? (
-                          <BsCart3 className="text-lg" />
-                        ) : link.icon === "wishlist" ? (
-                          <BsHeart className="text-lg" />
-                        ) : link.icon === "user" ? (
-                          <BsPersonCircle className="text-lg" />
-                        ) : null}
-                        {link.icon === "cart" && cartItems.length > 0 && (
-                          <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full font-normal">
-                            {cartItems.length}
-                          </span>
-                        )}
+                        {renderIcon(link.icon)}
+                        {renderBadge(link.icon)}
                       </div>
                     )}
                     {link.label}

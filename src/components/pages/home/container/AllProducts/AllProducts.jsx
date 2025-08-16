@@ -14,7 +14,7 @@ import { useCard } from "@/hooks/usecard";
 
 const AllProducts = () => {
   const [allProductData, setAllProductData] = useState([]);
-  const { allProducts } = useCard();
+  const { allProducts, wishlistItems, toggleWishlist } = useCard();
   const router = useRouter();
 
   const discountPrice = (price, discount) => {
@@ -78,7 +78,14 @@ const AllProducts = () => {
           )}
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center gap-x-4 ">
-              <p className="cursor-pointer bg-red-50 border border-red-200 rounded-md p-1 text-red-300 hover:text-red-400 hover:bg-red-100 transition-colors">
+              <p
+                onClick={() => toggleWishlist(item)}
+                className={`cursor-pointer bg-red-50 border border-red-200 rounded-md p-1 transition-colors ${
+                  wishlistItems.find((i) => i.id === item.id)
+                    ? "text-red-600 hover:bg-red-100"
+                    : "text-red-300 hover:text-red-500 hover:bg-red-100"
+                }`}
+              >
                 <FiHeart size={24} />
               </p>
               <p
