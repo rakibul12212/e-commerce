@@ -17,7 +17,7 @@ const DealsDetails = () => {
   if (!slug) {
     return <Loading />;
   }
-  const { allProducts } = useCard();
+  const { allProducts, addToCart } = useCard(); 
 
   const discountPrice = (price, discount) => {
     return (price - (price * discount) / 100).toFixed(2);
@@ -106,7 +106,10 @@ const DealsDetails = () => {
                   </p>
                   <p
                     className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors"
-                    onClick={() => router.push(`/cart/${item.id}`)}
+                    onClick={() => {
+                      addToCart(item); 
+                      
+                    }}
                   >
                     <FiShoppingCart size={24} />
                   </p>

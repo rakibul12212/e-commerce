@@ -2,7 +2,7 @@
 import Loading from "@/app/loading";
 import { useCard } from "@/hooks/usecard";
 import Image from "next/image";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import Rating from "../rating/Rating";
 import { RiErrorWarningLine } from "react-icons/ri";
@@ -13,9 +13,9 @@ import Tab from "../tab/Tab";
 
 const DetailsProductCard = () => {
   const params = useParams();
-  const { allProducts } = useCard();
+  const { allProducts, addToCart } = useCard(); 
   const [product, setProduct] = useState(null);
-
+const router = useRouter();
   const discountPrice = (price, discount) => {
     return (price - (price * discount) / 100).toFixed(2);
   };
@@ -236,7 +236,13 @@ const DetailsProductCard = () => {
                 </button>
               </div>
 
-              <button className="flex-1 bg-blue-900 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors">
+              <button
+                className="flex-1 bg-blue-900 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+                onClick={() => {
+                  addToCart(product); 
+                  router.push("/cart"); 
+                }}
+              >
                 Add to Cart
               </button>
               <button className="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors">
@@ -298,7 +304,7 @@ const DetailsProductCard = () => {
           </div>
         </div>
       </div>
-      {/* details */}
+      
       <div className="mt-8">
         <Tab />
       </div>

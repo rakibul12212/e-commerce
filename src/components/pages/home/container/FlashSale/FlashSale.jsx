@@ -1,3 +1,5 @@
+
+
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,7 +10,12 @@ import { useCard } from "@/hooks/usecard";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { FiChevronLeft, FiChevronRight, FiHeart, FiShoppingCart } from "react-icons/fi";
+import {
+  FiChevronLeft,
+  FiChevronRight,
+  FiHeart,
+  FiShoppingCart,
+} from "react-icons/fi";
 import { PiPauseLight } from "react-icons/pi";
 
 import Rating from "@/components/UI/rating/Rating";
@@ -17,23 +24,14 @@ import Button from "@/components/UI/buttons/button";
 const FlashSale = () => {
   const [flashSaleItems, setFlashSaleItems] = useState([]);
   const router = useRouter();
-  const { allProducts } = useCard();
-   const swiperRef = useRef(null);
+  const { allProducts, addToCart } = useCard(); 
+  const swiperRef = useRef(null);
 
   const discountPrice = (price, discount) =>
     (price - (price * discount) / 100).toFixed(2);
 
-    const handlePrev = () => {
-      if (swiperRef.current) {
-        swiperRef.current.slidePrev();
-      }
-    };
-
-    const handleNext = () => {
-      if (swiperRef.current) {
-        swiperRef.current.slideNext();
-      }
-    };
+  const handlePrev = () => swiperRef.current?.slidePrev();
+  const handleNext = () => swiperRef.current?.slideNext();
 
   useEffect(() => {
     const filtered = allProducts.flatMap((category) =>
@@ -115,6 +113,7 @@ const FlashSale = () => {
                 >
                   {item.name}
                 </h3>
+
                 <div className="flex items-center justify-between ">
                   <Rating value={item.rating} />
                   <p className="flex items-center space-x-2 text-lg">
@@ -133,6 +132,7 @@ const FlashSale = () => {
                     )}
                   </p>
                 </div>
+
                 <div className="py-3">
                   {item.isDiscount ? (
                     <p className="text-start">
@@ -149,14 +149,19 @@ const FlashSale = () => {
                     </p>
                   )}
                 </div>
+
                 <div className="flex justify-between items-center py-4">
                   <div className="flex items-center gap-x-4">
                     <p className="cursor-pointer bg-red-50 border border-red-200 rounded-md p-1 text-red-300 hover:text-red-400 hover:bg-red-100 transition-colors">
                       <FiHeart size={24} />
                     </p>
+                    
                     <p
                       className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors"
-                      onClick={() => router.push(`/cart/${item.id}`)}
+                      onClick={() => {
+                        addToCart(item); 
+                        
+                      }}
                     >
                       <FiShoppingCart size={24} />
                     </p>
@@ -188,3 +193,4 @@ const FlashSale = () => {
 };
 
 export default FlashSale;
+
