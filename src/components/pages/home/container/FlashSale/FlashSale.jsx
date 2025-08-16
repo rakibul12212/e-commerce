@@ -84,7 +84,7 @@ const FlashSale = () => {
             1024: { slidesPerView: 4, spaceBetween: 16 },
             1280: { slidesPerView: 5, spaceBetween: 16 },
           }}
-           autoplay={{ delay: 4000 }}
+          autoplay={{ delay: 4000 }}
           loop
           onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
@@ -154,7 +154,14 @@ const FlashSale = () => {
                     <p className="cursor-pointer bg-red-50 border border-red-200 rounded-md p-1 text-red-300 hover:text-red-400 hover:bg-red-100 transition-colors">
                       <FiHeart size={24} />
                     </p>
-                    <p className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors">
+                    <p
+                      className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors"
+                      onClick={() =>
+                        router.push(
+                          `/cart/${item.id}`,
+                        )
+                      }
+                    >
                       <FiShoppingCart size={24} />
                     </p>
                     <p className="cursor-pointer bg-gray-50 border border-gray-200 rounded-md p-1 text-gray-500 hover:text-gray-400 hover:bg-gray-100 transition-colors">
