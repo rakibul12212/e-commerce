@@ -81,7 +81,10 @@ const AllProducts = () => {
               <p className="cursor-pointer bg-red-50 border border-red-200 rounded-md p-1 text-red-300 hover:text-red-400 hover:bg-red-100 transition-colors">
                 <FiHeart size={24} />
               </p>
-              <p className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors">
+              <p
+                className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors"
+                onClick={() => router.push(`/cart/${item.id}`)}
+              >
                 <FiShoppingCart size={24} />
               </p>
               <p className="cursor-pointer bg-gray-50 border border-gray-200 rounded-md p-1 text-gray-500 hover:text-gray-400 hover:bg-gray-100 transition-colors">
@@ -89,7 +92,14 @@ const AllProducts = () => {
               </p>
             </div>
             <div>
-              <Button variant="secondary" text="Buy Now" className="px-8" />
+              <Button
+                variant="secondary"
+                text="Buy Now"
+                className="px-8"
+                onClick={() =>
+                  router.push(`/productDetails/${item.category}/${item.id}`)
+                }
+              />
             </div>
           </div>
         </div>

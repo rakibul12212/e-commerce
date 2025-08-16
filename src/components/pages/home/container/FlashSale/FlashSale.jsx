@@ -156,11 +156,7 @@ const FlashSale = () => {
                     </p>
                     <p
                       className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors"
-                      onClick={() =>
-                        router.push(
-                          `/cart/${item.id}`,
-                        )
-                      }
+                      onClick={() => router.push(`/cart/${item.id}`)}
                     >
                       <FiShoppingCart size={24} />
                     </p>
@@ -174,6 +170,11 @@ const FlashSale = () => {
                       text="Buy Now"
                       className="px-8"
                       disabled={item.stockQuantity === 0}
+                      onClick={() =>
+                        router.push(
+                          `/productDetails/${item.category}/${item.id}`,
+                        )
+                      }
                     />
                   </div>
                 </div>
