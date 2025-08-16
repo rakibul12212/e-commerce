@@ -7,9 +7,7 @@ import { BsCart3, BsHeart, BsPersonCircle } from "react-icons/bs";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 const navLinks = [
-  { href: "/dashboard", label: "Dashboard" },
   { href: "/products", label: "Products" },
-  { href: "/addProduct", label: "Add Product" },
   { href: "/contact", label: "Contact Us" },
   { href: "/about", label: "About Us" },
   { href: "/wishlist", label: "Wishlist", icon: "wishlist" },
