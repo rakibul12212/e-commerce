@@ -14,7 +14,7 @@ import { useCard } from "@/hooks/usecard";
 
 const AllProducts = () => {
   const [allProductData, setAllProductData] = useState([]);
-  const { allProducts, wishlistItems, toggleWishlist } = useCard();
+  const { allProducts, wishlistItems, toggleWishlist, addToCart } = useCard();
   const router = useRouter();
 
   const discountPrice = (price, discount) => {
