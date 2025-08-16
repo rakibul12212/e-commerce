@@ -239,13 +239,18 @@ const router = useRouter();
               <button
                 className="flex-1 bg-blue-900 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
                 onClick={() => {
-                  addToCart(product); 
-                  router.push("/cart"); 
+                  addToCart(product);
                 }}
               >
                 Add to Cart
               </button>
-              <button className="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors">
+              <button
+                className="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+                onClick={() => {
+                  addToCart(product);
+                  router.push("/cart");
+                }}
+              >
                 Buy Now
               </button>
               <button className="p-3 bg-red-50 hover:bg-red-100 text-red-600 rounded-lg transition-colors">
@@ -304,7 +309,7 @@ const router = useRouter();
           </div>
         </div>
       </div>
-      
+
       <div className="mt-8">
         <Tab />
       </div>

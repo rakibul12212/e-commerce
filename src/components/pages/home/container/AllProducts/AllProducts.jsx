@@ -83,7 +83,9 @@ const AllProducts = () => {
               </p>
               <p
                 className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors"
-                onClick={() => router.push(`/cart/${item.id}`)}
+                onClick={() => {
+                  addToCart(item);
+                }}
               >
                 <FiShoppingCart size={24} />
               </p>
@@ -96,9 +98,10 @@ const AllProducts = () => {
                 variant="secondary"
                 text="Buy Now"
                 className="px-8"
-                onClick={() =>
-                  router.push(`/productDetails/${item.category}/${item.id}`)
-                }
+                onClick={() => {
+                  addToCart(item);
+                  router.push("/cart");
+                }}
               />
             </div>
           </div>

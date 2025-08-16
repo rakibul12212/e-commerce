@@ -160,8 +160,7 @@ const ProductCategoryDetail = ({ params }) => {
                     <p
                       className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors"
                       onClick={() => {
-                        addToCart(item); 
-                      
+                        addToCart(item);
                       }}
                     >
                       <FiShoppingCart size={24} />
@@ -175,11 +174,10 @@ const ProductCategoryDetail = ({ params }) => {
                       variant="secondary"
                       text="Buy Now"
                       className="px-8"
-                      onClick={() =>
-                        router.push(
-                          `/productDetails/${item.category}/${item.id}`,
-                        )
-                      }
+                      onClick={() => {
+                        addToCart(item);
+                        router.push("/cart");
+                      }}
                     />
                   </div>
                 </div>

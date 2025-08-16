@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { BsCart3, BsHeart, BsPersonCircle } from "react-icons/bs";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { useCard } from "@/hooks/usecard"; // ✅ import cart context
 
 const navLinks = [
   { href: "/products", label: "Products" },
@@ -18,6 +19,7 @@ const navLinks = [
 const Navbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { cartItems } = useCard(); // ✅ get cart items
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -42,7 +44,7 @@ const Navbar = () => {
             <nav className="font-semibold">
               <ul className="flex items-center gap-6">
                 {navLinks.map((link) => (
-                  <li key={link.href}>
+                  <li key={link.href} className="relative">
                     <Link
                       href={link.href}
                       className={`hover:text-red-500 hover:border-b-2 hover:border-red-500 transition-colors flex items-center gap-2 pb-1 ${
@@ -60,6 +62,11 @@ const Navbar = () => {
                           ) : link.icon === "user" ? (
                             <BsPersonCircle className="text-lg" />
                           ) : null}
+                          {link.icon === "cart" && cartItems.length > 0 && (
+                            <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full font-bold">
+                              {cartItems.length}
+                            </span>
+                          )}
                         </div>
                       )}
                       {!link.icon && link.label}
@@ -83,6 +90,7 @@ const Navbar = () => {
           </button>
         </div>
 
+        {/* Mobile Menu */}
         <div
           className={`md:hidden transition-all duration-300 ease-in-out ${
             isMenuOpen
@@ -93,7 +101,7 @@ const Navbar = () => {
           <nav className="px-4 sm:px-6 py-4">
             <ul className="space-y-4">
               {navLinks.map((link) => (
-                <li key={link.href}>
+                <li key={link.href} className="relative">
                   <Link
                     href={link.href}
                     onClick={() => setIsMenuOpen(false)}
@@ -112,6 +120,11 @@ const Navbar = () => {
                         ) : link.icon === "user" ? (
                           <BsPersonCircle className="text-lg" />
                         ) : null}
+                        {link.icon === "cart" && cartItems.length > 0 && (
+                          <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full font-normal">
+                            {cartItems.length}
+                          </span>
+                        )}
                       </div>
                     )}
                     {link.label}

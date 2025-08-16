@@ -155,12 +155,11 @@ const FlashSale = () => {
                     <p className="cursor-pointer bg-red-50 border border-red-200 rounded-md p-1 text-red-300 hover:text-red-400 hover:bg-red-100 transition-colors">
                       <FiHeart size={24} />
                     </p>
-                    
+
                     <p
                       className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors"
                       onClick={() => {
-                        addToCart(item); 
-                        
+                        addToCart(item);
                       }}
                     >
                       <FiShoppingCart size={24} />
@@ -175,11 +174,10 @@ const FlashSale = () => {
                       text="Buy Now"
                       className="px-8"
                       disabled={item.stockQuantity === 0}
-                      onClick={() =>
-                        router.push(
-                          `/productDetails/${item.category}/${item.id}`,
-                        )
-                      }
+                      onClick={() => {
+                        addToCart(item);
+                        router.push("/cart");
+                      }}
                     />
                   </div>
                 </div>
