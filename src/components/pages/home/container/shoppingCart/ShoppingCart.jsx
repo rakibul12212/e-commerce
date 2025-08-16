@@ -4,12 +4,13 @@ import React, { useState } from "react";
 import { useCard } from "@/hooks/usecard";
 import Image from "next/image";
 import { FiX, FiMinus, FiPlus } from "react-icons/fi";
+import { useRouter } from "next/navigation";
 
 const ShoppingCart = () => {
   const { cartItems, removeFromCart, increaseQty, decreaseQty } = useCard(); 
   const [couponCode, setCouponCode] = useState("");
   const [rewardPoints, setRewardPoints] = useState("");
-
+const router = useRouter();
  
   const calculateDiscount = (price, discountPercent) => {
     return (price * discountPercent) / 100;
@@ -191,7 +192,7 @@ const ShoppingCart = () => {
             <span>${grandTotal.toFixed(2)}</span>
           </div>
 
-          <button className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-medium hover:bg-blue-700 transition-colors">
+          <button className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-medium hover:bg-blue-700 transition-colors" onClick={() => router.push("/checkout")}>
             Proceed to Checkout
           </button>
         </div>
