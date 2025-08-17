@@ -21,8 +21,8 @@ const Deals = () => {
   }
   return (
     <div>
-      <p className="text-2xl font-bold">Deals</p>
-      <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 mt-4">
+      <p className="text-3xl md:text-4xl font-bold text-gray-900">Deals</p>
+      <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 mt-10">
         {categoriesWithDeals.map((deal, id) => (
           <div key={id} className="">
             <p

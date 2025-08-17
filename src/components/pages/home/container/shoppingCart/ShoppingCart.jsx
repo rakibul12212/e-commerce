@@ -38,7 +38,7 @@ const router = useRouter();
 
   if (cartItems.length === 0) {
     return (
-      <div className="py-10">
+      <div className="py-10 text-center">
         <h2 className="text-2xl font-bold mb-4">Shopping Cart</h2>
         <p className="text-gray-600">Your cart is empty</p>
       </div>
