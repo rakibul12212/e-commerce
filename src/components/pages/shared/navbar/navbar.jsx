@@ -6,6 +6,7 @@ import { useState } from "react";
 import { BsCart3, BsHeart, BsPersonCircle } from "react-icons/bs";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { useCard } from "@/hooks/usecard"; // cart & wishlist context
+import SearchInputs from "@/components/UI/Inputs/SearchInputs";
 
 const navLinks = [
   { href: "/products", label: "Products" },
@@ -56,11 +57,7 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-4">
-            <input
-              type="search"
-              placeholder="Search products..."
-              className="border border-gray-300 rounded-md px-3 py-1 focus:outline-none w-80"
-            />
+            <SearchInputs />
             <nav className="font-semibold">
               <ul className="flex items-center gap-6">
                 {navLinks.map((link) => (

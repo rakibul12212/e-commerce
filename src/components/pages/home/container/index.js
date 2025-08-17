@@ -9,6 +9,7 @@ import LatestProduct from "./LatestProduct/LatestProduct";
 import BestSellerProduct from "./BestSellerProduct/BestSellerProduct";
 import FlashSale from "./FlashSale/FlashSale";
 
+
 const HomePage = () => {
   return (
     <div>
