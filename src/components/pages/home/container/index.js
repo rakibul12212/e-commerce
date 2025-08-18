@@ -9,7 +9,6 @@ import LatestProduct from "./LatestProduct/LatestProduct";
 import BestSellerProduct from "./BestSellerProduct/BestSellerProduct";
 import FlashSale from "./FlashSale/FlashSale";
 
-
 const HomePage = () => {
   return (
     <div>
@@ -18,7 +17,7 @@ const HomePage = () => {
         <ProductCategory />
         <Deals />
         <FlashSale />
-        <div className="flex justify-between items-start space-x-4">
+        <div className="flex justify-between items-start gap-x-4">
           <FeatureProduct />
           <LatestProduct />
           <BestSellerProduct />

@@ -37,32 +37,33 @@ const LatestProductCard = () => {
               item.isLatest && (
                 <div
                   key={item.id}
-                  className="bg-white flex justify-between gap-x-6 items-center px-4 mt-4 rounded-md border border-gray-200 shadow-sm hover:shadow-md transform  duration-300 ease-in-out hover:scale-105"
+                  className="bg-white flex justify-between gap-x-6 items-center px-8  mt-4 rounded-md border border-gray-200 shadow-sm hover:shadow-md transform  duration-300 ease-in-out hover:scale-105"
                 >
                   <div className="relative">
                     <Image
                       src={item.primaryImg}
                       alt={item.name}
                       width={200}
-                      height={100}
-                      className="object-cover rounded-md mb-2"
+                      height={80}
+                      className="object-cover rounded-md "
                     />
                     {item.discountPercent > 0 && (
-                      <div className="absolute top-4 left-2 bg-[#B91C1C] text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md">
+                      <div className="absolute top-4 left-2 bg-[#B91C1C] text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md hidden 2xl:block">
                         -{item.discountPercent}%
                       </div>
                     )}
                   </div>
-                  <div className="flex flex-col justify-start flex-1 ">
+                  <div className="flex flex-col justify-start flex-1 py-2">
                     <Rating
                       value={item.rating}
                       showValue
                       showCount
                       reviewCount={item.reviewCount}
                       size="medium"
+                      className="pb-4"
                     />
                     <h3
-                      className="text-2xl hover:text-[#6896AD] transform duration-300 ease-in-out font-semibold pb-3 cursor-pointer"
+                      className="text-xl md:max-w-[150px] 2xl:max-w-[300px] truncate hover:text-[#6896AD] transform duration-300 ease-in-out font-semibold  cursor-pointer"
                       onClick={() =>
                         router.push(
                           `/productDetails/${item.category}/${item.id}`,
@@ -73,15 +74,15 @@ const LatestProductCard = () => {
                     </h3>
                     {item.isDiscount ? (
                       <p>
-                        <span className="text-[#6896AD] text-2xl font-bold">
+                        <span className="text-[#6896AD] text-xl font-bold">
                           ${discountPrice(item.price, item.discountPercent)}
                         </span>
-                        <span className="line-through text-gray-400 text-xl font-semibold  ml-4">
+                        <span className="line-through text-gray-400 text-lg font-semibold  ml-4">
                           ${item.price}
                         </span>
                       </p>
                     ) : (
-                      <p className="text-2xl font-bold">${item.price}</p>
+                      <p className="text-xl font-bold">${item.price}</p>
                     )}
                     <p className="text-sm text-gray-500 ">{item.description}</p>
                   </div>

@@ -53,12 +53,12 @@ const Rating = ({
 
       {showValue && (
         <span className="text-sm font-medium text-gray-600">
-          {value.toFixed(1)}
+          {/* {value.toFixed(1)} */}
         </span>
       )}
 
       {showCount && reviewCount > 0 && (
-        <span className="text-sm text-gray-500">
+        <span className="text-sm text-gray-500 md:max-w-[150px] 2xl:max-w-[300px] truncate">
           ({reviewCount.toLocaleString()}{" "}
           {reviewCount === 1 ? "review" : "reviews"})
         </span>
