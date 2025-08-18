@@ -71,7 +71,9 @@ const DetailsProductCard = () => {
           <h1 className="text-3xl font-bold text-gray-900">{product.name}</h1>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
             <p className="flex items-center space-x-2 border border-gray-300 rounded px-3 py-1 text-lg ">
-              <span className="text-lg font-medium text-gray-700">Stock:</span>
+              <span className="text-lg font-medium text-gray-700 md:hidden 2xl:block">
+                Stock:
+              </span>
               {product.stockQuantity === 0 ? (
                 <span className="text-red-600 font-semibold">Stock Out</span>
               ) : product.stockQuantity < 10 ? (
@@ -110,7 +112,7 @@ const DetailsProductCard = () => {
             reviewCount={product.reviewCount}
             size="medium"
           />
-          <div className="bg-gray-50 rounded-lg p-4">
+          <div className="bg-gray-50 rounded-lg p-4 md:hidden 2xl:block">
             <h3 className="text-lg font-semibold text-gray-800 mb-3">
               Specifications
             </h3>
@@ -230,7 +232,7 @@ const DetailsProductCard = () => {
           </div>
           <div className="bg-white  rounded-lg p-4 shadow-sm">
             <div className="flex items-center space-x-3">
-              <div className="flex items-center border border-gray-300 rounded-lg">
+              <div className="flex items-center border border-gray-300 rounded-lg md:hidden 2xl:block">
                 <button
                   className="py-3 px-6"
                   onClick={() => setQuantity((q) => Math.max(1, q - 1))}
@@ -281,7 +283,7 @@ const DetailsProductCard = () => {
                   <FiHeart size={24} />
                 </p>
               </button>
-              <button className="p-3 bg-blue-50 hover:bg-blue-100 text-blue-600 rounded-lg transition-colors">
+              <button className="p-3 bg-blue-50 hover:bg-blue-100 text-blue-600 rounded-lg transition-colors md:hidden 2xl:block">
                 <svg
                   className="w-6 h-6"
                   fill="none"
@@ -304,7 +306,7 @@ const DetailsProductCard = () => {
                 className="bg-gray-50 rounded-lg p-4 flex items-center justify-between"
                 onClick={() => setShowDisclaimerModal(true)}
               >
-                <p className="flex items-center space-x-1">
+                <p className="flex items-center space-x-1 md:text-sm 2xl:text-base">
                   <span>
                     <RiErrorWarningLine />
                   </span>
@@ -326,7 +328,7 @@ const DetailsProductCard = () => {
                 className="bg-gray-50 rounded-lg p-4 flex items-center justify-between"
                 onClick={() => setShowSuggestionsModal(true)}
               >
-                <p className="flex items-center space-x-1">
+                <p className="flex items-center space-x-1 md:text-sm 2xl:text-base">
                   <span>
                     <FaRegCircleCheck />
                   </span>

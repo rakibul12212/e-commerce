@@ -6,13 +6,13 @@ import { useCard } from "@/hooks/usecard";
 
 const RelatedProductPage = () => {
   const [relatedProduct, setRelatedProduct] = useState([]);
-  const params = useParams(); 
-    const { allProducts } = useCard();
-    const router = useRouter();
+  const params = useParams();
+  const { allProducts } = useCard();
+  const router = useRouter();
 
-     const discountPrice = (price, discount) => {
-       return (price - (price * discount) / 100).toFixed(2);
-     };
+  const discountPrice = (price, discount) => {
+    return (price - (price * discount) / 100).toFixed(2);
+  };
 
   useEffect(() => {
     if (!params?.id || !params?.category || allProducts.length === 0) return;
@@ -32,7 +32,7 @@ const RelatedProductPage = () => {
         {relatedProduct.map((item) => (
           <div
             key={item.id}
-            className="flex items-center gap-4 p-3 border border-gray-300 rounded-lg shadow-sm hover:shadow-md transform  duration-100  hover:scale-105 cursor-pointer bg-white"
+            className="flex items-center md:gap-1 2xl:gap-4 p-3 border border-gray-300 rounded-lg shadow-sm hover:shadow-md transform  duration-100  hover:scale-105 cursor-pointer bg-white"
           >
             <div className="flex-shrink-0">
               <img
@@ -50,18 +50,20 @@ const RelatedProductPage = () => {
               >
                 {item.name} {item.shortDetails}
               </p>
-              {item.isDiscount ? (
-                <p>
-                  <span className="text-[#6896AD] text-lg font-semibold">
-                    ${discountPrice(item.price, item.discountPercent)}
-                  </span>
-                  <span className="line-through text-gray-400 text-md font-semibold  ml-4">
-                    ${item.price}
-                  </span>
-                </p>
-              ) : (
-                <p className="text-lg font-semibold">${item.price}</p>
-              )}
+              <div>
+                {item.isDiscount ? (
+                  <p>
+                    <span className="text-[#6896AD] text-lg font-semibold">
+                      ${discountPrice(item.price, item.discountPercent)}
+                    </span>
+                    <span className="line-through text-gray-400 text-md font-semibold ml-4 hidden 2xl:inline">
+                      ${item.price}
+                    </span>
+                  </p>
+                ) : (
+                  <p className="text-lg font-semibold">${item.price}</p>
+                )}
+              </div>
             </div>
           </div>
         ))}
