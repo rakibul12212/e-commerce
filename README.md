@@ -1,4 +1,4 @@
-# 🛒 Ecommerce Next.js App
+#  E-commerce 
 
 A modern ecommerce web application built with Next.js, React, and Tailwind CSS. Fast, responsive, and ready for your online store.
 
