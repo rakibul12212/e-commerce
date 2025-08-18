@@ -127,7 +127,7 @@ const SearchInputs = () => {
         value={searchQuery}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
-        className="w-3xl max-w-5xl border border-gray-300 rounded-lg px-4 py-1 outline-none"
+        className="min-w-xl max-w-5xl border border-gray-300 rounded-lg px-4 py-1 outline-none"
       />
 
       {isOpen && (
