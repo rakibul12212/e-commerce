@@ -36,13 +36,14 @@ const AllProducts = () => {
           className="bg-white  px-4 mt-4 rounded-md border border-gray-200 shadow-sm hover:shadow-md transform duration-300 ease-in-out hover:scale-105"
         >
           <div className="relative">
-            <Image
-              src={item.primaryImg}
-              alt={item.name}
-              width={200}
-              height={100}
-              className="w-full h-auto object-cover rounded-md mb-2"
-            />
+            <div className="flex justify-center">
+                              <Image
+                                src={item.primaryImg}
+                                alt={item.name}
+                                width={200}
+                                height={100}
+                              />
+                            </div>
           </div>
           <h3
             className="text-2xl hover:text-[#6896AD] transform duration-300 ease-in-out font-semibold pb-1 cursor-pointer truncate"

@@ -41,20 +41,21 @@ const DealsDetails = () => {
   return (
     <div className="py-10">
       <div className="col-span-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {dealsProduct.map((item) => (
             <div
               key={item.id}
               className="bg-white  px-4  rounded-md border border-gray-200 shadow-sm hover:shadow-md transform duration-300 ease-in-out hover:scale-105"
             >
               <div className="relative">
-                <Image
-                  src={item.primaryImg}
-                  alt={item.name}
-                  width={200}
-                  height={100}
-                  className="w-full  object-cover rounded-md mb-2"
-                />
+                <div className="flex justify-center">
+                  <Image
+                    src={item.primaryImg}
+                    alt={item.name}
+                    width={200}
+                    height={100}
+                  />
+                </div>
                 {item.isDiscount && (
                   <div className="absolute top-2 left-2 bg-red-500 text-white text-sm font-bold px-2 py-1 rounded-md">
                     Save {item.discountPercent}%
