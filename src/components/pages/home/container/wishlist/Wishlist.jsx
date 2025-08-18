@@ -42,7 +42,7 @@ const Wishlist = () => {
                 className="border-b border-gray-200 hover:bg-gray-50"
               >
                 <td className="py-4 px-4 w-24">
-                  <div className="relative w-20 h-20">
+                  <div className="relative w-20 h-20 border border-gray-200 rounded-md">
                     <Image
                       src={item.primaryImg}
                       alt={item.name}
@@ -62,7 +62,10 @@ const Wishlist = () => {
                     {item.name}
                   </h3>
                   <p className="text-gray-500 text-sm ">
-                    Brand: {item.brand || "N/A"}, Model: {item.model || "N/A"}
+                    <span className="font-semibold"> Product ID:</span>{" "}
+                    {item.PID || "N/A"},{" "}
+                    <span className="font-semibold"> Brand:</span>{" "}
+                    {item.brand || "N/A"}
                   </p>
                 </td>
 

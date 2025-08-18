@@ -11,10 +11,14 @@ import { FaMinus, FaPlus } from "react-icons/fa";
 import { RiArrowRightSLine } from "react-icons/ri";
 import Tab from "../tab/Tab";
 import { FiHeart } from "react-icons/fi";
+import ProductDisclaimerModal from "../modal/ProductDisclaimerModal";
+import Suggestions from "../modal/Suggestions";
 
 const DetailsProductCard = () => {
   const params = useParams();
   const { allProducts, addToCart, wishlistItems, toggleWishlist } = useCard();
+  const [showDisclaimerModal, setShowDisclaimerModal] = useState(false);
+  const [showSuggestionsModal, setShowSuggestionsModal] = useState(false);
   const [product, setProduct] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const router = useRouter();
@@ -295,27 +299,49 @@ const DetailsProductCard = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-between">
-              <p className="flex items-center space-x-1">
-                <span>
-                  <RiErrorWarningLine />
-                </span>
-                <span>Product Disclaimer</span>
-              </p>
-              <p>
-                <RiArrowRightSLine size={20} />
-              </p>
+            <div>
+              <div
+                className="bg-gray-50 rounded-lg p-4 flex items-center justify-between"
+                onClick={() => setShowDisclaimerModal(true)}
+              >
+                <p className="flex items-center space-x-1">
+                  <span>
+                    <RiErrorWarningLine />
+                  </span>
+                  <span>Product Disclaimer</span>
+                </p>
+                <p>
+                  <RiArrowRightSLine size={20} />
+                </p>
+              </div>
+              {showDisclaimerModal && (
+                <ProductDisclaimerModal
+                  isOpen={showDisclaimerModal}
+                  onClose={() => setShowDisclaimerModal(false)}
+                />
+              )}
             </div>
-            <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-between">
-              <p className="flex items-center space-x-1">
-                <span>
-                  <FaRegCircleCheck />
-                </span>
-                <span>Any Suggestion?</span>
-              </p>
-              <p>
-                <RiArrowRightSLine size={20} />
-              </p>
+            <div>
+              <div
+                className="bg-gray-50 rounded-lg p-4 flex items-center justify-between"
+                onClick={() => setShowSuggestionsModal(true)}
+              >
+                <p className="flex items-center space-x-1">
+                  <span>
+                    <FaRegCircleCheck />
+                  </span>
+                  <span>Any Suggestion?</span>
+                </p>
+                <p>
+                  <RiArrowRightSLine size={20} />
+                </p>
+              </div>
+              {showSuggestionsModal && (
+                <Suggestions
+                  isOpen={showSuggestionsModal}
+                  onClose={() => setShowSuggestionsModal(false)}
+                />
+              )}
             </div>
           </div>
         </div>

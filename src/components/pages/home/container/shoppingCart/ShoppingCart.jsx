@@ -81,7 +81,7 @@ const router = useRouter();
             <div className="col-span-2">
               <h3 className="text-xl font-medium text-gray-900">{item.name}</h3>
               <p className="text-lg text-gray-500">
-                Model: {item.model || "N/A"}
+                Product ID: {item.PID || "N/A"}
               </p>
             </div>
 
