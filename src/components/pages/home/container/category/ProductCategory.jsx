@@ -20,11 +20,11 @@ const ProductCategory = () => {
             <Image
               src={product.categoryImg}
               alt={product.category}
-              width={64}
-              height={64}
+              width={56}
+              height={48}
             />
             <p
-              className="text-xl font-semibold hover:text-[#6896AD] transform duration-300 ease-in-out uppercase cursor-pointer"
+              className="md:lg  font-semibold hover:text-[#6896AD] transform duration-300 ease-in-out uppercase cursor-pointer truncate"
               onClick={() =>
                 router.push(
                   `/categoryproduct/${product.category.toLowerCase()}`,
