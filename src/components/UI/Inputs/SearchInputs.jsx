@@ -166,7 +166,7 @@ const SearchInputs = () => {
                   <img
                     src={product?.primaryImg}
                     alt={product?.name}
-                    className="w-full h-full object-cover rounded border border-gary-300"
+                    className="w-full h-full object-cover rounded border border-gray-300"
                   />
                 </div>
 
