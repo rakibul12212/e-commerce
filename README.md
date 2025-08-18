@@ -2,7 +2,7 @@
 
 A modern ecommerce web application built with Next.js, React, and Tailwind CSS. Fast, responsive, and ready for your online store.
 
-## 🧑‍💻 Technologies Used
+## Technologies Used
 
 - Next.js
 - React
@@ -18,7 +18,7 @@ A modern ecommerce web application built with Next.js, React, and Tailwind CSS. 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/ecommerce.git
+    git clone https://github.com/rakibul12212/e-commerce.git
     cd ecommerce
     ```
 2. Install dependencies:
