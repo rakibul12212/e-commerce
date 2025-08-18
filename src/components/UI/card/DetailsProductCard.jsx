@@ -16,6 +16,7 @@ const DetailsProductCard = () => {
   const params = useParams();
   const { allProducts, addToCart, wishlistItems, toggleWishlist } = useCard();
   const [product, setProduct] = useState(null);
+  const [quantity, setQuantity] = useState(1);
   const router = useRouter();
   const discountPrice = (price, discount) => {
     return (price - (price * discount) / 100).toFixed(2);
@@ -226,13 +227,23 @@ const DetailsProductCard = () => {
           <div className="bg-white  rounded-lg p-4 shadow-sm">
             <div className="flex items-center space-x-3">
               <div className="flex items-center border border-gray-300 rounded-lg">
-                <button className="py-3 px-6 ">
+                <button
+                  className="py-3 px-6"
+                  onClick={() => setQuantity((q) => Math.max(1, q - 1))}
+                  disabled={quantity <= 1}
+                >
                   <FaMinus />
                 </button>
                 <span className="py-2 px-6 min-w-[60px] text-center text-xl font-semibold">
-                  1
+                  {quantity}
                 </span>
-                <button className="py-3 px-6 ">
+                <button
+                  className="py-3 px-6"
+                  onClick={() =>
+                    setQuantity((q) => Math.min(product.stockQuantity, q + 1))
+                  }
+                  disabled={quantity >= product.stockQuantity}
+                >
                   <FaPlus />
                 </button>
               </div>
@@ -240,7 +251,7 @@ const DetailsProductCard = () => {
               <button
                 className="flex-1 bg-blue-900 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
                 onClick={() => {
-                  addToCart(product);
+                  addToCart({ ...product, quantity });
                 }}
               >
                 Add to Cart
@@ -248,7 +259,7 @@ const DetailsProductCard = () => {
               <button
                 className="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors"
                 onClick={() => {
-                  addToCart(product);
+                  addToCart({ ...product, quantity });
                   router.push("/cart");
                 }}
               >

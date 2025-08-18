@@ -37,13 +37,13 @@ const AllProducts = () => {
         >
           <div className="relative">
             <div className="flex justify-center">
-                              <Image
-                                src={item.primaryImg}
-                                alt={item.name}
-                                width={200}
-                                height={100}
-                              />
-                            </div>
+              <Image
+                src={item.primaryImg}
+                alt={item.name}
+                width={200}
+                height={100}
+              />
+            </div>
           </div>
           <h3
             className="text-2xl hover:text-[#6896AD] transform duration-300 ease-in-out font-semibold pb-1 cursor-pointer truncate"

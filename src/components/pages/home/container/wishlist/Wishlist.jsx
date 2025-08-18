@@ -7,8 +7,8 @@ import { useRouter } from "next/navigation";
 
 const Wishlist = () => {
   const { wishlistItems, removeFromWishlist, addToCart } = useCard();
-    const router = useRouter();
-    
+  const router = useRouter();
+
   if (wishlistItems.length === 0)
     return (
       <div className="py-10 text-center">
@@ -66,19 +66,25 @@ const Wishlist = () => {
                   </p>
                 </td>
 
-                <td className="py-4 px-4 text-center">
-                  <span
-                    className={`px-4 py-1 rounded-full text-lg font-medium ${
-                      item.stockQuantity > 0
-                        ? "bg-green-100 text-green-700"
-                        : "bg-red-100 text-red-700"
-                    }`}
-                  >
-                    {item.stockQuantity > 0 ? "In Stock" : "Out of Stock"}
-                  </span>
+                <td className="py-4 px-4 text-center ">
+                  <p className="flex justify-center items-center space-x-2  text-sm ">
+                    {item.stockQuantity === 0 ? (
+                      <span className="text-red-600 font-semibold bg-red-50 px-6 py-1 rounded-xl">
+                        Stock Out
+                      </span>
+                    ) : item.stockQuantity > 0 && item.stockQuantity < 10 ? (
+                      <span className="text-orange-500 font-semibold bg-orange-50 px-6 py-1 rounded-xl">
+                        Low Stock
+                      </span>
+                    ) : (
+                      <span className="text-green-600 font-semibold bg-green-50 px-6 py-1 rounded-xl">
+                        In Stock
+                      </span>
+                    )}
+                  </p>
                 </td>
 
-                <td className="py-4 px-4 text-center text-red-500 font-semibold text-xl">
+                <td className="py-4 px-4 text-center  font-semibold text-xl">
                   ৳ {item.price.toLocaleString()}
                 </td>
 
