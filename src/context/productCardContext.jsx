@@ -13,13 +13,13 @@ export const CardProvider = ({ children }) => {
 
   const [wishlistItems, setWishlistItems] = useState([]);
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setAllProducts(products || []);
-      setLoading(false);
-    }, 100);
-  }, []);
+ useEffect(() => {
+   setLoading(true);
+   setTimeout(() => {
+     setAllProducts(products || []);
+     setLoading(false);
+   }, 100);
+ }, []);
 
   const addToCart = (product) => {
     setCartItems((prev) => {

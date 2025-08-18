@@ -41,7 +41,7 @@ const DealsDetails = () => {
   return (
     <div className="py-10">
       <div className="col-span-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-5 gap-6">
           {dealsProduct.map((item) => (
             <div
               key={item.id}

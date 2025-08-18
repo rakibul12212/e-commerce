@@ -76,11 +76,9 @@ const FlashSale = () => {
         spaceBetween={16}
         slidesPerView={1}
         breakpoints={{
-          480: { slidesPerView: 2, spaceBetween: 16 },
-          640: { slidesPerView: 2, spaceBetween: 16 },
-          768: { slidesPerView: 3, spaceBetween: 16 },
-          1024: { slidesPerView: 4, spaceBetween: 16 },
-          1280: { slidesPerView: 5, spaceBetween: 16 },
+          480: { slidesPerView: 2 }, 
+          768: { slidesPerView: 3 }, 
+          1536: { slidesPerView: 5 }, 
         }}
         autoplay={{ delay: 4000 }}
         loop
@@ -89,7 +87,6 @@ const FlashSale = () => {
         {flashSaleItems.map((item) => (
           <SwiperSlide key={item.id} className="p-2">
             <div className="bg-white p-4 mt-4 rounded-md border border-gray-200 shadow-sm hover:shadow-md transform duration-300 hover:scale-105">
-             
               <div className="relative h-56">
                 <Image
                   src={item.primaryImg}
@@ -106,7 +103,6 @@ const FlashSale = () => {
                 )}
               </div>
 
-             
               <h3
                 className="text-2xl text-start hover:text-[#6896AD] font-semibold pt-3 pb-1 cursor-pointer truncate"
                 onClick={() =>
@@ -116,7 +112,6 @@ const FlashSale = () => {
                 {item.name}
               </h3>
 
-             
               <div className="flex items-center justify-between">
                 <Rating value={item.rating} />
                 <p className="flex items-center space-x-2 text-lg">
@@ -136,7 +131,6 @@ const FlashSale = () => {
                 </p>
               </div>
 
-              
               <div className="py-3">
                 {item.isDiscount ? (
                   <p className="text-start">
@@ -154,10 +148,8 @@ const FlashSale = () => {
                 )}
               </div>
 
-             
               <div className="flex justify-between items-center py-4">
                 <div className="flex items-center gap-x-4">
-                  
                   <p
                     onClick={() => toggleWishlist(item)}
                     className={`cursor-pointer bg-red-50 border border-red-200 rounded-md p-1 transition-colors ${
@@ -169,7 +161,6 @@ const FlashSale = () => {
                     <FiHeart size={24} />
                   </p>
 
-                  
                   <p
                     className="cursor-pointer bg-blue-50 border border-blue-200 rounded-md p-1 text-blue-300 hover:text-blue-400 hover:bg-blue-100 transition-colors"
                     onClick={() => addToCart(item)}
