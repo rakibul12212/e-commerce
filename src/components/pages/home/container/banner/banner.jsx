@@ -1,6 +1,6 @@
 import BannerCarousel from "@/components/UI/bannerCarousel/bannerCarousel";
 import Image from "next/image";
-import Link from "next/link"; // Added missing import
+import Link from "next/link";
 
 const Banner = () => {
   const images = [
@@ -30,7 +30,7 @@ const Banner = () => {
                   src={image.url}
                   alt={`Banner ${idx + 1}`}
                   fill
-                  style={{ objectFit: "cover" }} // Changed to "cover" for better fit
+                  style={{ objectFit: "cover" }} 
                   sizes="(max-width: 768px) 100vw, 240px"
                 />
               </Link>
