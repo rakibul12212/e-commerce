@@ -34,9 +34,9 @@ A modern ecommerce web application built with Next.js, React, and Tailwind CSS. 
 
 ## 🚀 demo
 
-[https://web-ecommerc-client.vercel.app/](https://web-ecommerc-client.vercel.app/)
+🔗 https://web-ecommerc-client.vercel.app/
 
 
 ## 🌐 Server Link
 
-[https://e-commerce-server-swart.vercel.app/products](https://e-commerce-server-swart.vercel.app/products)
+🔗 https://e-commerce-server-swart.vercel.app/products
