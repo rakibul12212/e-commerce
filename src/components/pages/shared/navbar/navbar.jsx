@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { BsCart3, BsHeart, BsPersonCircle } from "react-icons/bs";
+import { BsCart3, BsHeart } from "react-icons/bs";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-import { useCard } from "@/hooks/usecard"; // cart & wishlist context
+import { useCard } from "@/hooks/usecard"; 
 import SearchInputs from "@/components/UI/Inputs/SearchInputs";
+import { useAuth } from "@/hooks/useAuth";
 
 const navLinks = [
   { href: "/products", label: "Products" },
@@ -14,20 +15,27 @@ const navLinks = [
   { href: "/about", label: "About Us" },
   { href: "/wishlist", label: "Wishlist", icon: "wishlist" },
   { href: "/cart", label: "Cart", icon: "cart" },
-  { href: "/", label: "User", icon: "user" },
+ 
 ];
 
 const Navbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
+
   const { cartItems, wishlistItems } = useCard();
+  const { user, isAuthenticated, status, login, logout } = useAuth();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const handleUserIconClick = () => {
+    setIsUserDropdownOpen((prev) => !prev);
+  };
 
   const renderIcon = (icon) => {
     if (icon === "cart") return <BsCart3 className="text-lg" />;
     if (icon === "wishlist") return <BsHeart className="text-lg" />;
-    if (icon === "user") return <BsPersonCircle className="text-lg" />;
+   
     return null;
   };
 
@@ -80,6 +88,73 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
+                <li className="relative">
+                  {status === "loading" ? (
+                    <span>Loading...</span>
+                  ) : (
+                    <div>
+                      <button
+                        type="button"
+                        onClick={handleUserIconClick}
+                        className="focus:outline-none flex items-center"
+                      >
+                        <img
+                          src={
+                            user?.image ||
+                            "https://tanzolymp.com/images/default-non-user-no-photo-1.jpg"
+                          }
+                          alt="user"
+                          className="w-8 h-8 rounded-full"
+                        />
+                      </button>
+                      {isUserDropdownOpen && (
+                        <div className="absolute right-0 mt-6 w-48 bg-white shadow-lg border border-gray-300 rounded z-50 py-3">
+                          <div className="flex flex-col items-center gap-2 px-4">
+                            <img
+                              src={
+                                user?.image ||
+                                "https://tanzolymp.com/images/default-non-user-no-photo-1.jpg"
+                              }
+                              alt="user"
+                              className="w-12 h-12 rounded-full"
+                            />
+                            <span className="font-semibold">
+                              {user?.name || "Guest"}
+                            </span>
+                            <Link
+                              href="/"
+                              className="text-blue-600 hover:underline text-sm"
+                              onClick={() => setIsUserDropdownOpen(false)}
+                            >
+                              Account
+                            </Link>
+                            {isAuthenticated ? (
+                              <button
+                                onClick={() => {
+                                  logout();
+                                  setIsUserDropdownOpen(false);
+                                }}
+                                className="mt-2 px-3 py-1 rounded bg-red-500 text-white w-full"
+                              >
+                                Sign out
+                              </button>
+                            ) : (
+                              <button
+                                onClick={() => {
+                                  login("google");
+                                  setIsUserDropdownOpen(false);
+                                }}
+                                className="mt-2 px-3 py-1 rounded bg-blue-600 text-white w-full"
+                              >
+                                Sign in
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </li>
               </ul>
             </nav>
           </div>
