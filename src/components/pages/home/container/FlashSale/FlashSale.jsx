@@ -3,21 +3,19 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-
 import { useCard } from "@/hooks/usecard";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { PiPauseLight } from "react-icons/pi";
+import Rating from "@/components/UI/rating/Rating";
+import Button from "@/components/UI/buttons/button";
 import {
   FiChevronLeft,
   FiChevronRight,
   FiHeart,
   FiShoppingCart,
 } from "react-icons/fi";
-import { PiPauseLight } from "react-icons/pi";
-
-import Rating from "@/components/UI/rating/Rating";
-import Button from "@/components/UI/buttons/button";
 
 const FlashSale = () => {
   const [flashSaleItems, setFlashSaleItems] = useState([]);
@@ -45,9 +43,7 @@ const FlashSale = () => {
     setFlashSaleItems(filtered);
   }, [allProducts]);
 
-  if (flashSaleItems.length === 0) {
-    return <p className="text-lg">No deals available at the moment.</p>;
-  }
+  
 
   return (
     <div className="pt-5">

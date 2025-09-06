@@ -22,9 +22,6 @@ const FeatureProductCard = () => {
     setFeatureProduct(featureProductCategories);
   }, [allProducts]);
 
-  if (featureProduct.length === 0) {
-    return <p className="text-lg">No deals available at the moment.</p>;
-  }
 
   return (
     <div>

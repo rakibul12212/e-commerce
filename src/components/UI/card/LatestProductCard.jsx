@@ -24,9 +24,6 @@ const LatestProductCard = () => {
 
  
 
-  if (latestProduct.length === 0) {
-    return <p className="text-lg">No deals available at the moment.</p>;
-  }
 
   return (
     <div>

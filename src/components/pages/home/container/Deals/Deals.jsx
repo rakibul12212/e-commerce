@@ -16,9 +16,7 @@ const Deals = () => {
  }, [allProducts]);
 
   
-  if (categoriesWithDeals.length === 0) {
-    return <p className="text-lg">No deals available at the moment.</p>;
-  }
+ 
   return (
     <div>
       <p className="text-3xl md:text-4xl font-bold text-gray-900">Deals</p>
