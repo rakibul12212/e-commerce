@@ -21,12 +21,10 @@ const Navbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
-
   const { cartItems, wishlistItems } = useCard();
   const { user, isAuthenticated, status, login, logout } = useAuth();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
   const handleUserIconClick = () => {
     setIsUserDropdownOpen((prev) => !prev);
   };
@@ -34,7 +32,6 @@ const Navbar = () => {
   const renderIcon = (icon) => {
     if (icon === "cart") return <BsCart3 className="text-lg" />;
     if (icon === "wishlist") return <BsHeart className="text-lg" />;
-
     return null;
   };
 
@@ -53,7 +50,7 @@ const Navbar = () => {
       );
     return null;
   };
-  console.log(user?.image);
+
   return (
     <div className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-[1920px] mx-auto">
@@ -87,70 +84,139 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
+
+                {/* User Dropdown */}
                 <li className="relative">
-                  
-                    <div>
-                      <button
-                        type="button"
-                        onClick={handleUserIconClick}
-                        className="focus:outline-none flex items-center"
-                      >
-                        <img
-                          src={
-                            user?.image ||
-                            "https://tanzolymp.com/images/default-non-user-no-photo-1.jpg"
-                          }
-                          alt="user"
-                          className="w-8 h-8 rounded-full"
-                        />
-                      </button>
-                      {isUserDropdownOpen && (
-                        <div className="absolute right-0 mt-6 w-48 bg-white shadow-lg border border-gray-300 rounded z-50 py-3">
-                          <div className="flex flex-col items-center gap-2 px-4">
-                            <img
-                              src={
-                                user?.image ||
-                                "https://tanzolymp.com/images/default-non-user-no-photo-1.jpg"
-                              }
-                              alt="user"
-                              className="w-12 h-12 rounded-full"
+                  <div>
+                    <button
+                      type="button"
+                      onClick={handleUserIconClick}
+                      className="focus:outline-none flex items-center"
+                    >
+                      <img
+                        src={
+                          user?.image ||
+                          "https://tanzolymp.com/images/default-non-user-no-photo-1.jpg"
+                        }
+                        alt="user"
+                        className="w-8 h-8 rounded-full"
+                      />
+                    </button>
+
+                    {isUserDropdownOpen && (
+                      <div className="absolute right-0 mt-6 w-64 bg-white shadow-lg border border-gray-300 rounded z-50 py-4 px-4">
+                        {!isAuthenticated ? (
+                          <div className="flex flex-col gap-3">
+                           
+                            <input
+                              type="email"
+                              placeholder="Email"
+                              className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500"
                             />
-                            <span className="font-semibold">
-                              {user?.name || "Guest"}
-                            </span>
-                            <Link
-                              href="/"
-                              className="text-blue-600 hover:underline text-sm"
-                              onClick={() => setIsUserDropdownOpen(false)}
+                            <input
+                              type="password"
+                              placeholder="Password"
+                              className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500"
+                            />
+                            <button
+                              onClick={() => login("email")} 
+                              className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
                             >
-                              Account
+                              Sign In
+                            </button>
+
+                           
+                            <div className="flex items-center justify-between text-gray-400 text-sm my-2">
+                              <span className="flex-grow border-b border-gray-300 mr-2"></span>
+                              <span>OR</span>
+                              <span className="flex-grow border-b border-gray-300 ml-2"></span>
+                            </div>
+
+                           
+                            <button
+                              onClick={() => login("google")}
+                              className="w-full bg-red-500 text-white py-2 rounded hover:bg-red-600 transition"
+                            >
+                              Sign In with Google
+                            </button>
+
+                            <Link
+                              href="/signup"
+                              onClick={() => setIsUserDropdownOpen(false)}
+                              className="text-center text-blue-600 hover:underline text-sm mt-2"
+                            >
+                              Create Account
                             </Link>
-                            {isAuthenticated ? (
-                              <button
-                                onClick={() => {
-                                  logout();
-                                  setIsUserDropdownOpen(false);
-                                }}
-                                className="mt-2 px-3 py-1 rounded bg-red-500 text-white w-full"
-                              >
-                                Sign out
-                              </button>
-                            ) : (
-                              <button
-                                onClick={() => {
-                                  login("google");
-                                  setIsUserDropdownOpen(false);
-                                }}
-                                className="mt-2 px-3 py-1 rounded bg-blue-600 text-white w-full"
-                              >
-                                Sign in
-                              </button>
-                            )}
                           </div>
-                        </div>
-                      )}
-                    </div>
-                  
+                        ) : (
+                          <div className="flex flex-col items-center gap-2">
+                           
+                            <div className="flex items-center gap-3">
+                              <img
+                                src={
+                                  user?.image ||
+                                  "https://tanzolymp.com/images/default-non-user-no-photo-1.jpg"
+                                }
+                                alt="user"
+                                className="w-12 h-12 rounded-full"
+                              />
+                              <div>
+                                <p className="font-semibold">
+                                  {user?.name || "Guest"}
+                                </p>
+                                <p className="text-xs text-gray-500">
+                                  Reward Point : 0
+                                </p>
+                              </div>
+                            </div>
+
+                            
+                            <div className="w-full flex flex-col gap-1 text-left py-2 space-y-2">
+                              <Link
+                                href="/"
+                                className="text-gray-600 hover:underline text-sm"
+                                onClick={() => setIsUserDropdownOpen(false)}
+                              >
+                                My Profile
+                              </Link>
+                              <Link
+                                href="/"
+                                className="text-gray-600 hover:underline text-sm"
+                                onClick={() => setIsUserDropdownOpen(false)}
+                              >
+                                Order History
+                              </Link>
+                              <Link
+                                href="/"
+                                className="text-gray-600 hover:underline text-sm"
+                                onClick={() => setIsUserDropdownOpen(false)}
+                              >
+                                Reward Point History
+                              </Link>
+                              <Link
+                                href="/"
+                                className="text-gray-600 hover:underline text-sm"
+                                onClick={() => setIsUserDropdownOpen(false)}
+                              >
+                                Account
+                              </Link>
+                            </div>
+
+                            
+                            <button
+                              onClick={() => {
+                                logout();
+                                setIsUserDropdownOpen(false);
+                              }}
+                              className="mt-2 px-3 py-1 rounded bg-red-500 text-white w-full"
+                            >
+                              Sign out
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
                 </li>
               </ul>
             </nav>
