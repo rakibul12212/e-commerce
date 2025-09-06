@@ -1,3 +1,8 @@
+
+
+
+
+
 "use client";
 
 import { products } from "@/lib/data/data";
@@ -8,18 +13,36 @@ const CardContext = createContext();
 export const CardProvider = ({ children }) => {
   const [allProducts, setAllProducts] = useState([]);
   const [loading, setLoading] = useState(false);
-
   const [cartItems, setCartItems] = useState([]);
-
   const [wishlistItems, setWishlistItems] = useState([]);
 
- useEffect(() => {
-   setLoading(true);
-   setTimeout(() => {
-     setAllProducts(products || []);
-     setLoading(false);
-   }, 100);
- }, []);
+
+  useEffect(() => {
+    const storedCart = localStorage.getItem("cart");
+    const storedWishlist = localStorage.getItem("wishlist");
+
+    if (storedCart) setCartItems(JSON.parse(storedCart));
+    if (storedWishlist) setWishlistItems(JSON.parse(storedWishlist));
+  }, []);
+
+ 
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+  }, [cartItems]);
+
+ 
+  useEffect(() => {
+    localStorage.setItem("wishlist", JSON.stringify(wishlistItems));
+  }, [wishlistItems]);
+
+ 
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setAllProducts(products || []);
+      setLoading(false);
+    }, 100);
+  }, []);
 
   const addToCart = (product) => {
     setCartItems((prev) => {
@@ -56,7 +79,10 @@ export const CardProvider = ({ children }) => {
     );
   };
 
-  const clearCart = () => setCartItems([]);
+  const clearCart = () => {
+    setCartItems([]);
+    localStorage.removeItem("cart"); 
+  };
 
   const addToWishlist = (product) => {
     setWishlistItems((prev) => {
@@ -100,3 +126,4 @@ export const CardProvider = ({ children }) => {
 };
 
 export default CardContext;
+

@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { BsCart3, BsHeart } from "react-icons/bs";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-import { useCard } from "@/hooks/usecard"; 
+import { useCard } from "@/hooks/usecard";
 import SearchInputs from "@/components/UI/Inputs/SearchInputs";
 import { useAuth } from "@/hooks/useAuth";
 
@@ -15,7 +15,6 @@ const navLinks = [
   { href: "/about", label: "About Us" },
   { href: "/wishlist", label: "Wishlist", icon: "wishlist" },
   { href: "/cart", label: "Cart", icon: "cart" },
- 
 ];
 
 const Navbar = () => {
@@ -35,7 +34,7 @@ const Navbar = () => {
   const renderIcon = (icon) => {
     if (icon === "cart") return <BsCart3 className="text-lg" />;
     if (icon === "wishlist") return <BsHeart className="text-lg" />;
-   
+
     return null;
   };
 
@@ -54,7 +53,7 @@ const Navbar = () => {
       );
     return null;
   };
-
+  console.log(user?.image);
   return (
     <div className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-[1920px] mx-auto">
