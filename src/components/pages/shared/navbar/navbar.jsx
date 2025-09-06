@@ -88,9 +88,7 @@ const Navbar = () => {
                   </li>
                 ))}
                 <li className="relative">
-                  {status === "loading" ? (
-                    <span>Loading...</span>
-                  ) : (
+                  
                     <div>
                       <button
                         type="button"
@@ -152,7 +150,7 @@ const Navbar = () => {
                         </div>
                       )}
                     </div>
-                  )}
+                  
                 </li>
               </ul>
             </nav>
