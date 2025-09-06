@@ -22,7 +22,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
   const { cartItems, wishlistItems } = useCard();
-  const { user, isAuthenticated, status, login, logout } = useAuth();
+  const { user, isAuthenticated, login, logout } = useAuth();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const handleUserIconClick = () => {
