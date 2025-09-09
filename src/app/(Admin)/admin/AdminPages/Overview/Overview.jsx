@@ -3,42 +3,42 @@ import React from "react";
 const Overview = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-5 gap-4">
-      <div className="p-4 bg-gray-100 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
+      <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
         <h1 className="text-lg font-bold text-blue-950">Total Visitor</h1>
         <p className="text-2xl font-semibold">1,234</p>
         <p className="text-gray-500">12% froms last month</p>
       </div>
-      <div className="p-4 bg-gray-100 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
+      <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
         <h1 className="text-lg font-bold text-blue-950">Total Order</h1>
         <p className="text-2xl font-semibold">5,000</p>
         <p className="text-gray-500">12% froms last month</p>
       </div>
-      <div className="p-4 bg-gray-100 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
+      <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
         <h1 className="text-lg font-bold text-blue-950">Pending Orders</h1>
         <p className="text-2xl font-semibold">1,234</p>
         <p className="text-gray-500">12% froms last month</p>
       </div>
 
-      <div className="p-4 bg-gray-100 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
+      <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
         <h1 className="text-lg font-bold text-blue-950">Total Customers</h1>
         <p className="text-2xl font-semibold">1,234</p>
         <p className="text-gray-500">12% froms last month</p>
       </div>
-      <div className="p-4 bg-gray-100 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
+      <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
         <h1 className="text-lg font-bold text-blue-950">Total Sale</h1>
         <p className="text-2xl font-semibold">$1,234</p>
         <p className="text-gray-500">12% froms last month</p>
       </div>
-      <div className="p-4 bg-gray-100 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
+      <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
         <h1 className="text-lg font-bold text-blue-950">Total Profit</h1>
         <p className="text-2xl font-semibold">$5,000</p>
         <p className="text-gray-500">12% froms last month</p>
       </div>
-      <div className="p-4 bg-gray-100 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
+      <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
         <h1 className="text-lg font-bold text-blue-950">Total Products</h1>
         <p className="text-2xl font-semibold">150</p>
       </div>
-      <div className="col-span-2 bg-gray-100 rounded-lg border border-gray-200 shadow-md space-y-2 text-center p-2">
+      <div className="col-span-2 bg-gray-50 rounded-lg border border-gray-200 shadow-md space-y-2 text-center p-2">
         <h1 className="text-lg font-bold text-blue-950">
           Order Status Summary
         </h1>
@@ -65,7 +65,7 @@ const Overview = () => {
           </div>
         </div>
       </div>
-      <div className="p-4 bg-gray-100 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
+      <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 shadow-md space-y-2 text-center hover:scale-105 transition-transform ease-in-out duration-500 will-change-transform">
         <h1 className="text-lg font-bold text-blue-950 ">Traffic Source</h1>
 
         <div className="text-left line-clamp-5">

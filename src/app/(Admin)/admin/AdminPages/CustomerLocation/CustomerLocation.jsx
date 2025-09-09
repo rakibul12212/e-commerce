@@ -16,7 +16,7 @@ const CustomerLocation = () => {
   const max = Math.max(...Cdata.map((data) => data.value));
 
   return (
-    <div className="w-full  rounded-md border border-gray-200 bg-gray-100 p-6 shadow-md">
+    <div className="w-full  rounded-md border border-gray-200 bg-gray-50 p-6 shadow-md">
       <h2 className="text-lg font-semibold text-gray-900">
         Customers Locations
       </h2>

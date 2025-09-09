@@ -2,7 +2,7 @@ import React from "react";
 
 const AdminTable = ({ columns, data, rows = 10 }) => {
   return (
-    <div className="overflow-x-auto rounded-md shadow-md">
+    <div className="overflow-x-auto rounded-lg shadow-md">
       <table className="w-full border border-gray-300  text-sm text-left">
         <thead>
           <tr className="bg-blue-950 text-white text-center ">
@@ -27,7 +27,7 @@ const AdminTable = ({ columns, data, rows = 10 }) => {
                 {columns.map((col, colIndex) => (
                   <td
                     key={colIndex}
-                    className="px-4 py-2 border font-semibold border-gray-300"
+                    className="px-4 py-2 border font-semibold border-gray-200"
                   >
                     {
                       row
