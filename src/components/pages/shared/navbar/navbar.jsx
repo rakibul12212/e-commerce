@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import { BsCart3, BsHeart } from "react-icons/bs";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { useCard } from "@/hooks/usecard";
@@ -18,7 +18,7 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const pathname = usePathname();
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
   const { cartItems, wishlistItems } = useCard();
@@ -51,6 +51,11 @@ const Navbar = () => {
     return null;
   };
 
+  const handleSignOut = () => {
+    logout();
+    setIsUserDropdownOpen(false);
+  };
+
   return (
     <div className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-[1920px] mx-auto">
@@ -69,7 +74,7 @@ const Navbar = () => {
                     <Link
                       href={link.href}
                       className={`hover:text-red-500 hover:border-b-2 hover:border-red-500 transition-colors flex items-center gap-2 pb-1 ${
-                        pathname === link.href
+                        router === link.href
                           ? "text-gray-600 border-b-2 border-red-500"
                           : "text-gray-700"
                       }`}
@@ -107,7 +112,6 @@ const Navbar = () => {
                       <div className="absolute right-0 mt-6 w-64 bg-white shadow-lg border border-gray-300 rounded z-50 py-4 px-4">
                         {!isAuthenticated ? (
                           <div className="flex flex-col gap-3">
-                           
                             <input
                               type="email"
                               placeholder="Email"
@@ -119,20 +123,18 @@ const Navbar = () => {
                               className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500"
                             />
                             <button
-                              onClick={() => login("email")} 
+                              onClick={() => login("email")}
                               className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
                             >
                               Sign In
                             </button>
 
-                           
                             <div className="flex items-center justify-between text-gray-400 text-sm my-2">
                               <span className="flex-grow border-b border-gray-300 mr-2"></span>
                               <span>OR</span>
                               <span className="flex-grow border-b border-gray-300 ml-2"></span>
                             </div>
 
-                           
                             <button
                               onClick={() => login("google")}
                               className="w-full bg-red-500 text-white py-2 rounded hover:bg-red-600 transition"
@@ -150,7 +152,6 @@ const Navbar = () => {
                           </div>
                         ) : (
                           <div className="flex flex-col items-center gap-2">
-                           
                             <div className="flex items-center gap-3">
                               <img
                                 src={
@@ -170,7 +171,6 @@ const Navbar = () => {
                               </div>
                             </div>
 
-                            
                             <div className="w-full flex flex-col gap-1 text-left py-2 space-y-2">
                               <Link
                                 href="/"
@@ -202,12 +202,8 @@ const Navbar = () => {
                               </Link>
                             </div>
 
-                            
                             <button
-                              onClick={() => {
-                                logout();
-                                setIsUserDropdownOpen(false);
-                              }}
+                              onClick={handleSignOut}
                               className="mt-2 px-3 py-1 rounded bg-red-500 text-white w-full"
                             >
                               Sign out
@@ -252,7 +248,7 @@ const Navbar = () => {
                     href={link.href}
                     onClick={() => setIsMenuOpen(false)}
                     className={`flex items-center gap-3 px-3 py-2 rounded-md transition-colors ${
-                      pathname === link.href
+                      router === link.href
                         ? "text-red-500"
                         : "text-gray-700 hover:text-red-500"
                     }`}
